@@ -4,6 +4,7 @@
 Sei in biblioteca
 
     <- move_between_rooms(my_location)
+    <- mentore
     + Leggi un libro
     -
     

@@ -4,6 +4,7 @@
 Sei nel giardino
 
     <- move_between_rooms(my_location)
+    <- mentore
     + Esplori il giardino
     -
 -> hub_giardino 
