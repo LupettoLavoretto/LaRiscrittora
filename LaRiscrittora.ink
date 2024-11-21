@@ -1,8 +1,16 @@
-//File dedicati alla gestione complessiva del progetto
-INCLUDE Variabili.ink
-INCLUDE Funzioni.ink
+//File con gli appunti di gestione del progetto, la formattazione etc.
 INCLUDE AppuntiGestioneFile.ink
-INCLUDE Intro.ink
+
+//File dedicati alla gestione complessiva del progetto
+INCLUDE VariabiliEListe.ink
+INCLUDE Funzioni.ink
+INCLUDE FunzioniGestioneSpazi.ink
+INCLUDE VariabiliEFunzioniMentore.ink
+INCLUDE Inventario.Ink.ink
+INCLUDE Main.ink
+
+//File dedicato all'hub centrale
+INCLUDE HubCentrale.ink
 
 //File dedicati alla gestione del Mausoleo
 INCLUDE Mausoleo\HubMausoleo.ink
@@ -18,10 +26,19 @@ INCLUDE Giardino\Biblioteca\Amelia.ink
 
 //Dialoghi dalle varie spettre etc.
 INCLUDE Personagge/Mentore.ink
+INCLUDE FunzioniCambioLuogo.ink
 
 
 
 
+
+
+
+
+
+
+
+-> hub_centrale
 
 
 
