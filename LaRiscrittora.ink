@@ -5,7 +5,7 @@ INCLUDE AppuntiGestioneFile.ink
 INCLUDE VariabiliEListe.ink
 INCLUDE Funzioni.ink
 INCLUDE FunzioniGestioneSpazi.ink
-INCLUDE VariabiliEFunzioniMentore.ink
+INCLUDE GestioneMentore.ink
 INCLUDE Inventario.Ink.ink
 INCLUDE Main.ink
 
@@ -27,6 +27,8 @@ INCLUDE Giardino\Biblioteca\Amelia.ink
 //Dialoghi dalle varie spettre etc.
 INCLUDE Personagge/Mentore.ink
 INCLUDE FunzioniCambioLuogo.ink
+INCLUDE TrackingStatoStoria.ink
+
 
 
 
