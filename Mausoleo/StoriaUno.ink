@@ -17,6 +17,9 @@
     //la storia in corso viene attivata, e le altre non saranno accessibili fino alla sua conclusione
     ~ storiaUno = InCorso
     Ascolti la prima storia
+    E ti presenti
+    -> il_mio_nome ->
+    -> assegnazione_genere ->
     -> hub_mausoleo
 
 

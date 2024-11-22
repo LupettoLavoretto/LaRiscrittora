@@ -78,6 +78,10 @@ INCLUDE Giardino\Biblioteca\RaccontoTre.ink
 INCLUDE Giardino\Biblioteca\RaccontoQuattro.ink
 INCLUDE AppuntiContenutiEStruttura.ink
 INCLUDE Personagge\StoryletsMentore.ink
+INCLUDE CodiceEStruttura/FunzioniVarie.ink
+INCLUDE Giardino\Labirinto\Specchio.ink
+
+
 
 
 

@@ -6,7 +6,7 @@
     ~ move_entity(PG, Giardino)
     -> hub_giardino
 
-+ {my_location == HubCentrale} [{~ Ti sposti in|Vai nel|Ti rechi al} mausoleo]
++ {my_location == HubCentrale} [{~ Ti sposti verso il|Vai nel|Ti rechi al} mausoleo]
     ~ move_entity(PG, Mausoleo)
     -> hub_mausoleo
 
@@ -16,7 +16,7 @@
     -> hub_centrale
     
 //Luoghi accessibili solo dal giardino
-+ {my_location == Giardino} [{~ Ti sposti in|Vai nella|Ti rechi alla} biblioteca]
++ {my_location == Giardino && storiaDue == Conclusa} [{~ Ti sposti in|Vai nella|Ti rechi alla} biblioteca]
     ~ move_entity(PG, Biblioteca)
     -> hub_biblioteca
 
@@ -24,11 +24,11 @@
     ~ move_entity(PG, Falene)
     -> hub_falene
     
-+ {my_location == Giardino && storiaUno == Conclusa} [{~ Ti sposti dai|Vai dai|Ti rechi dai} funghi]
++ {my_location == Giardino} [{~ Ti sposti dai|Vai dai|Ti rechi dai} funghi]
     ~ move_entity(PG, Funghi)
     -> hub_funghi   
     
-+ {my_location == Giardino && storiaDue == Conclusa} [{~ Ti sposti nel|Vai nel|Ti rechi nel} labirinto]
++ {my_location == Giardino && storiaUno == Conclusa} [{~ Ti sposti nel|Vai nel|Ti rechi nel} labirinto]
     ~ move_entity(PG, Labirinto)
     -> hub_labirinto
     

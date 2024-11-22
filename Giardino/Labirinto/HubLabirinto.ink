@@ -6,6 +6,7 @@ Sei nel labirinto
     <- move_between_rooms(my_location)
     <- mentore
     + Inizi a camminare
+    + Trovi lo specchio -> lo_specchio
     -
     
 -> hub_labirinto

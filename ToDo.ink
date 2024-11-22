@@ -13,8 +13,7 @@ COSE TECNICHE/STRUTTURALE DA DECIDERE E RISOLVERE
         -> vanno per tier
         -> non si ripresentano più (?)
     * Mentore: ti offre un aiuto all'inizio, puoi rifiutarlo, ma puoi sempre chiedergli un aiuto/remind poi
-    * Settaggio genere giocatrice, nome, pronomi
-        -> nome random, no Unity
+    * A tempo perso, caricare a ruota nomi nella lista
 
 */
   

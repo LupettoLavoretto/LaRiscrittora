@@ -1,6 +1,6 @@
 === storylets_mentore ===
 {
- - parlareColMentore == 1: -> presentazioni(->parlareColMentore)
+ - parlareColMentore == 1: -> presentazioni
  - else: ->->
 
 }
@@ -10,14 +10,11 @@
 
 
 
-=== presentazioni(->return_to) ===
-Mentore: Ma dimmi, come vuoi che ti chiami?
-- (top)
-    ~ nome = "{~ Alessio|Gianni|Matteo|Alessandro|Lorenzo|Diego|Tommaso|Riccardo|Leonardo|Gabriele|Edoardo|Samuele|Liam|Nathan|Noah|Enea|Cesare|Ivo|Arturo|Nevio|Ettore|Roberto|Valerio|Pierluigi|Gianmaria|Gianmarco|Maurizio|Emanuele|Niccolò|Nicola|Filippo|Santiago|Alberto|Corrado|Ernesto|Giuliano|Ivan|Juri|Lupo|Tancredi|Jacob|Micahel|Ethan|Joshua|Daniel|Aurelio|Mario|Stefano|Cristian|Carmine|Ciro|Corrado|Carlo|Cesare|Carlo|Dante|Dario|Davide|Damiano|Diego|Domenico|Dino|Eugenio|Flavio|Filippo|Fabio|Francesco|Gaetano|Giordano|Giovanni|Alex|Alexander|Luca|Jacopo|Milo|Cristiano|Thomas|Lucas|Joele|Massimo|Giosuè|Oliver|William|James|Lucas|Henry|John|Ryan|Ethan|Gus|Logan|Nolan|Sean|Tyler}"
-    
-    + (nome_scelto)[<b>Mi chiamo {nome}</b>]Mi chiamo {nome}.
-    + [<i>No, questo non è il mio nome.</i>]-> top
-    - 
-Mentore: Piacere di conoscerti, {nome}.
-Mentore: E quali sono i pronomi in cui ti riconosci?
-->return_to
+=== presentazioni===
+    Mentore: Ma dimmi, come vuoi che ti chiami?
+        -> il_mio_nome ->
+    Mentore: E quali sono i pronomi in cui ti riconosci?
+        -> assegnazione_genere ->
+    Mentore: E allora: piacere di conoscerti, {nome}.
+    Mentore: E {pronomi has maschili: benvenuto|{pronomi has femminili: benvenuta|benvenutə}}. Spero ti troverai bene, qui.
+    ->->
