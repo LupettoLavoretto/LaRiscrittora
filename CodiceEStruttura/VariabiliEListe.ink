@@ -1,5 +1,5 @@
 //Per abilitare o meno il debug
-VAR debug = true
+VAR debug = false
 
 //Lista di tutti i luoghi del gioco
 LIST luoghi = Giardino, Mausoleo, Biblioteca, HubCentrale, Falene, Funghi, Labirinto, Tisane

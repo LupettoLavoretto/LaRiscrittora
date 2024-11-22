@@ -65,7 +65,9 @@
         ~ statoInchiostroSpettroTre ++
         Spettro tre apprezza mediamente il tuo dono.
     }
-    ->->    
+    ->->   
+//Se la lista è vuota
++ {doniTrovati == ()} Non hai nulla da donare
 + Mmm, per ora passo ->->   
 + ->
 - 

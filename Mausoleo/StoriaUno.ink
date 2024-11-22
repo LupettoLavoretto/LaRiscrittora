@@ -23,8 +23,11 @@ Ascolti la prima storia
 === aiuto_storia_uno ===
     + {doniTrovati != ()} Offri un dono allo spettro e inizi la sua storia
         -> gestione_inventario -> capitolo_uno
-//queste opzioni poi non saranno scelte dirette, ma risultati delle scelte fatte durante il gioco
+    + ->
+    {doniTrovati == (): Non parlo senza un dono adeguato! ->hub_mausoleo}       
 
+
+//queste opzioni poi non saranno scelte dirette, ma risultati delle scelte fatte durante il gioco
 = capitolo_uno
 Dopo il tuo dono, la quantità di inchiostro a disposizione è {statoInchiostroSpettroUno}.
      -> azioniInchiostro ->
