@@ -3,7 +3,7 @@ LIST doni = mela, pera, fungo, banana
 VAR doniNonTrovati = (fungo)
 VAR doniTrovati = (banana, mela, pera)
 VAR doniDonati = ()
-
+//Nota: potrebbe anche avere senso dividere poi la lista di doni per tier, con la logica tieruno = tutorial, tierdue = altre tre storie sbloccate (e relativi oggetti), tiertre= ultime tre storie sbloccate.
 
 //Gestione dell'inchiostro per i vari spettri. Nomi e valori sono temporanei. L'idea per ora è: se sono su Scarso, posso fare solo una scelta forte. Con Normale, due e via di seguito. Ogni scelta mi scala indietro nella lista di stati.
 LIST statoInchiostro = Vuoto, Scarso, Normale, Medio, Altissimo
@@ -11,8 +11,9 @@ VAR statoInchiostroSpettroUno = Scarso
 VAR statoInchiostroSpettroDue = Scarso
 VAR statoInchiostroSpettroTre = Scarso
 
-//Formula per tradurre la quantità di inchiostro in numeri
 
+
+//Formula per tradurre la quantità di inchiostro in valori espliciti
 === azioniInchiostro
 VAR Inchiostro = ()
 {
@@ -34,7 +35,7 @@ VAR Inchiostro = ()
     - Medio:
         Hai tre azioni forti a disposizione.
     - Altissimo:
-        Hai quattro azioni forti a disposizione.
+        Hai tre azioni forti a disposizione.
     - else:
         Errore
 }

@@ -62,6 +62,8 @@ INCLUDE Giardino\Labirinto\CoseLabirinto.ink
 //Angolo delle tisane
 INCLUDE Giardino\Tisane\HubTisane.ink
 INCLUDE Giardino\Tisane\CoseTisane.ink
+INCLUDE Giardino\Tisane\DipintiERitratti.ink
+
 
 
 

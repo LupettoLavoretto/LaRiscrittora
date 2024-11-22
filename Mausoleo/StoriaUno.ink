@@ -59,6 +59,14 @@ Dopo il tuo dono, la quantità di inchiostro a disposizione è {statoInchiostroS
     + Ho risolto la prima storia e attribuito allo spettro il secondo nuovo stato
         ~ storiaUno = Conclusa
         ~ effettivoStatoSpettroUno = NuovoStatoDue        
+    + {eventoSpecialeSpettroUno} Tastino perché hai sbloccato l'evento speciale
+        -> evento_speciale
     + Non ho risolto la storia
     -
+-> hub_mausoleo
+
+
+= evento_speciale
+Sei finita nell'evento speciale
+~ storiaUno = Conclusa
 -> hub_mausoleo

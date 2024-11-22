@@ -18,3 +18,7 @@ VAR effettivoStatoSpettroDue = StatoDefaultDue
 LIST possibiliStatiSpettroTre = StatoDefaultTre, NuovoStatoUnoTre, NuovoStatoDueTre, NuovoStatoTreTre
 VAR effettivoStatoSpettroTre = StatoDefaultTre
 
+//Variabili per verificare se c'è o meno l'accesso all'evento speciale di un singolo spettro
+VAR eventoSpecialeSpettroUno = false
+VAR eventoSpecialeSpettroDue = false
+VAR eventoSpecialeSpettroTre = false

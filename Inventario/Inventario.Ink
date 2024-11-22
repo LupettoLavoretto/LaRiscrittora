@@ -4,15 +4,17 @@
     ~ doniTrovati -= banana
     ~ doniDonati += banana
     {
-    - storiaUno == InCorso:
-        ~ statoInchiostroSpettroUno ++
-        ~ statoInchiostroSpettroDue ++
-        Spettro uno ha apprezzato molto il tuo dono.
     - storiaDue == InCorso:
         ~ statoInchiostroSpettroDue ++
         ~ statoInchiostroSpettroDue ++
-        ~ statoInchiostroSpettroDue ++
-        Hai regalato a spettro due la sua cosa preferita.
+        Spettro due ha apprezzato molto il tuo dono.
+    - storiaUno == InCorso:
+        ~ statoInchiostroSpettroUno ++
+        ~ statoInchiostroSpettroUno ++
+        ~ statoInchiostroSpettroUno ++
+        Hai regalato a spettro uno la sua cosa preferita.
+        //Questa occasione sblocca un pezzo speciale di storia
+        ~ eventoSpecialeSpettroUno = true
     - storiaTre == InCorso:
         ~ statoInchiostroSpettroTre --
         Spettro tre è disgustato dal tuo dono.

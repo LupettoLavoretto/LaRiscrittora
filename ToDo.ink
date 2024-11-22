@@ -10,6 +10,7 @@ COSE TECNICHE/STRUTTURALE DA DECIDERE E RISOLVERE
     * Come randomizzare i luoghi del giardino
     * Modi per proporre libri (con tag) nella biblioteca
     * Come gestire gli spettri (compaiono ovunque? unico file con randomizzazione fantasma, o più file?)
+    * Mentore: ti offre un aiuto all'inizio, puoi rifiutarlo, ma puoi sempre chiedergli un aiuto/remind poi
 
 
 TOMBE
