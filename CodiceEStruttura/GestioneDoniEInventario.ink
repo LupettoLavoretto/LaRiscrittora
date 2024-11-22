@@ -46,13 +46,22 @@ VAR Inchiostro = ()
 
 //Funzione di randomizzazione dono nei luoghi
 === randomizzazione_dono_luoghi
-{debug: Doni non trovati: {doniNonTrovatiLuogo}}
-{debug: Doni trovati:{doniTrovati}}
-{debug: Doni donati:{doniDonati}}
-{debug: Luoghi da cui hai già ricevuto un dono:{luoghiDono}}
 ~ temp luogoDono = entity_location(PG)
 ~ temp dono = LIST_RANDOM(doniNonTrovatiLuogo)
+~ temp dice_roll = RANDOM(1, 6)
+
+{debug: Doni non trovati: {doniNonTrovatiLuogo}}
+{debug: Doni trovati: {doniTrovati}}
+{debug: Doni donati: {doniDonati}}
+{debug: Luoghi da cui hai già ricevuto un dono: {luoghiDono}}
+{debug: Valore dado: {dice_roll}}
+
+
+
 {
+    - dice_roll > 3: ->->
+    - else:
+        {
     - luoghiDono has luogoDono: ->->
     - luoghiDono hasnt luogoDono:
         Hai trovato {dono}
@@ -62,11 +71,15 @@ VAR Inchiostro = ()
     - else:
         Errore: non riesco a rintracciare il luogo
 }
+    
+}
+
+
 
 {debug: Doni non trovati: {doniNonTrovatiLuogo}}
-{debug: Doni trovati:{doniTrovati}}
-{debug: Doni donati:{doniDonati}}
-{debug: Luoghi da cui hai già ricevuto un dono:{luoghiDono}}
+{debug: Doni trovati: {doniTrovati}}
+{debug: Doni donati: {doniDonati}}
+{debug: Luoghi da cui hai già ricevuto un dono: {luoghiDono}}
     
 
 ->->
