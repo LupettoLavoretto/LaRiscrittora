@@ -1,40 +1,66 @@
+/* ---------------------------------
+
+   ELEMENTI DI GESTIONE DEL GIOCO
+
+ ----------------------------------*/
+
 //File con gli appunti di gestione del progetto, la formattazione etc.
 INCLUDE AppuntiGestioneFile.ink
 
 //File dedicati alla gestione complessiva del progetto
-INCLUDE VariabiliEListe.ink
-INCLUDE Funzioni.ink
-INCLUDE FunzioniGestioneSpazi.ink
-INCLUDE GestioneMentore.ink
-INCLUDE Inventario.Ink.ink
-INCLUDE Main.ink
+INCLUDE CodiceEStruttura/VariabiliEListe.ink
+INCLUDE CodiceEStruttura/FunzioniGestioneSpazi.ink
+INCLUDE CodiceEStruttura/FunzioniCambioLuogo.ink
+INCLUDE CodiceEStruttura/TrackingStatoStoria.ink
+INCLUDE CodiceEStruttura/Inventario.ink
+
 
 //File dedicato all'hub centrale
 INCLUDE HubCentrale.ink
 
+/* ---------------------------------
+
+   CONTENUTI
+
+ ----------------------------------*/
+ 
+ //Dialoghi dalle varie spettre etc.
+INCLUDE Personagge/Mentore.ink
+
+
 //File dedicati alla gestione del Mausoleo
 INCLUDE Mausoleo\HubMausoleo.ink
-INCLUDE Mausoleo\Inamabile.ink
-
+INCLUDE Mausoleo\StoriaUno.ink
+INCLUDE Mausoleo\StoriaDue.ink
+INCLUDE Mausoleo\StoriaTre.ink
 
 //File dedicata alla gestione del giardino
 INCLUDE Giardino\HubGiardino.ink
 
 //Storie dalla biblioteca
 INCLUDE Giardino\Biblioteca\HubBiblioteca.ink
-INCLUDE Giardino\Biblioteca\Amelia.ink
+INCLUDE Giardino\Biblioteca\RaccontoUno.ink
+INCLUDE Giardino\Biblioteca\RaccontoDue.ink
+INCLUDE Giardino\Biblioteca\RaccontoTre.ink
+INCLUDE Giardino\Biblioteca\RaccontoQuattro.ink
 
-//Dialoghi dalle varie spettre etc.
-INCLUDE Personagge/Mentore.ink
-INCLUDE FunzioniCambioLuogo.ink
-INCLUDE TrackingStatoStoria.ink
-
-
-
-
+//Angolo delle falene
+INCLUDE Giardino\Falene\HubFalene.ink
+INCLUDE Giardino\Falene\CoseFalene.ink
 
 
+//Cura di fiori e funghi
+INCLUDE Giardino\Funghi\HubFunghi.ink
+INCLUDE Giardino\Funghi\CoseFungose.ink
 
+
+//Il labirinto
+INCLUDE Giardino\Labirinto\HubLabirinto.ink
+INCLUDE Giardino\Labirinto\CoseLabirinto.ink
+
+//Angolo delle tisane
+INCLUDE Giardino\Tisane\HubTisane.ink
+INCLUDE Giardino\Tisane\CoseTisane.ink
 
 
 

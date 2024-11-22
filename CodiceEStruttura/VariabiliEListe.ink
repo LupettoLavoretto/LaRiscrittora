@@ -2,7 +2,7 @@
 VAR debug = false
 
 //Lista di tutti i luoghi del gioco
-LIST luoghi = Giardino, Mausoleo, Biblioteca, HubCentrale
+LIST luoghi = Giardino, Mausoleo, Biblioteca, HubCentrale, Falene, Funghi, Labirinto, Tisane
 
 //Lista delle personagge del gioco (quelle che hanno elementi di variabilità
 LIST personagge = Mentore, PG
@@ -12,5 +12,9 @@ VAR contenutoGiardino = ()
 VAR contenutoMausoleo = (Mentore)
 VAR contenutoBiblioteca = ()
 VAR contenutoHubCentrale = (PG)
+VAR contenutoFalene = ()
+VAR contenutoFunghi = ()
+VAR contenutoLabirinto = ()
+VAR contenutoTisane = ()
 
 //

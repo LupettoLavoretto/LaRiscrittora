@@ -10,6 +10,15 @@
         ~ return Biblioteca
     - contenutoHubCentrale has entity:
         ~ return HubCentrale
+    - contenutoFalene has entity:
+        ~ return Falene
+    - contenutoFunghi has entity:
+        ~ return Funghi
+    - contenutoLabirinto has entity:
+        ~ return Labirinto
+    - contenutoTisane has entity:
+        ~ return Tisane   
+        
     - else:
         DEBUG: error, cannot find {entity} anywhere!
         ~ return 0
@@ -28,6 +37,14 @@
         ~ contenutoBiblioteca -= entity
     - HubCentrale:
         ~ contenutoHubCentrale -= entity
+    - Falene:
+        ~ contenutoFalene -= entity
+    - Funghi:
+        ~ contenutoFunghi -= entity
+    - Labirinto:
+        ~ contenutoLabirinto -= entity
+    - Tisane:
+        ~ contenutoTisane -= entity
 
     - else:
         DEBUG: error, cannot understand location {CurrentLocation} while trying to move {entity} out.
@@ -42,6 +59,15 @@
         ~ contenutoBiblioteca += entity
     - HubCentrale:
         ~ contenutoHubCentrale += entity
+    - Falene:
+        ~ contenutoFalene += entity
+    - Funghi:
+        ~ contenutoFunghi += entity
+    - Labirinto:
+        ~ contenutoLabirinto += entity
+    - Tisane:
+        ~ contenutoTisane += entity        
+    
     - else:
         DEBUG: error, cannot understand location {destination} while trying to move {entity} in.
 }

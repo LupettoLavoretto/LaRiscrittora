@@ -8,6 +8,7 @@
 
 
 === parlareColMentore
+-> storylets_mentore ->
 Il mentore ti dice cose
      + Rispondi
      + Abbandoni la conversazione -> andarsene
@@ -21,5 +22,10 @@ Il mentore ti dice cose
 === andarsene
 ~ temp my_location = entity_location(PG)
 <- move_between_rooms(my_location)
+
+-> DONE
+
+
+=== storylets_mentore ===
 
 -> DONE
