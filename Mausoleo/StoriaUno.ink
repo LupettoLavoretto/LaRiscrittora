@@ -33,3 +33,9 @@ Ascolti la prima storia
     + Non ho risolto la storia
     -
 -> hub_mausoleo
+
+=== riconoscimento_valore_dono_storia_uno ===
+Passo per "riconoscimento valore"
+//Qui facciamo in modo che, a seconda del dono, ci siano reazioni diverse da parte del fantasma, e "inchiostro" o quel che sarà diverso.
+//La logica è quella di raggruppare i doni tra non apprezzati, neutri, apprezzati, e un dono unico, e quindi una risposta ad hoc per gruppo, e una variazione di inchiostro per gruppo.
+->->

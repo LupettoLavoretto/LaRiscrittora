@@ -17,3 +17,9 @@ VAR effettivoStatoSpettroDue = StatoDefaultDue
 
 LIST possibiliStatiSpettroTre = StatoDefaultTre, NuovoStatoUnoTre, NuovoStatoDueTre, NuovoStatoTreTre
 VAR effettivoStatoSpettroTre = StatoDefaultTre
+
+//Gestione dell'inchiostro per i vari spettri. Nomi e valori sono temporanei. L'idea per ora è: se sono su Scarso, posso fare solo una scelta forte. Con Normale, due e via di seguito. Ogni scelta mi scala indietro nella lista di stati.
+LIST statoInchiostro = Vuoto, Scarso, Normale, Medio, Altissimo
+VAR statoInchiostroSpettroUno = Vuoto
+VAR statoInchiostroSpettroDue = Vuoto
+VAR statoInchiostroSpettroTre = Vuoto
