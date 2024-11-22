@@ -25,8 +25,3 @@ Il mentore ti dice cose
 <- move_between_rooms(my_location)
 
 -> DONE
-
-
-=== storylets_mentore ===
-
--> DONE
