@@ -6,6 +6,7 @@
 
 //File con gli appunti di gestione del progetto, la formattazione etc.
 INCLUDE AppuntiGestioneFile.ink
+INCLUDE ToDo.ink
 
 //File dedicati alla gestione complessiva del progetto
 INCLUDE CodiceEStruttura/VariabiliEListe.ink
