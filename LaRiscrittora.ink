@@ -13,9 +13,7 @@ INCLUDE CodiceEStruttura/VariabiliEListe.ink
 INCLUDE CodiceEStruttura/FunzioniGestioneSpazi.ink
 INCLUDE CodiceEStruttura/FunzioniCambioLuogo.ink
 INCLUDE CodiceEStruttura/TrackingStatoStoria.ink
-INCLUDE CodiceEStruttura/Inventario.ink
 INCLUDE CodiceEStruttura/GestioneDoniEInventario.ink
-
 
 //File dedicato all'hub centrale
 INCLUDE HubCentrale.ink
@@ -25,10 +23,11 @@ INCLUDE HubCentrale.ink
    CONTENUTI
 
  ----------------------------------*/
- 
- //Dialoghi dalle varie spettre etc.
+//Dialoghi dalle varie spettre etc.
 INCLUDE Personagge/Mentore.ink
 
+//Gestione dell'inventario
+INCLUDE Inventario/Inventario.ink
 
 //File dedicati alla gestione del Mausoleo
 INCLUDE Mausoleo\HubMausoleo.ink

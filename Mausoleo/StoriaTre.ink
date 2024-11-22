@@ -23,7 +23,7 @@ Ascolti la terza storia
 
 === aiuto_storia_tre ===
     + {doniTrovati != ()} Offro un dono allo spettro
-        -> gestione_inventario ->
+
 //queste opzioni poi non saranno scelte dirette, ma risultati delle scelte fatte durante il gioco
      + Ho risolto la terza storia dando allo spettro lo stato tre
         ~ storiaTre = Conclusa
