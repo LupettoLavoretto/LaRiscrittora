@@ -28,6 +28,31 @@ Ascolti la prima storia
 = capitolo_uno
 Dopo il tuo dono, la quantità di inchiostro a disposizione è {statoInchiostroSpettroUno}.
      -> azioniInchiostro ->
+     
+    + {statoInchiostroSpettroUno != Vuoto} Posso compiere una azione speciale, che mi costerà tot inchiostro
+        ~ statoInchiostroSpettroUno --
+        Lo stato dell'inchiostro è ora a {statoInchiostroSpettroUno}
+    + {statoInchiostroSpettroUno == Vuoto} Non posso più compiere azioni speciali
+    + Domanda generica, senza impegno di inchiostro
+    -
+    Dico cose varie
+    + {statoInchiostroSpettroUno!= Vuoto} Posso compiere una azione speciale, che mi costerà tot inchiostro
+        ~ statoInchiostroSpettroUno --
+        Lo stato dell'inchiostro è ora a {statoInchiostroSpettroUno}
+    + {statoInchiostroSpettroUno == Vuoto} Non posso più compiere azioni speciali
+    + Domanda generica, senza impegno di inchiostro
+    - 
+    Dico altre cose varie
+    + {statoInchiostroSpettroUno!= Vuoto} Posso compiere una azione speciale, che mi costerà tot inchiostro
+        ~ statoInchiostroSpettroUno --
+        Lo stato dell'inchiostro è ora a {statoInchiostroSpettroUno}
+    + {statoInchiostroSpettroUno == Vuoto} Non posso più compiere azioni speciali
+    + Domanda generica, senza impegno di inchiostro
+    -
+    Finisco coi finali (che saranno dettati dalle scelte, non opzioni come ora)
+ -> finali
+ 
+ = finali    
     + Ho risolto la prima storia e attribuito allo spettro il primo nuovo stato
         ~ storiaUno = Conclusa
         ~ effettivoStatoSpettroUno = NuovoStatoUno
@@ -37,9 +62,3 @@ Dopo il tuo dono, la quantità di inchiostro a disposizione è {statoInchiostroS
     + Non ho risolto la storia
     -
 -> hub_mausoleo
-
-=== riconoscimento_valore_dono_storia_uno ===
-Passo per "riconoscimento valore"
-//Qui facciamo in modo che, a seconda del dono, ci siano reazioni diverse da parte del fantasma, e "inchiostro" o quel che sarà diverso.
-//La logica è quella di raggruppare i doni tra non apprezzati, neutri, apprezzati, e un dono unico, e quindi una risposta ad hoc per gruppo, e una variazione di inchiostro per gruppo.
-->->
