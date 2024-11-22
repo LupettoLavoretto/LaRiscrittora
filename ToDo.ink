@@ -40,6 +40,6 @@ La struttura per assegnare un oggetto random è
     {debug: Doni trovati:{doniTrovati}}
     {debug: Doni donati:{doniDonati}}
     
-    Se faccio l'apertura per tier, è possibile che mi servano tre liste di oggetti separati (primo, secondo, terzo tier). Per non fare un lavoro infinito possono esserci delle corrispondenze dirette, per cui comunque un'area (es: la prima che apro) mi dà solo elementi della prima lista (che coincide con la lista di doni da fare al primo spettro/tutorial). Poi si aprono altre due o tre aree, e lì troverò solo le cose del secondo tier, ovvero dei successivi tre spettri, e via di seguito.
+    La randomizzazione è solo per i luoghi, e vale solo una volta. Altri oggetti compaiono con interazioni specifiche (certi spiriti, il mentore, tisane, i funghi e via di seguito)
     
 */
