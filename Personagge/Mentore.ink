@@ -11,6 +11,7 @@
 -> storylets_mentore ->
 Il mentore ti dice cose
      + Rispondi
+     + Chiedi aiuto (opzione responsiva in base alla storia che hai in corso?)
      + Abbandoni la conversazione -> andarsene
      -
 
