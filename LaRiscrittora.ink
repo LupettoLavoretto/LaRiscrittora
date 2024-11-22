@@ -14,6 +14,7 @@ INCLUDE CodiceEStruttura/FunzioniGestioneSpazi.ink
 INCLUDE CodiceEStruttura/FunzioniCambioLuogo.ink
 INCLUDE CodiceEStruttura/TrackingStatoStoria.ink
 INCLUDE CodiceEStruttura/Inventario.ink
+INCLUDE CodiceEStruttura/GestioneDoniEInventario.ink
 
 
 //File dedicato all'hub centrale
@@ -62,6 +63,8 @@ INCLUDE Giardino\Labirinto\CoseLabirinto.ink
 //Angolo delle tisane
 INCLUDE Giardino\Tisane\HubTisane.ink
 INCLUDE Giardino\Tisane\CoseTisane.ink
+
+
 
 
 

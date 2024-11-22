@@ -25,7 +25,7 @@ Ascolti la seconda storia
 
 
 === aiuto_storia_due ===
-
+<- gestione_inventario
 //queste opzioni poi non saranno scelte dirette, ma risultati delle scelte fatte durante il gioco
      + Ho risolto la seconda storia dando al secondo spettro il secondo stato
         ~ storiaDue = Conclusa

@@ -21,7 +21,8 @@ Ascolti la prima storia
 
 
 === aiuto_storia_uno ===
-
+    + {doniTrovati != ()} Offro un dono allo spettro
+        -> gestione_inventario ->
 //queste opzioni poi non saranno scelte dirette, ma risultati delle scelte fatte durante il gioco
     + Ho risolto la prima storia e attribuito allo spettro il primo nuovo stato
         ~ storiaUno = Conclusa
