@@ -1,6 +1,9 @@
-//Liste per la gestione dei doni agli spettri (e al mentore?)
+//Liste per la gestione dei doni agli spettri
+//Nota: doniNonTrovati sono i doni che verranno dati da eventi, anime etc.
+//doniNonTrovatiLuogo sono quelli assegnati invece in modo randomico da un luogo
 LIST doni = mela, pera, fungo, banana, ocelot
-VAR doniNonTrovati = (fungo, banana, mela, pera)
+VAR doniNonTrovati = (ocelot)
+VAR doniNonTrovatiLuogo = (fungo, banana, mela, pera)
 VAR doniTrovati = ()
 VAR doniDonati = ()
 VAR luoghiDono = ()
@@ -43,24 +46,24 @@ VAR Inchiostro = ()
 
 //Funzione di randomizzazione dono nei luoghi
 === randomizzazione_dono_luoghi
-{debug: Doni non trovati: {doniNonTrovati}}
+{debug: Doni non trovati: {doniNonTrovatiLuogo}}
 {debug: Doni trovati:{doniTrovati}}
 {debug: Doni donati:{doniDonati}}
 {debug: Luoghi da cui hai già ricevuto un dono:{luoghiDono}}
 ~ temp luogoDono = entity_location(PG)
-~ temp dono = LIST_RANDOM(doniNonTrovati)
+~ temp dono = LIST_RANDOM(doniNonTrovatiLuogo)
 {
     - luoghiDono has luogoDono: ->->
     - luoghiDono hasnt luogoDono:
         Hai trovato {dono}
-        ~ doniNonTrovati -= dono
+        ~ doniNonTrovatiLuogo -= dono
         ~ doniTrovati += dono
         ~ luoghiDono += luogoDono
     - else:
         Errore: non riesco a rintracciare il luogo
 }
 
-{debug: Doni non trovati: {doniNonTrovati}}
+{debug: Doni non trovati: {doniNonTrovatiLuogo}}
 {debug: Doni trovati:{doniTrovati}}
 {debug: Doni donati:{doniDonati}}
 {debug: Luoghi da cui hai già ricevuto un dono:{luoghiDono}}
