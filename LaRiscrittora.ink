@@ -29,6 +29,9 @@ INCLUDE Personagge/Mentore.ink
 //Gestione dell'inventario
 INCLUDE Inventario/Inventario.ink
 
+
+//LUOGHI APERTI DALL'INIZIO DEL GIOCO
+
 //File dedicati alla gestione del Mausoleo
 INCLUDE Mausoleo\HubMausoleo.ink
 INCLUDE Mausoleo\StoriaUno.ink
@@ -38,31 +41,41 @@ INCLUDE Mausoleo\StoriaTre.ink
 //File dedicata alla gestione del giardino
 INCLUDE Giardino\HubGiardino.ink
 
-//Storie dalla biblioteca
-INCLUDE Giardino\Biblioteca\HubBiblioteca.ink
-INCLUDE Giardino\Biblioteca\RaccontoUno.ink
-INCLUDE Giardino\Biblioteca\RaccontoDue.ink
-INCLUDE Giardino\Biblioteca\RaccontoTre.ink
-INCLUDE Giardino\Biblioteca\RaccontoQuattro.ink
+//Cura di fiori e funghi
+INCLUDE Giardino\Funghi\HubFunghi.ink
+INCLUDE Giardino\Funghi\CoseFungose.ink
+
+
+
+//LUOGHI CHE SI SBLOCCANO COL SECONDO TIER
 
 //Angolo delle falene
 INCLUDE Giardino\Falene\HubFalene.ink
 INCLUDE Giardino\Falene\CoseFalene.ink
 
 
-//Cura di fiori e funghi
-INCLUDE Giardino\Funghi\HubFunghi.ink
-INCLUDE Giardino\Funghi\CoseFungose.ink
-
-
 //Il labirinto
 INCLUDE Giardino\Labirinto\HubLabirinto.ink
 INCLUDE Giardino\Labirinto\CoseLabirinto.ink
+
+
+
+//LUOGHI CHE SI SBLOCCANO COL TERZO TIER
 
 //Angolo delle tisane
 INCLUDE Giardino\Tisane\HubTisane.ink
 INCLUDE Giardino\Tisane\CoseTisane.ink
 INCLUDE Giardino\Tisane\DipintiERitratti.ink
+
+//Area del canto
+INCLUDE Giardino\Sirene\HubSirene.ink
+
+//Storie dalla biblioteca
+INCLUDE Giardino\Biblioteca\HubBiblioteca.ink
+INCLUDE Giardino\Biblioteca\RaccontoUno.ink
+INCLUDE Giardino\Biblioteca\RaccontoDue.ink
+INCLUDE Giardino\Biblioteca\RaccontoTre.ink
+INCLUDE Giardino\Biblioteca\RaccontoQuattro.ink
 
 
 

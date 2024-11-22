@@ -20,21 +20,25 @@
     ~ move_entity(PG, Biblioteca)
     -> hub_biblioteca
 
-+ {my_location == Giardino} [{~ Ti sposti dalle|Vai dalle|Ti rechi dalle} falene]
++ {my_location == Giardino && storiaUno == Conclusa} [{~ Ti sposti dalle|Vai dalle|Ti rechi dalle} falene]
     ~ move_entity(PG, Falene)
     -> hub_falene
     
-+ {my_location == Giardino} [{~ Ti sposti dai|Vai dai|Ti rechi dai} funghi]
++ {my_location == Giardino && storiaUno == Conclusa} [{~ Ti sposti dai|Vai dai|Ti rechi dai} funghi]
     ~ move_entity(PG, Funghi)
     -> hub_funghi   
     
-+ {my_location == Giardino} [{~ Ti sposti nel|Vai nel|Ti rechi nel} labirinto]
++ {my_location == Giardino && storiaDue == Conclusa} [{~ Ti sposti nel|Vai nel|Ti rechi nel} labirinto]
     ~ move_entity(PG, Labirinto)
     -> hub_labirinto
     
-+ {my_location == Giardino} [{~ Ti sposti dalle|Vai dalle|Ti rechi dalle} tisane]
++ {my_location == Giardino && storiaDue == Conclusa} [{~ Ti sposti dalle|Vai dalle|Ti rechi dalle} tisane]
     ~ move_entity(PG, Tisane)
     -> hub_tisane
+
++ {my_location == Giardino && storiaDue == Conclusa} [{~ Ti sposti nell'|Vai alla|Ti rechi nell'} area delle sirene]
+    ~ move_entity(PG, Sirene)
+    -> hub_sirene   
 
 -    
 -> DONE

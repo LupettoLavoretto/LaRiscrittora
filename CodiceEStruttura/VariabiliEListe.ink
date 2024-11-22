@@ -1,8 +1,8 @@
 //Per abilitare o meno il debug
-VAR debug = true
+VAR debug = false
 
 //Lista di tutti i luoghi del gioco
-LIST luoghi = Giardino, Mausoleo, Biblioteca, HubCentrale, Falene, Funghi, Labirinto, Tisane
+LIST luoghi = Giardino, Mausoleo, Biblioteca, HubCentrale, Falene, Funghi, Labirinto, Tisane, Sirene
 
 //Lista delle personagge del gioco (quelle che hanno elementi di variabilità
 LIST personagge = Mentore, PG
