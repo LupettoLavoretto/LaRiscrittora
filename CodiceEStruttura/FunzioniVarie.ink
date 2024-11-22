@@ -1,13 +1,12 @@
 //Per assegnare/cambiare pronomi di riferimento
-=== assegnazione_genere === 
-    + Mi trovo a mio agio col maschile.
-        ~ pronomi += maschili
-    + Preferisco i pronomi femminili.
-        ~ pronomi += femminili
-    + Vai di neutro, ama.
-        ~ pronomi += neutri
-    -
-->->     a mio agio col maschile.
+=== assegnazione_genere ===
+    + {assegnazione_genere> 1} Mi trovo a mio agio con i pronomi {pronomi}
+        ->->
+    + {assegnazione_genere > 1} <i> Forse qualcosa è cambiato </i>
+        -> top
+    + ->
+    - (top)
+        + Mi trovo a mio agio col maschile.
             ~ pronomi += maschili
         + Preferisco i pronomi femminili.
             ~ pronomi += femminili
