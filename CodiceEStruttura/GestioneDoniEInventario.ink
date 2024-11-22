@@ -1,9 +1,8 @@
 //Liste per la gestione dei doni agli spettri (e al mentore?)
-LIST doni = mela, pera, fungo, banana
-VAR doniNonTrovati = (fungo)
-VAR doniTrovati = (banana, mela, pera)
+LIST doni = mela, pera, fungo, banana, ocelot
+VAR doniNonTrovati = (fungo, banana, mela, pera)
+VAR doniTrovati = ()
 VAR doniDonati = ()
-//Nota: potrebbe anche avere senso dividere poi la lista di doni per tier, con la logica tieruno = tutorial, tierdue = altre tre storie sbloccate (e relativi oggetti), tiertre= ultime tre storie sbloccate.
 
 //Gestione dell'inchiostro per i vari spettri. Nomi e valori sono temporanei. L'idea per ora è: se sono su Scarso, posso fare solo una scelta forte. Con Normale, due e via di seguito. Ogni scelta mi scala indietro nella lista di stati.
 LIST statoInchiostro = Vuoto, Scarso, Normale, Medio, Altissimo
