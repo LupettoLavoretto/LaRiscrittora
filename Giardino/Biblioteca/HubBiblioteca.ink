@@ -13,43 +13,45 @@ Sei in biblioteca
 
 
 === test_libri ===
-+ Vorrei un libro x
-    + + Con qualcosa di z
-        ~ libro = libriX ^ libriZ
++ {libriX != ()}Vorrei un libro x
+    + + {libriX ^ libriZ != ()} Con qualcosa di z
+        ~ libro = LIST_MIN(libriX ^ libriZ)
+        {libro}
         ~ libriX -= libro
         ~ libriZ -= libro
         ~ libriLetti += libro
         -> da_lista_a_libri
-    + + Con qualcosa di y    
-        ~ libro = libriX ^ libriY
-        ~ libriX -= libro
-        ~ libriY -= libro
-        ~ libriLetti += libro
-        -> da_lista_a_libri
-
-+ Vorrei un libro y
-    + + Con qualcosa di z
-        ~ libro = libriY ^ libriZ
-        ~ libriZ -= libro
-        ~ libriY -= libro
-        ~ libriLetti += libro
-        -> da_lista_a_libri
-    + + Con qualcosa di x    
-        ~ libro = libriX ^ libriY
+    + + {libriX ^ libriY!= ()} Con qualcosa di y    
+        ~ libro = LIST_MIN(libriX ^ libriY)
+        {libro}
         ~ libriX -= libro
         ~ libriY -= libro
         ~ libriLetti += libro
         -> da_lista_a_libri
 
-+ Vorrei un libro z
-    + + Con qualcosa di y
-        ~ libro = libriY ^ libriZ
++ {libriY != ()}Vorrei un libro y
+    + + {libriY ^ libriZ != ()} Con qualcosa di z
+        ~ libro = LIST_MIN(libriY ^ libriZ)
         ~ libriZ -= libro
         ~ libriY -= libro
         ~ libriLetti += libro
         -> da_lista_a_libri
-    + + Con qualcosa di x    
-        ~ libro = libriX ^ libriZ
+    + + {libriX ^ libriY != ()} Con qualcosa di x    
+        ~ libro = LIST_MIN(libriX ^ libriY)
+        ~ libriX -= libro
+        ~ libriY -= libro
+        ~ libriLetti += libro
+        -> da_lista_a_libri
+
++ {libriZ != ()}Vorrei un libro z
+    + + {libriY ^ libriZ != ()} Con qualcosa di y
+        ~ libro = LIST_MIN(libriY ^ libriZ)
+        ~ libriZ -= libro
+        ~ libriY -= libro
+        ~ libriLetti += libro
+        -> da_lista_a_libri
+    + + {libriX ^ libriZ != ()} Con qualcosa di x    
+        ~ libro = LIST_MIN(libriX ^ libriZ)
         ~ libriX -= libro
         ~ libriZ -= libro
         ~ libriLetti += libro
@@ -60,7 +62,7 @@ Sei in biblioteca
 -> DONE
 
 === da_lista_a_libri ===
-{
+{libro:
     - libroAnna:
         -> libro_anna
     - libroCeci:
