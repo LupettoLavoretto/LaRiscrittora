@@ -20,3 +20,11 @@ VAR contenutoFalene = ()
 VAR contenutoFunghi = ()
 VAR contenutoLabirinto = ()
 VAR contenutoTisane = ()
+
+//Variabili per la gestione della biblioteca
+LIST libri = libroCeci, libroGabri, libroGreta, libroAnna
+VAR libriX = (libroCeci, libroGabri, libroAnna)
+VAR libriY = (libroCeci, libroGreta, libroAnna)
+VAR libriZ = (libroGabri, libroGreta)
+//Libro che verrà proposto
+VAR libro = ()
