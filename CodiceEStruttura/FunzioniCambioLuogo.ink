@@ -16,7 +16,7 @@
     -> hub_centrale
     
 //Luoghi accessibili solo dal giardino
-+ {my_location == Giardino /*&& storiaDue == Conclusa*/} [{~ Ti sposti in|Vai nella|Ti rechi alla} biblioteca]
++ {my_location == Giardino && storiaDue == Conclusa} [{~ Ti sposti in|Vai nella|Ti rechi alla} biblioteca]
     ~ move_entity(PG, Biblioteca)
     -> hub_biblioteca
 

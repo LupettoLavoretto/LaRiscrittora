@@ -28,6 +28,8 @@ Sei in biblioteca
         ~ libriY -= libro
         ~ libriLetti += libro
         -> da_lista_a_libri
+    + + No, vorrei qualcosa di diverso!
+        -> test_libri
 
 + {libriY != ()}Vorrei un libro y
     + + {libriY ^ libriZ != ()} Con qualcosa di z
@@ -42,6 +44,9 @@ Sei in biblioteca
         ~ libriY -= libro
         ~ libriLetti += libro
         -> da_lista_a_libri
+    + + No, vorrei qualcosa di diverso!
+        -> test_libri
+        
 
 + {libriZ != ()}Vorrei un libro z
     + + {libriY ^ libriZ != ()} Con qualcosa di y
@@ -55,9 +60,14 @@ Sei in biblioteca
         ~ libriX -= libro
         ~ libriZ -= libro
         ~ libriLetti += libro
-        -> da_lista_a_libri          
+        -> da_lista_a_libri
+    + + No, vorrei qualcosa di diverso!
+        -> test_libri
+        
 + {libriLetti != ()} Vorrei qualcosa che ho già letto
         -> rilettura
++ Mmm, mi è passata la voglia di leggere
+    -> hub_biblioteca
 -
 -> DONE
 
