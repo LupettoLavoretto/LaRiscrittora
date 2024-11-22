@@ -36,6 +36,9 @@
 === aiuto_storia_tre ===
     + {doniTrovati != ()} Offro un dono allo spettro
         -> gestione_inventario -> capitolo_uno
+        + ->
+    {doniTrovati == (): Non parlo senza un dono adeguato! ->hub_mausoleo}
+    
     
     = capitolo_uno
         Dopo il tuo dono, la quantità di inchiostro a disposizione è {statoInchiostroSpettroTre}.
