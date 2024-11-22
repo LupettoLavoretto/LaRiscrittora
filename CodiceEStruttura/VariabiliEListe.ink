@@ -23,8 +23,9 @@ VAR contenutoTisane = ()
 
 //Variabili per la gestione della biblioteca
 LIST libri = libroCeci, libroGabri, libroGreta, libroAnna
+VAR libriLetti = ()
 VAR libriX = (libroCeci, libroGabri, libroAnna)
 VAR libriY = (libroCeci, libroGreta, libroAnna)
 VAR libriZ = (libroGabri, libroGreta)
-//Libro che verrà proposto
-VAR libro = ()
+    //Libro che verrà proposto
+    VAR libro = ()
