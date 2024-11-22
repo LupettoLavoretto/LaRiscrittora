@@ -1,5 +1,6 @@
 === gestione_inventario ===
-+ {doniTrovati == banana} Doni una banana
+{debug: I doni trovati sono {doniTrovati}}
++ {doniTrovati has banana} Doni una banana
     ~ doniTrovati -= banana
     ~ doniDonati += banana
     {
@@ -19,7 +20,7 @@
     
     ->->
 
-+ {doniTrovati == mela} Doni una mela
++ {doniTrovati has mela} Doni una mela
     ~ doniTrovati -= mela
     ~ doniDonati += mela
     {
@@ -33,6 +34,36 @@
         Spettro tre apprezza mediamente il tuo dono.
     }
     ->->
+
++ {doniTrovati has pera} Doni una pera
+    ~ doniTrovati -= pera
+    ~ doniDonati += pera
+    {
+    - storiaUno == InCorso:
+        ~ statoInchiostroSpettroUno --
+        Spettro uno inizia a piangere
+    - storiaDue == InCorso:
+        Hai regalato a spettro due qualcosa che proprio non gli interessa
+    - storiaTre == InCorso:
+        ~ statoInchiostroSpettroTre ++
+        Spettro tre apprezza mediamente il tuo dono.
+    }
+    ->->
+    
++ {doniTrovati has fungo} Doni un fungo
+    ~ doniTrovati -= fungo
+    ~ doniDonati += fungo
+    {
+    - storiaUno == InCorso:
+        ~ statoInchiostroSpettroUno --
+        Spettro uno inizia a piangere
+    - storiaDue == InCorso:
+        Hai regalato a spettro due qualcosa che proprio non gli interessa
+    - storiaTre == InCorso:
+        ~ statoInchiostroSpettroTre ++
+        Spettro tre apprezza mediamente il tuo dono.
+    }
+    ->->    
 + Mmm, per ora passo ->->   
 + ->
 - 

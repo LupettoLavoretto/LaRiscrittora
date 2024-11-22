@@ -23,7 +23,11 @@ Ascolti la terza storia
 
 === aiuto_storia_tre ===
     + {doniTrovati != ()} Offro un dono allo spettro
-
+        -> gestione_inventario -> capitolo_uno
+    
+= capitolo_uno
+Dopo il tuo dono, la quantità di inchiostro a disposizione è {statoInchiostroSpettroTre}.
+     -> azioniInchiostro ->
 //queste opzioni poi non saranno scelte dirette, ma risultati delle scelte fatte durante il gioco
      + Ho risolto la terza storia dando allo spettro lo stato tre
         ~ storiaTre = Conclusa

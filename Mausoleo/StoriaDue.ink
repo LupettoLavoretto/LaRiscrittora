@@ -26,7 +26,11 @@ Ascolti la seconda storia
 
 === aiuto_storia_due ===
     + {doniTrovati != ()} Offro un dono allo spettro
-
+    -> gestione_inventario -> capitolo_uno
+    
+= capitolo_uno    
+Dopo il tuo dono, la quantità di inchiostro a disposizione è {statoInchiostroSpettroDue}.
+     -> azioniInchiostro ->
 //queste opzioni poi non saranno scelte dirette, ma risultati delle scelte fatte durante il gioco
      + Ho risolto la seconda storia dando al secondo spettro il secondo stato
         ~ storiaDue = Conclusa
