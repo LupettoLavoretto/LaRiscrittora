@@ -2,8 +2,8 @@
 {
 - alcolismo == false:
     {
-    - debug: alcolismo attivo, salto storia
-    ->->
+    - debug: alcolismo attivo, salto storia, propongo altra
+    -> random_animelle
     }
 }
 //Se alcolismo attivo come trigger, salto la storia

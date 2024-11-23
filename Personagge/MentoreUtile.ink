@@ -116,17 +116,6 @@ Consiglio storia sette
 ->parlareColMentore
 
 
-/* ---------------------------------
-
-   Trigger Warning
-
- ----------------------------------*/
- 
- === trigger_warning ===
- 
- ->->iglio storia sette
-->parlareColMentore
-
 
 /* ---------------------------------
 
