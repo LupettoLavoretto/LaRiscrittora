@@ -7,7 +7,6 @@ COSE DA INSERIRE E VALUTARE A LIVELLO DI STORIA
 
 COSE TECNICHE/STRUTTURALE DA DECIDERE E RISOLVERE
 Cosine prioritarie
-
     * Mentore: ti offre un aiuto all'inizio, puoi rifiutarlo, ma puoi sempre chiedergli un aiuto/remind poi
 
 Cosine meno importanti    

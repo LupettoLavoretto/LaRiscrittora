@@ -1,5 +1,5 @@
 //Per abilitare o meno il debug
-VAR debug = false
+VAR debug = true
 
 //Nome giocatrice e pronomi
 VAR nome = ""
@@ -20,6 +20,7 @@ VAR contenutoFalene = ()
 VAR contenutoFunghi = ()
 VAR contenutoLabirinto = ()
 VAR contenutoTisane = ()
+VAR contenutoSirene = ()
 
 //Variabili per la gestione della biblioteca
 LIST libri = libroCeci, libroGabri, libroGreta, libroAnna
@@ -29,3 +30,8 @@ VAR libriY = (libroCeci, libroGreta, libroAnna)
 VAR libriZ = (libroGabri, libroGreta)
     //Libro che verrà proposto
     VAR libro = ()
+    
+//Liste per gestire i luoghi dove troviamo il mentore
+VAR luoghiIncontroMentore = (Giardino, Mausoleo, Biblioteca, HubCentrale, Falene, Funghi, Tisane, Sirene)
+VAR luoghiMentoreIncontrato = ()
+    

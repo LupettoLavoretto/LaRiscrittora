@@ -18,7 +18,8 @@
         ~ return Labirinto
     - contenutoTisane has entity:
         ~ return Tisane   
-        
+    - contenutoSirene has entity:
+        ~ return Sirene      
     - else:
         DEBUG: error, cannot find {entity} anywhere!
         ~ return 0
@@ -45,7 +46,9 @@
         ~ contenutoLabirinto -= entity
     - Tisane:
         ~ contenutoTisane -= entity
-
+    - Sirene:
+        ~ contenutoSirene -= entity
+        
     - else:
         DEBUG: error, cannot understand location {CurrentLocation} while trying to move {entity} out.
 }
@@ -67,7 +70,9 @@
         ~ contenutoLabirinto += entity
     - Tisane:
         ~ contenutoTisane += entity        
-    
+    - Sirene:
+        ~ contenutoSirene += entity
+        
     - else:
         DEBUG: error, cannot understand location {destination} while trying to move {entity} in.
 }
