@@ -11,6 +11,8 @@ Ti prendi cura dei funghi
     <- move_between_rooms(my_location)
     <- mentore
     + Ti prendi cura dei funghi
+    + {doniTrovati != ()} Controlla li lista di oggetti che hai con te
+        -> contenuti_inventario ->
     -
     
 -> hub_funghi

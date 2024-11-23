@@ -12,6 +12,8 @@ Sei in biblioteca
     <- move_between_rooms(my_location)
     <- mentore
     + Leggi un libro -> test_libri
+    + {doniTrovati != ()} Controlla li lista di oggetti che hai con te
+        -> contenuti_inventario ->
     -
     
 -> hub_biblioteca

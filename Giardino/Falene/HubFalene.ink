@@ -13,6 +13,8 @@ Sei dalle falene
     <- move_between_rooms(my_location)
     <- mentore
     + Coccoli le falene
+    + {doniTrovati != ()} Controlla li lista di oggetti che hai con te
+        -> contenuti_inventario ->
     -
     
 -> hub_falene

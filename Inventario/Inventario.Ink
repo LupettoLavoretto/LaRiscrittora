@@ -1,3 +1,9 @@
+=== contenuti_inventario ===
+
+    {doniTrovati}
+->->
+TODO: un po' come in The Good Dog Show, creare un "traduttore" di contenuti, che metta gli elementi della lista in modo presentabile
+
 === gestione_inventario ===
 {debug: I doni trovati sono {doniTrovati}}
 + {doniTrovati has banana} Doni una banana

@@ -10,6 +10,8 @@ Eccoci: è il momento di comporre una canzone
     <- move_between_rooms(my_location)
     <- mentore
     + Inizi a cantare
+    + {doniTrovati != ()} Controlla li lista di oggetti che hai con te
+        -> contenuti_inventario ->
     -
     
 -> hub_tisane
