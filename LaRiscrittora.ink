@@ -14,7 +14,6 @@ INCLUDE CodiceEStruttura/VariabiliEListe.ink
 INCLUDE CodiceEStruttura/FunzioniGestioneSpazi.ink
 INCLUDE CodiceEStruttura/FunzioniCambioLuogo.ink
 INCLUDE CodiceEStruttura/TrackingStatoStoria.ink
-INCLUDE CodiceEStruttura/GestioneDoniEInventario.ink
 INCLUDE CodiceEStruttura/VarEFunAnime.ink
 INCLUDE CodiceEStruttura/FunzioniVarie.ink
 

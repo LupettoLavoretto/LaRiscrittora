@@ -9,14 +9,15 @@
 
 === parlareColMentore
 -> storylets_mentore ->
-Il mentore ti dice cose
+Cosa vuoi sapere {pronomi has maschili: amico mio|{pronomi has femminili: amica mia|amicə miə}}?
+    - (top)
      + Rispondi
      + {storiaUno == InCorso or storiaDue == InCorso or storiaTre == InCorso} Chiedi un consiglio legato alla storia in corso -> consigli_storie
      + {tutorial} Chiedi di ripetere il tutorial -> indicazioni
      + Abbandoni la conversazione -> andarsene
      -
 
-->->
+-> top
 
 
 

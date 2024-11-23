@@ -41,16 +41,33 @@ Tutorial
 === indicazioni
 //Strutturare come wave sintetica?
 Indicazioni tutorial
+-(top)
     + Sul mausoleo
+        Informazioni
+            -> top
     + Sui funghi
+        Informazioni
+            -> top
     + {storiaUno == Conclusa}Sulle falene
+        Informazioni
+            -> top
     + {storiaUno == Conclusa}Sul labirinto
+        Informazioni
+            -> top
     + {storiaDue == Conclusa}Sulle tisane
+        Informazioni
+            -> top
     + {storiaDue == Conclusa}Sulle sirene
+        Informazioni
+            -> top
     + {storiaDue == Conclusa}Sulla biblioteca
+        Informazioni
+            -> top
+    + Ho cambiato idea
+        -> parlareColMentore
     -
 
-->->
+-> parlareColMentore
 
 === consigli_storie ===
 {

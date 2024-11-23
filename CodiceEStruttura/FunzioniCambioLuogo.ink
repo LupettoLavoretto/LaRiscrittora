@@ -2,7 +2,7 @@
  
  === move_between_rooms(my_location)
 
-+ {my_location == Biblioteca|| my_location == Falene||my_location == Funghi||my_location == Labirinto||my_location == Tisane} [{~ Ti sposti in|Vai nel|Ti rechi al} giardino]
++ {my_location == Biblioteca||my_location == Mausoleo|| my_location == Falene||my_location == Funghi||my_location == Labirinto||my_location == Tisane} [{~ Ti sposti in|Vai nel|Ti rechi al} giardino]
     ~ move_entity(PG, Giardino)
     -> hub_giardino
 
