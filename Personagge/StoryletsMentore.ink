@@ -30,7 +30,17 @@ Tutorial
     -
 -> DONE
 
-= indicazioni    
+
+= indicazioni
+//Strutturare come wave sintetica?
 Indicazioni tutorial
+    + Sul mausoleo
+    + Sui funghi
+    + {storiaUno == Conclusa}Sulle falene
+    + {storiaUno == Conclusa}Sul labirinto
+    + {storiaDue == Conclusa}Sulle tisane
+    + {storiaDue == Conclusa}Sulle sirene
+    + {storiaDue == Conclusa}Sulla biblioteca
+    -
 
 ->->
