@@ -46,4 +46,16 @@ TOMBE
         -> risolvo il suo percorso
         -> il nome sulla sua tomba si aggiorna
         -> posso interagire di nuovo con le altre lapidi, e avviare una storia tra quelle disponibili
+        
+ANIME
+    Ci troviamo in uno spazio di rielaborazione e rilettura di ciò che è accaduto nel nostro passato.
+    Le anime che incontriamo ci vengono presentate dal mentore come persone che stanno facendo il nostro stesso lavoro, ma mi piacerebbe che fossero un mix di persone della nostra vita attuale, e alcune di quelle che incontriamo nelle nostre elaborazioni.
+    Il tempo può creare anche un contrasto, es: madre presentata da uno spettro giovane, e qui incontriamo una donna anziana.
+    Con questa logica cercherei di dividerle tra poche (POCHE!!!) ricorrenti (tre, quattro) e comparse.
+    Le ricorrenti hanno comunque una storyline lineare: piccoli storylet con scelte che non hanno conseguenze effettive (al massimo dei doni), che compaiono consequenzialmente ogni volta che le incontriamo, plausibilmente con un massimo di incontri previsti.
+    
+    Strutturalmente (un po' come col mentore) avrò quindi bisogno che ogni volta che entro in un luogo ci sia:
+        -> un tiro di dado per decidere se sarà o meno presente una determinata anima
+        -> se è prevista, una pescata tra le anime, che faccia in modo che non si ripresentino anime già incontrate, e che rendano la comparsa di quelle ricorrenti più dilazionata.
+
     */

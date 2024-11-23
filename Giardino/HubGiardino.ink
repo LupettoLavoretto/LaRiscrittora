@@ -1,5 +1,6 @@
 === hub_giardino ===
 ~ temp my_location = entity_location(PG)
+-> comparsa_anime ->
 //Qui ci viene detto che cosa è accessibile o meno come luogo, cosa possiamo o meno vedere, dove andare.
 Sei nel giardino
 

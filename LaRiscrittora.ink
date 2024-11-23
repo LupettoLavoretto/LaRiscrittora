@@ -6,6 +6,7 @@
 
 //File con gli appunti di gestione del progetto, la formattazione etc.
 INCLUDE AppuntiGestioneFile.ink
+INCLUDE AppuntiContenutiEStruttura.ink
 INCLUDE ToDo.ink
 
 //File dedicati alla gestione complessiva del progetto
@@ -14,6 +15,8 @@ INCLUDE CodiceEStruttura/FunzioniGestioneSpazi.ink
 INCLUDE CodiceEStruttura/FunzioniCambioLuogo.ink
 INCLUDE CodiceEStruttura/TrackingStatoStoria.ink
 INCLUDE CodiceEStruttura/GestioneDoniEInventario.ink
+INCLUDE CodiceEStruttura/VarEFunAnime.ink
+INCLUDE CodiceEStruttura/FunzioniVarie.ink
 
 //File dedicato all'hub centrale
 INCLUDE HubCentrale.ink
@@ -25,6 +28,12 @@ INCLUDE HubCentrale.ink
  ----------------------------------*/
 //Dialoghi dalle varie spettre etc.
 INCLUDE Personagge/Mentore.ink
+INCLUDE Personagge\StoryletsMentore.ink
+INCLUDE Personagge/AnimaUno.ink
+INCLUDE Personagge/AnimaDue.ink
+INCLUDE Personagge/AnimaTre.ink
+INCLUDE Personagge/Animelle.ink
+
 
 //Gestione dell'inventario
 INCLUDE Inventario/Inventario.ink
@@ -57,7 +66,7 @@ INCLUDE Giardino\Falene\CoseFalene.ink
 //Il labirinto
 INCLUDE Giardino\Labirinto\HubLabirinto.ink
 INCLUDE Giardino\Labirinto\CoseLabirinto.ink
-
+INCLUDE Giardino\Labirinto\Specchio.ink
 
 
 //LUOGHI CHE SI SBLOCCANO COL TERZO TIER
@@ -76,10 +85,12 @@ INCLUDE Giardino\Biblioteca\RaccontoUno.ink
 INCLUDE Giardino\Biblioteca\RaccontoDue.ink
 INCLUDE Giardino\Biblioteca\RaccontoTre.ink
 INCLUDE Giardino\Biblioteca\RaccontoQuattro.ink
-INCLUDE AppuntiContenutiEStruttura.ink
-INCLUDE Personagge\StoryletsMentore.ink
-INCLUDE CodiceEStruttura/FunzioniVarie.ink
-INCLUDE Giardino\Labirinto\Specchio.ink
+
+
+
+
+
+
 
 
 

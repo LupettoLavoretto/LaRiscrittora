@@ -62,15 +62,15 @@ VAR Inchiostro = ()
     - dice_roll > 3: ->->
     - else:
         {
-    - luoghiDono has luogoDono: ->->
-    - luoghiDono hasnt luogoDono:
-        Hai trovato {dono}
-        ~ doniNonTrovatiLuogo -= dono
-        ~ doniTrovati += dono
-        ~ luoghiDono += luogoDono
-    - else:
-        Errore: non riesco a rintracciare il luogo
-}
+        - luoghiDono has luogoDono: ->->
+        - luoghiDono hasnt luogoDono:
+            Hai trovato {dono}
+            ~ doniNonTrovatiLuogo -= dono
+            ~ doniTrovati += dono
+            ~ luoghiDono += luogoDono
+        - else:
+            Errore: non riesco a rintracciare il luogo
+        }
     
 }
 
