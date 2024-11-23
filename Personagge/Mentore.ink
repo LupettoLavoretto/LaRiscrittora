@@ -24,7 +24,8 @@ Cosa vuoi sapere {pronomi has maschili: amico mio|{pronomi has femminili: amica 
         + {tutorial} Chiedi di ripetere il tutorial -> indicazioni
         + Non mi sento più a mio agio col mio nome -> il_mio_nome
         + Non mi sento più a mio agio col mio pronome -> assegnazione_genere
-        + Vorrei aggiornare i miei trigger warning -> trigger_warning        + Vorrei parlare d'altro -> parlareColMentore
+        + Vorrei aggiornare i miei trigger warning -> trigger_warning       
+        + Vorrei parlare d'altro -> parlareColMentore
         -
     -> top   
 
