@@ -8,6 +8,9 @@ COSE DA INSERIRE E VALUTARE A LIVELLO DI STORIA
 COSE TECNICHE/STRUTTURALE DA DECIDERE E RISOLVERE
 Prioritari
     * Capire se con una lista o che c'è un modo più sensato di gestire i doni spettro per spettro
+    * lista oggetti accessibile
+    * Skip col TW per le storie
+    * e per le anime/animelle?
 
 Con calma
     * A tempo perso, caricare a ruota nomi nella lista

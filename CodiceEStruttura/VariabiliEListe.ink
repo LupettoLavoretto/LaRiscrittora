@@ -30,3 +30,7 @@ VAR libriZ = (libroGabri, libroGreta)
     //Libro che verrà proposto
     VAR libro = ()
     
+//Variabili per tracciare i trigger warning. False = non è TW, posso mostrare quelle storie
+VAR alcolismo = false
+VAR abusi = true
+VAR lutto = true

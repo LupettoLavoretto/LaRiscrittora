@@ -73,7 +73,7 @@ VAR counterLuoghi = 0
         ~ animelleIncontrate += animellina
         {debug: La lista animelle contiene: {animelleDaIncontrare}}
         -> animella_tre
-    - else: non ho estratto nulla ->->
+    - else: non ho più animelle da estrarre ->->
 
 }
 -> DONE

@@ -86,6 +86,8 @@ INCLUDE Giardino\Biblioteca\RaccontoDue.ink
 INCLUDE Giardino\Biblioteca\RaccontoTre.ink
 INCLUDE Giardino\Biblioteca\RaccontoQuattro.ink
 INCLUDE CodiceEStruttura\GestioneMentore.ink
+INCLUDE Personagge/MentoreUtile.ink
+
 
 
 

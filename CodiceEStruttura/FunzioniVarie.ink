@@ -15,6 +15,7 @@
         -
 ->->
 
+//Per la scelta del nome
 === il_mio_nome ===
     + {il_mio_nome > 1} Il mio nome è {nome}
         ->->

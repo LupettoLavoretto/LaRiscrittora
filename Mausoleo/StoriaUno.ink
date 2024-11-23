@@ -16,6 +16,11 @@
 === storia_uno ===
     //la storia in corso viene attivata, e le altre non saranno accessibili fino alla sua conclusione
     ~ storiaUno = InCorso
+    {
+    - alcolismo == false:
+    Hai segnalato che l'alcool per te è un problema, per cui questa storia verrà saltata, ma potrai scegliere un nuovo nome per questa lapide.
+        -> scelta_nome_uno
+    }
     Ascolti la prima storia
     E ti presenti
     -> il_mio_nome ->
@@ -76,3 +81,11 @@
         Sei finita nell'evento speciale
         ~ storiaUno = Conclusa
         -> hub_mausoleo
+
+=== scelta_nome_uno
+    + Scelta nome uno
+    + Scelta nome due
+    + Scelta nome tre
+    -
+~ storiaUno = Conclusa
+->hub_mausoleo
