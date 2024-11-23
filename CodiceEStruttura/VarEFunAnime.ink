@@ -11,6 +11,7 @@ VAR counterLuoghi = 0
 
 //Funzione per randomizzare la comparsa di ogni tipo di anima
 === comparsa_anime
+{storiaUno != Conclusa: ->->}
 ~ counterLuoghi ++
 ~ temp dice_roll = RANDOM(1, 6)
 {debug: ultima volta vista Anima = {ultimaVoltaVistaAnima}}
