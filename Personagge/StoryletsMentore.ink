@@ -20,7 +20,14 @@
     Mentore: E allora: piacere di conoscerti, {nome}.
     Mentore: E {pronomi has maschili: benvenuto|{pronomi has femminili: benvenuta|benvenutə}}. Spero ti troverai bene, qui.
     ->->
-    
+
+/* ---------------------------------
+
+   Supporto alla giocatrice
+
+ ----------------------------------*/
+
+
 === tutorial
 Tutorial
     + Lo voglio ascoltare
@@ -31,7 +38,7 @@ Tutorial
 -> DONE
 
 
-= indicazioni
+=== indicazioni
 //Strutturare come wave sintetica?
 Indicazioni tutorial
     + Sul mausoleo
@@ -44,3 +51,25 @@ Indicazioni tutorial
     -
 
 ->->
+
+=== consigli_storie ===
+{
+    - storiaUno == InCorso:
+        -> consigli_storia_uno
+    - storiaDue == InCorso:
+        -> consigli_storia_due
+    - storiaTre == InCorso:
+        -> consigli_storia_tre
+}
+
+=== consigli_storia_uno
+Consiglio storia uno
+->parlareColMentore
+
+=== consigli_storia_due
+Consiglio storia due
+->parlareColMentore
+
+=== consigli_storia_tre
+Consiglio storia tre
+->parlareColMentore

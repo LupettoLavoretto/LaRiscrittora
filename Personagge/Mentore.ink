@@ -11,12 +11,12 @@
 -> storylets_mentore ->
 Il mentore ti dice cose
      + Rispondi
-     + Chiedi aiuto (opzione responsiva in base alla storia che hai in corso?)
-     + {tutorial} Chiedi di ripetere il tutorial -> tutorial.indicazioni
+     + {storiaUno == InCorso or storiaDue == InCorso or storiaTre == InCorso} Chiedi un consiglio legato alla storia in corso -> consigli_storie
+     + {tutorial} Chiedi di ripetere il tutorial -> indicazioni
      + Abbandoni la conversazione -> andarsene
      -
 
--> DONE
+->->
 
 
 

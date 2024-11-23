@@ -6,8 +6,6 @@ COSE DA INSERIRE E VALUTARE A LIVELLO DI STORIA
 
 
 COSE TECNICHE/STRUTTURALE DA DECIDERE E RISOLVERE
-Cosine prioritarie
-    * Mentore: ti offre un aiuto all'inizio, puoi rifiutarlo, ma puoi sempre chiedergli un aiuto/remind poi
 
 Cosine meno importanti    
     * A tempo perso, caricare a ruota nomi nella lista
@@ -19,9 +17,4 @@ Cosine meno importanti
   
 /*
 Prima di andartene il mentore ti chiede: c'è qualcuno che vuoi salutare? e puoi chiamare una delle anime che hai incontrato.
-
-
-Non ho bisogno di altri complicati sistemi, perché sono poi gli storylets a decidere quando accade cosa
-Unica eccezione forse il tutorial, o la richiesta di aiuto, ma vediamo poi.
-
 */
