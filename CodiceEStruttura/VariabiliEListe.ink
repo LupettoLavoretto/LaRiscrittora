@@ -31,7 +31,3 @@ VAR libriZ = (libroGabri, libroGreta)
     //Libro che verrà proposto
     VAR libro = ()
     
-//Liste per gestire i luoghi dove troviamo il mentore
-VAR luoghiIncontroMentore = (Giardino, Mausoleo, Biblioteca, HubCentrale, Falene, Funghi, Tisane, Sirene)
-VAR luoghiMentoreIncontrato = ()
-    

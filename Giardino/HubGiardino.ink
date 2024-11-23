@@ -10,6 +10,11 @@ Sei nel giardino
 
     <- move_between_rooms(my_location)
     <- mentore
-    + Esplori il giardino
+    + Ti siedi sulla panchina -> panchina
     -
 -> hub_giardino 
+
+
+=== panchina
+
+->->
