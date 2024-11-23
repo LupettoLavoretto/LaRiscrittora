@@ -5,6 +5,10 @@ LIST statoStorie = NonIniziata, InCorso, Conclusa
 VAR storiaUno = NonIniziata
 VAR storiaDue = NonIniziata
 VAR storiaTre = NonIniziata
+VAR storiaQuattro = NonIniziata
+VAR storiaCinque = NonIniziata
+VAR storiaSei = NonIniziata
+VAR storiaSette = NonIniziata
 
 //Lista denominatori dei singoli spettri
 //Questi denominatori poi verranno adattati al singolo spettro
@@ -18,10 +22,26 @@ VAR effettivoStatoSpettroDue = StatoDefaultDue
 LIST possibiliStatiSpettroTre = StatoDefaultTre, NuovoStatoUnoTre, NuovoStatoDueTre, NuovoStatoTreTre
 VAR effettivoStatoSpettroTre = StatoDefaultTre
 
+LIST possibiliStatiSpettroQuattro = StatoDefaultQuattro, NuovoStatoUnoQuattro, NuovoStatoDueQuattro, NuovoStatoTreQuattro
+VAR effettivoStatoSpettroQuattro = StatoDefaultQuattro
+
+LIST possibiliStatiSpettroCinque = StatoDefaultCinque, NuovoStatoUnoCinque, NuovoStatoDueCinque, NuovoStatoTreCinque
+VAR effettivoStatoSpettroCinque = StatoDefaultCinque
+
+LIST possibiliStatiSpettroSei = StatoDefaultSei, NuovoStatoUnoSei, NuovoStatoDueSei, NuovoStatoTreSei
+VAR effettivoStatoSpettroSei = StatoDefaultSei
+
+LIST possibiliStatiSpettroSette = StatoDefaultSette, NuovoStatoUnoSette, NuovoStatoDueSette, NuovoStatoTreSette
+VAR effettivoStatoSpettroSette= StatoDefaultSette
+
 //Variabili per verificare se c'è o meno l'accesso all'evento speciale di un singolo spettro
 VAR eventoSpecialeSpettroUno = false
 VAR eventoSpecialeSpettroDue = false
 VAR eventoSpecialeSpettroTre = false
+VAR eventoSpecialeSpettroQuattro = false
+VAR eventoSpecialeSpettroCinque = false
+VAR eventoSpecialeSpettroSei = false
+VAR eventoSpecialeSpettroSette = false
 
 //Liste per la gestione dei doni agli spettri
 //Nota: doniNonTrovati sono i doni che verranno dati da eventi, anime etc.
@@ -38,6 +58,11 @@ LIST statoInchiostro = Vuoto, Scarso, Normale, Medio, Altissimo
 VAR statoInchiostroSpettroUno = Scarso
 VAR statoInchiostroSpettroDue = Scarso
 VAR statoInchiostroSpettroTre = Scarso
+VAR statoInchiostroSpettroQuattro = Scarso
+VAR statoInchiostroSpettroCinque = Scarso
+VAR statoInchiostroSpettroSei = Scarso
+VAR statoInchiostroSpettroSette = Scarso
+
 
 
 
@@ -50,7 +75,15 @@ VAR Inchiostro = ()
     - storiaDue == InCorso:
         ~ Inchiostro = statoInchiostroSpettroDue
     - storiaTre == InCorso:
-        ~ Inchiostro = statoInchiostroSpettroTre  
+        ~ Inchiostro = statoInchiostroSpettroTre
+    - storiaQuattro == InCorso:
+        ~ Inchiostro = statoInchiostroSpettroQuattro
+    - storiaCinque == InCorso:
+        ~ Inchiostro = statoInchiostroSpettroCinque
+    - storiaSei== InCorso:
+        ~ Inchiostro = statoInchiostroSpettroSei 
+    - storiaSette == InCorso:
+        ~ Inchiostro = statoInchiostroSpettroSette     
 }
 
 {Inchiostro:

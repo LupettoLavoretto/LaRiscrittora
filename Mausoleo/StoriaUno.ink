@@ -4,7 +4,7 @@
         -> storia_uno
     
     //opzione se c'è un'altra storia attiva
-    + {storiaDue == InCorso or storiaTre == InCorso or storiaUno == Conclusa} La prima lapide appartiene a {effettivoStatoSpettroUno} -> hub_mausoleo
+    + {storiaUno == Conclusa} La prima lapide appartiene a {effettivoStatoSpettroUno} -> hub_mausoleo
     
     //opzione se questa storia è attiva
     + {storiaUno == InCorso} Il fantasma della prima storia ti attende -> aiuto_storia_uno

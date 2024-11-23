@@ -12,7 +12,7 @@ VAR mentore_location = ()
 //Quando poi avrò le storie un attimo settate, andranno risistemate le condizioni del cambio tier
 
         {   
-            - storiaDue == Conclusa: -> random_luogo_mentore_terzo_tier
+            - storiaDue == Conclusa && storiaTre == Conclusa && storiaQuattro == Conclusa: -> random_luogo_mentore_terzo_tier
             - storiaUno == Conclusa: -> random_luogo_mentore_secondo_tier
             - else:  -> random_luogo_mentore_primo_tier
         }

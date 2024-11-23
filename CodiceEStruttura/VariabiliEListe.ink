@@ -1,5 +1,5 @@
 //Per abilitare o meno il debug
-VAR debug = true
+VAR debug = false
 
 //Nome giocatrice e pronomi
 VAR nome = ""

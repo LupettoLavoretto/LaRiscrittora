@@ -16,6 +16,10 @@ Sei nel mausoleo
     <-lapide_uno
     <-lapide_due
     <-lapide_tre
+    <-lapide_quattro
+    <-lapide_cinque
+    <-lapide_sei
+    <-lapide_sette
     + Preferisci fare altro
         -> hub_mausoleo
 

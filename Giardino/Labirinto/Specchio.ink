@@ -1,4 +1,5 @@
 === lo_specchio ===
     -> il_mio_nome ->
     -> assegnazione_genere ->
--> DONE    
+Eventi dello specchio    
+-> hub_labirinto    

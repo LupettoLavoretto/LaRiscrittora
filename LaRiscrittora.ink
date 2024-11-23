@@ -35,6 +35,7 @@ INCLUDE Personagge/Animelle.ink
 INCLUDE Inventario/Inventario.ink
 
 
+
 //LUOGHI APERTI DALL'INIZIO DEL GIOCO
 
 //File dedicati alla gestione del Mausoleo
@@ -42,6 +43,10 @@ INCLUDE Mausoleo\HubMausoleo.ink
 INCLUDE Mausoleo\StoriaUno.ink
 INCLUDE Mausoleo\StoriaDue.ink
 INCLUDE Mausoleo\StoriaTre.ink
+INCLUDE Mausoleo/StoriaQuattro.ink
+INCLUDE Mausoleo/StoriaCinque.ink
+INCLUDE Mausoleo/StoriaSei.ink
+INCLUDE Mausoleo/StoriaSette.ink
 
 //File dedicata alla gestione del giardino
 INCLUDE Giardino\HubGiardino.ink
@@ -49,7 +54,6 @@ INCLUDE Giardino\HubGiardino.ink
 //Cura di fiori e funghi
 INCLUDE Giardino\Funghi\HubFunghi.ink
 INCLUDE Giardino\Funghi\CoseFungose.ink
-
 
 
 //LUOGHI CHE SI SBLOCCANO COL SECONDO TIER
@@ -82,6 +86,9 @@ INCLUDE Giardino\Biblioteca\RaccontoDue.ink
 INCLUDE Giardino\Biblioteca\RaccontoTre.ink
 INCLUDE Giardino\Biblioteca\RaccontoQuattro.ink
 INCLUDE CodiceEStruttura\GestioneMentore.ink
+
+
+
 
 
 

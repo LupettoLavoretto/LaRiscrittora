@@ -11,7 +11,7 @@
     -> hub_mausoleo
 
 
-+ {my_location == Giardino && storiaDue == Conclusa} [{~ Ti sposti in|Vai nella|Ti rechi alla} biblioteca]
++ {my_location == Giardino && storiaDue == Conclusa && storiaTre == Conclusa && storiaQuattro == Conclusa} [{~ Ti sposti in|Vai nella|Ti rechi alla} biblioteca]
     ~ move_entity(PG, Biblioteca)
     -> hub_biblioteca
 
@@ -27,11 +27,11 @@
     ~ move_entity(PG, Labirinto)
     -> hub_labirinto
     
-+ {my_location == Giardino && storiaDue == Conclusa} [{~ Ti sposti dalle|Vai dalle|Ti rechi dalle} tisane]
++ {my_location == Giardino && storiaDue == Conclusa && storiaTre == Conclusa && storiaQuattro == Conclusa} [{~ Ti sposti dalle|Vai dalle|Ti rechi dalle} tisane]
     ~ move_entity(PG, Tisane)
     -> hub_tisane
 
-+ {my_location == Giardino && storiaDue == Conclusa} [{~ Ti sposti nell'|Vai alla|Ti rechi nell'} area delle sirene]
++ {my_location == Giardino && storiaDue == Conclusa && storiaTre == Conclusa && storiaQuattro == Conclusa} [{~ Ti sposti nell'|Vai alla|Ti rechi nell'} area delle sirene]
     ~ move_entity(PG, Sirene)
     -> hub_sirene   
 

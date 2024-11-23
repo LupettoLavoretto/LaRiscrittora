@@ -7,11 +7,11 @@
 
     = opzioni
         //opzione se non hai mai esplorato questa storia, e se non ci sono storie attive
-        + {not (storiaTre == InCorso or storiaTre == Conclusa) and not (storiaDue == InCorso or storiaUno == InCorso)} Potresti conoscere la storia della terza lapide, {effettivoStatoSpettroTre}
+        + {not (storiaTre == InCorso or storiaTre == Conclusa) and not (storiaDue == InCorso or storiaQuattro == InCorso)} Potresti conoscere la storia della terza lapide, {effettivoStatoSpettroTre}
             -> storia_tre
         
         //opzione se c'è un'altra storia attiva
-        + {storiaDue == InCorso or storiaUno == InCorso  or storiaTre == Conclusa} La terza lapide, appartenente a {effettivoStatoSpettroTre} -> hub_mausoleo
+        + {storiaDue == InCorso or storiaQuattro == InCorso or storiaTre == Conclusa} La terza lapide, appartenente a {effettivoStatoSpettroTre} -> hub_mausoleo
         
         //opzione se questa storia è attiva
         + {storiaTre == InCorso} Il fantasma della terza storia ti attende -> aiuto_storia_tre
@@ -22,7 +22,7 @@
     
     = not_yet
         + Sulla lapide è incisa una sola parola: {effettivoStatoSpettroTre}
-            -> hub_mausoleo
+            -> lapidi
         
         
 === storia_tre ===
