@@ -24,8 +24,13 @@
 === tutorial
 Tutorial
     + Lo voglio ascoltare
-    + Passo ->->
+        -> indicazioni
+    + Passo
+        ->->
     -
+-> DONE
+
+= indicazioni    
 Indicazioni tutorial
 
 ->->

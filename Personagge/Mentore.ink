@@ -12,6 +12,7 @@
 Il mentore ti dice cose
      + Rispondi
      + Chiedi aiuto (opzione responsiva in base alla storia che hai in corso?)
+     + {tutorial} Chiedi di ripetere il tutorial -> tutorial.indicazioni
      + Abbandoni la conversazione -> andarsene
      -
 
