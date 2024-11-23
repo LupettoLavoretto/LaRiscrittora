@@ -1,4 +1,8 @@
 /*
+ACCESSO AD ELEMENTI RICORRENTI (MENTORE, LISTA OGGETTI, ANIME)
+Accade solo negli hub, non nelle scene singole, che sono private (credo)
+
+
 OGGETTI
     La struttura per assegnare un oggetto random è
     
