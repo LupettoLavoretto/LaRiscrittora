@@ -1,7 +1,7 @@
 //Liste per gestire i luoghi dove troviamo il mentore
-VAR luoghiMentorePrimoTier =(Giardino, Mausoleo, HubCentrale, Funghi)
-VAR luoghiMentoreSecondoTier =(Giardino, Mausoleo, HubCentrale, Funghi, Falene)
-VAR luoghiMentoreTerzoTier = (Giardino, Mausoleo, Biblioteca, HubCentrale, Falene, Funghi, Tisane, Sirene)
+VAR luoghiMentorePrimoTier =(Giardino, Mausoleo, Funghi)
+VAR luoghiMentoreSecondoTier =(Giardino, Mausoleo, Funghi, Falene)
+VAR luoghiMentoreTerzoTier = (Giardino, Mausoleo, Biblioteca, Falene, Funghi, Tisane, Sirene)
 VAR luoghiMentoreIncontrato = ()
 VAR mentore_location = ()
     
@@ -24,7 +24,7 @@ VAR mentore_location = ()
         - luoghiMentorePrimoTier != ():
             -> runDomPrimoTier
         - else:
-            ~ luoghiMentorePrimoTier = (Giardino, Mausoleo, HubCentrale, Funghi)
+            ~ luoghiMentorePrimoTier = (Giardino, Mausoleo, Funghi)
             ~ luoghiMentoreIncontrato = ()
         {debug: la lista dei luoghi era vuota, ma ora contiene di nuovo tutto (check) {luoghiMentorePrimoTier}}
             -> runDomPrimoTier
@@ -42,10 +42,6 @@ VAR mentore_location = ()
             ~ move_entity(Mentore, Mausoleo)
             ~ luoghiMentorePrimoTier -= Mausoleo
             ~ luoghiMentoreIncontrato += Mausoleo
-        - HubCentrale:
-            ~ move_entity(Mentore, HubCentrale)
-            ~ luoghiMentorePrimoTier -= HubCentrale
-            ~ luoghiMentoreIncontrato += HubCentrale
         - Funghi:
             ~ move_entity(Mentore, Funghi)
             ~ luoghiMentorePrimoTier -= Funghi
@@ -61,7 +57,7 @@ VAR mentore_location = ()
         - luoghiMentoreSecondoTier != ():
             -> runDomSecondoTier
         - else:
-            ~ luoghiMentoreSecondoTier = (Giardino, Mausoleo, HubCentrale, Funghi, Falene)
+            ~ luoghiMentoreSecondoTier = (Giardino, Mausoleo, Funghi, Falene)
             ~ luoghiMentoreIncontrato = ()
         {debug: la lista dei luoghi era vuota, ma ora contiene di nuovo tutto (check) {luoghiMentoreSecondoTier}}
             -> runDomSecondoTier
@@ -81,10 +77,6 @@ VAR mentore_location = ()
             ~ move_entity(Mentore, Mausoleo)
             ~ luoghiMentoreSecondoTier -= Mausoleo
             ~ luoghiMentoreIncontrato += Mausoleo
-        - HubCentrale:
-            ~ move_entity(Mentore, HubCentrale)
-            ~ luoghiMentoreSecondoTier -= HubCentrale
-            ~ luoghiMentoreIncontrato += HubCentrale
         - Falene:
             ~ move_entity(Mentore, Falene)
             ~ luoghiMentoreSecondoTier -= Falene
@@ -103,7 +95,7 @@ VAR mentore_location = ()
         - luoghiMentoreTerzoTier != ():
             -> runDomTerzoTier
         - else:
-            ~ luoghiMentoreTerzoTier = (Giardino, Mausoleo, Biblioteca, HubCentrale, Falene, Funghi, Tisane, Sirene)
+            ~ luoghiMentoreTerzoTier = (Giardino, Mausoleo, Biblioteca, Falene, Funghi, Tisane, Sirene)
             ~ luoghiMentoreIncontrato = ()
         {debug: la lista dei luoghi era vuota, ma ora contiene di nuovo tutto (check) {luoghiMentoreTerzoTier}}
             -> runDomTerzoTier
@@ -125,10 +117,6 @@ VAR mentore_location = ()
             ~ move_entity(Mentore, Biblioteca)
             ~ luoghiMentoreTerzoTier -= Biblioteca
             ~ luoghiMentoreIncontrato += Biblioteca
-        - HubCentrale:
-            ~ move_entity(Mentore, HubCentrale)
-            ~ luoghiMentoreTerzoTier -= HubCentrale
-            ~ luoghiMentoreIncontrato += HubCentrale
         - Falene:
             ~ move_entity(Mentore, Falene)
             ~ luoghiMentoreTerzoTier -= Falene

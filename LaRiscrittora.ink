@@ -18,9 +18,6 @@ INCLUDE CodiceEStruttura/GestioneDoniEInventario.ink
 INCLUDE CodiceEStruttura/VarEFunAnime.ink
 INCLUDE CodiceEStruttura/FunzioniVarie.ink
 
-//File dedicato all'hub centrale
-INCLUDE HubCentrale.ink
-
 /* ---------------------------------
 
    CONTENUTI
@@ -93,19 +90,7 @@ INCLUDE CodiceEStruttura\GestioneMentore.ink
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
--> hub_centrale
+-> inizio
 
 
 

@@ -19,7 +19,7 @@
         -> assegnazione_genere ->
     Mentore: E allora: piacere di conoscerti, {nome}.
     Mentore: E {pronomi has maschili: benvenuto|{pronomi has femminili: benvenuta|benvenutə}}. Spero ti troverai bene, qui.
-    ->->
+    -> hub_giardino
 
 /* ---------------------------------
 
@@ -63,7 +63,7 @@ Indicazioni tutorial
 }
 
 === consigli_storia_uno
-Consiglio storia uno
+{~ Consiglio storia uno|Consiglio storia uno|Consiglio storia uno}
 ->parlareColMentore
 
 === consigli_storia_due

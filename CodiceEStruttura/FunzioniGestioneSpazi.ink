@@ -8,8 +8,6 @@
         ~ return Mausoleo
     - contenutoBiblioteca has entity:
         ~ return Biblioteca
-    - contenutoHubCentrale has entity:
-        ~ return HubCentrale
     - contenutoFalene has entity:
         ~ return Falene
     - contenutoFunghi has entity:
@@ -36,8 +34,6 @@
         ~ contenutoMausoleo -= entity
     - Biblioteca:
         ~ contenutoBiblioteca -= entity
-    - HubCentrale:
-        ~ contenutoHubCentrale -= entity
     - Falene:
         ~ contenutoFalene -= entity
     - Funghi:
@@ -60,8 +56,6 @@
         ~ contenutoMausoleo += entity
     - Biblioteca:
         ~ contenutoBiblioteca += entity
-    - HubCentrale:
-        ~ contenutoHubCentrale += entity
     - Falene:
         ~ contenutoFalene += entity
     - Funghi:

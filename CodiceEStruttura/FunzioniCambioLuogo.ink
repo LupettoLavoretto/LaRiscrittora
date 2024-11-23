@@ -2,20 +2,15 @@
  
  === move_between_rooms(my_location)
 
-+ {my_location == HubCentrale|| my_location == Biblioteca|| my_location == Falene||my_location == Funghi||my_location == Labirinto||my_location == Tisane} [{~ Ti sposti in|Vai nel|Ti rechi al} giardino]
++ {my_location == Biblioteca|| my_location == Falene||my_location == Funghi||my_location == Labirinto||my_location == Tisane} [{~ Ti sposti in|Vai nel|Ti rechi al} giardino]
     ~ move_entity(PG, Giardino)
     -> hub_giardino
 
-+ {my_location == HubCentrale} [{~ Ti sposti verso il|Vai nel|Ti rechi al} mausoleo]
++ {my_location == Giardino} [{~ Ti sposti verso il|Vai nel|Ti rechi al} mausoleo]
     ~ move_entity(PG, Mausoleo)
     -> hub_mausoleo
 
 
-+ {my_location == Giardino|| my_location == Mausoleo} [{~ Ti sposti in|Vai nel|Ti rechi al} hub centrale]
-    ~ move_entity(PG, HubCentrale)
-    -> hub_centrale
-    
-//Luoghi accessibili solo dal giardino
 + {my_location == Giardino && storiaDue == Conclusa} [{~ Ti sposti in|Vai nella|Ti rechi alla} biblioteca]
     ~ move_entity(PG, Biblioteca)
     -> hub_biblioteca
