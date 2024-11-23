@@ -1,6 +1,8 @@
 === storylets_mentore ===
 {
- - parlareColMentore == 1: -> presentazioni
+ - presentazioni == 0: -> presentazioni
+ - tutorial == 0: -> tutorial
+ 
  - else: ->->
 
 }
@@ -10,7 +12,7 @@
 
 
 
-=== presentazioni===
+=== presentazioni ===
     Mentore: Ma dimmi, come vuoi che ti chiami?
         -> il_mio_nome ->
     Mentore: E quali sono i pronomi in cui ti riconosci?
@@ -18,3 +20,12 @@
     Mentore: E allora: piacere di conoscerti, {nome}.
     Mentore: E {pronomi has maschili: benvenuto|{pronomi has femminili: benvenuta|benvenutə}}. Spero ti troverai bene, qui.
     ->->
+    
+=== tutorial
+Tutorial
+    + Lo voglio ascoltare
+    + Passo ->->
+    -
+Indicazioni tutorial
+
+->->

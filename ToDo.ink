@@ -24,6 +24,4 @@ Prima di andartene il mentore ti chiede: c'è qualcuno che vuoi salutare? e puoi
 Non ho bisogno di altri complicati sistemi, perché sono poi gli storylets a decidere quando accade cosa
 Unica eccezione forse il tutorial, o la richiesta di aiuto, ma vediamo poi.
 
-
--> animelle: compaiono dopo il tutorial
 */

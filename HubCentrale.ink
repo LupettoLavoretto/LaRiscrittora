@@ -1,6 +1,6 @@
 === hub_centrale ===
 ~ temp my_location = entity_location(PG)
--> random_luogo_mentore ->
+{presentazioni: -> random_luogo_mentore ->}
 -> comparsa_anime ->
 //Questo è il punto che troveremo a inizio gioco, e che fa da hub centrale della storia.
 //Troveremo sempre un piccolo descrittore (randomico o meno, da vedere) e la scelta se andare al mausoleo o nel giardino.
