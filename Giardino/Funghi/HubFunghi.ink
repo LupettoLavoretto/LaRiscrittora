@@ -12,7 +12,7 @@ Ti prendi cura dei funghi
     <- mentore
     + Ti prendi cura dei funghi
     + {doniTrovati != ()} Controlla li lista di oggetti che hai con te
-        -> contenuti_inventario ->
+        -> contenuti_inventario
     -
     
 -> hub_funghi

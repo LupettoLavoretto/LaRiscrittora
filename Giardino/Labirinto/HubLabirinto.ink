@@ -9,7 +9,8 @@ Sei nel labirinto
     <- move_between_rooms(my_location)
     + Inizi a camminare
     + {doniTrovati != ()} Controlla li lista di oggetti che hai con te
-        -> contenuti_inventario ->
+        -> contenuti_inventario
+        //Per il labirinto, valutare se non andarci a mani vuote (nel senso: non controllo più)
     + Trovi lo specchio -> lo_specchio
     -
     

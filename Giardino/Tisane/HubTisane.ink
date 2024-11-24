@@ -11,7 +11,7 @@ Eccoci: è il momento di una bella tisana
     <- mentore
     + Inizi a preparare una tisana
     + {doniTrovati != ()} Controlla li lista di oggetti che hai con te
-        -> contenuti_inventario ->
+        -> contenuti_inventario
     -
     
 -> hub_tisane

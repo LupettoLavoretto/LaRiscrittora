@@ -12,7 +12,7 @@
 <- mentore
     + Ti siedi sulla panchina -> panchina
     + {doniTrovati != ()} Controlla li lista di oggetti che hai con te
-        -> contenuti_inventario ->
+        -> contenuti_inventario
     -
 
 -> DONE

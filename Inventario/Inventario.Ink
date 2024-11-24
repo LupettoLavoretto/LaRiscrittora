@@ -3,6 +3,7 @@
     {doniTrovati}
 ->->
 TODO: un po' come in The Good Dog Show, creare un "traduttore" di contenuti, che metta gli elementi della lista in modo presentabile
+TODO: fare funzioncina per cui se sono in un luogo, quando entro nell'inventario o altro (poi mi riporta all'hub di quel luogo. Es: uso entity_location(entity) per cui se contenutoTisane has PG: -> hub_tisane
 
 === gestione_inventario ===
 {debug: I doni trovati sono {doniTrovati}}

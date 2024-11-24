@@ -14,7 +14,7 @@ Sei dalle falene
     <- mentore
     + Coccoli le falene
     + {doniTrovati != ()} Controlla li lista di oggetti che hai con te
-        -> contenuti_inventario ->
+        -> contenuti_inventario
     -
     
 -> hub_falene

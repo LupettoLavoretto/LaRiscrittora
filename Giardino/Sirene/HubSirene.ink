@@ -11,7 +11,7 @@ Eccoci: è il momento di comporre una canzone
     <- mentore
     + Inizi a cantare
     + {doniTrovati != ()} Controlla li lista di oggetti che hai con te
-        -> contenuti_inventario ->
+        -> contenuti_inventario
     -
     
 -> hub_tisane

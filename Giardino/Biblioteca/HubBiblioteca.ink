@@ -13,7 +13,7 @@ Sei in biblioteca
     <- mentore
     + Leggi un libro -> test_libri
     + {doniTrovati != ()} Controlla li lista di oggetti che hai con te
-        -> contenuti_inventario ->
+        -> contenuti_inventario
     -
     
 -> hub_biblioteca
