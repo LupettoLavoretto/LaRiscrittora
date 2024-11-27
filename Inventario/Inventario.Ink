@@ -1,9 +1,57 @@
 === contenuti_inventario ===
+{doniTrovati != (): -> inventarietto|->vuoto}
+=inventarietto
+Nell'inventario hai <>
+- (loop)
+~ temp ingrediente = doniTrovati
+{
+- ingrediente != LIST_MAX(doniTrovati):
+ ~ traduttoreIngredienti(doniTrovati)
+    <>, 
+    ~  ingrediente ++
+    -> loop
+- ingrediente == LIST_MAX(doniTrovati):
+    ~ traduttoreIngredienti(doniTrovati)
+    <>.
+ }
 
-    {doniTrovati}
-->->
+-> doveDevoTornare
+
 TODO: un po' come in The Good Dog Show, creare un "traduttore" di contenuti, che metta gli elementi della lista in modo presentabile
-TODO: fare funzioncina per cui se sono in un luogo, quando entro nell'inventario o altro (poi mi riporta all'hub di quel luogo. Es: uso entity_location(entity) per cui se contenutoTisane has PG: -> hub_tisane
+= vuoto
+L'inventario è vuoto
+-> doveDevoTornare
+
+=== function traduttoreIngredienti(funzioneChiamata)
+{doniTrovati:
+- mela: una mela
+- fungo: un fungo
+- banana: una banana
+- pera: una pera
+}
+
+
+=== function punteggiatura(funzioneChiamata)
+
+{
+- traduttoreIngredienti(doniTrovati):
+    {
+    - LIST_MAX(doniTrovati):.
+    - else:, 
+    }
+}
+
+
+//Lo step potrebbe essere: controllo quanti elementi ci sono in doniTrovati. Printo il primo ingrediente, faccio un check per la punteggiatura: se è l'ultimo ingrediente, metto il punto, altrimenti la virgola
+
+=== function prova
+~ temp ingrediente = doniTrovati
+ {
+    - ingrediente == LIST_MAX(doniTrovati):.
+    - else:,  
+ }
+
+
 
 === gestione_inventario ===
 {debug: I doni trovati sono {doniTrovati}}
@@ -72,10 +120,11 @@ TODO: fare funzioncina per cui se sono in un luogo, quando entro nell'inventario
         ~ statoInchiostroSpettroTre ++
         Spettro tre apprezza mediamente il tuo dono.
     }
-    ->->   
+    -> doveDevoTornare
+    
 //Se la lista è vuota
 + {doniTrovati == ()} Non hai nulla da donare
-+ Mmm, per ora passo ->->   
++ Mmm, per ora passo -> doveDevoTornare   
 + ->
 - 
-->->
+-> doveDevoTornare

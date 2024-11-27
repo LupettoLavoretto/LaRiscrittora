@@ -8,6 +8,9 @@ Sei nel mausoleo
     <- move_between_rooms(my_location)
     <- mentore
     + Esplori una delle lapidi -> lapidi
+    + {doniTrovati != ()} Controlla la lista di oggetti che hai con te
+    -> contenuti_inventario
+    -
     -
     
 -> hub_mausoleo

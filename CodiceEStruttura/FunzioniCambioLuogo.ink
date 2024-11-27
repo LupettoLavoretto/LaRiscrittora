@@ -38,3 +38,31 @@
 -    
 -> DONE
 
+
+=== doveDevoTornare ===
+{
+    - contenutoGiardino has PG:
+        -> hub_giardino
+    - contenutoMausoleo has PG:
+        -> hub_mausoleo
+    - contenutoBiblioteca has PG:
+        -> hub_biblioteca
+    - contenutoFalene has PG:
+        -> hub_falene
+    - contenutoFunghi has PG:
+        -> hub_funghi 
+    - contenutoLabirinto has PG:
+        -> hub_labirinto
+    - contenutoTisane has PG:
+        -> hub_tisane  
+    - contenutoSirene has PG:
+        -> hub_sirene        
+    - else:
+        DEBUG: error, cannot find {PG} anywhere!
+    ->->
+}
+
+-> DONE
+
+
+
