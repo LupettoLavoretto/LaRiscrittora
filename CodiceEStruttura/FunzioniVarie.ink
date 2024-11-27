@@ -28,4 +28,34 @@
         + (nome_scelto)[<b>Mi chiamo {nome}</b>]Mi chiamo {nome}.
         + [<i>No, questo non è il mio nome.</i>]-> top
         - 
-->->        
+->->
+
+//Funzioni di gestione della numerazione
+
+//Takes the bottom element from a list, and returns it, modifying the list.
+//Returns the empty list () if the source list is empty.
+// I eat the {pop(fruitBowl)}. Now the bowl contains {fruitBowl}.
+
+
+
+=== function pop(ref _list) 
+    ~ temp el = LIST_MIN(_list) 
+    ~ _list -= el
+    ~ return el 
+    
+
+//Takes a list and prints it out, using commas. 
+// Dependenices: 
+// This function relies on the "pop" function. 
+//The fruit bowl contains {list_with_commas(fruitBowl)}.
+
+=== function list_with_commas(list)
+	{ list:
+		{_list_with_commas(list, LIST_COUNT(list))}
+	}
+
+=== function _list_with_commas(list, n)
+	{pop(list)}{ n > 1:{n == 2: e |, }{_list_with_commas(list, n-1)}}
+
+=== function oggettoOggetti(list)
+	{LIST_COUNT(list) == 1:oggetto|oggetti}
