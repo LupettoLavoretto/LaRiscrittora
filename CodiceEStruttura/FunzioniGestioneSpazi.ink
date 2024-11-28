@@ -76,9 +76,13 @@
   @moveTo roomName:{destination}
 }*/
 
-//Funzione per capire se due entità sono nello stesso luogo
+//Funzioni per capire se due entità sono nello stesso luogo
 === function are_two_entities_together(entity1, entity2)
 ~ return entity_location(entity1) == entity_location(entity2)
+
+
+== function are_entities_together_in(entity1, entity2, location)
+~ return entity_location(entity1) == entity_location(entity2) and entity_location(entity1) == location
 
 
 //Funzione per avvicinare una PNG alla personaggia protagonista

@@ -31,6 +31,7 @@ Tutorial
 
 === indicazioni
 //Strutturare come wave sintetica?
+//Com'è la logica? Qui ho le indicazioni pratiche, e negli storylet "prima visita a" invece è presentazione del contenuto?
 Indicazioni tutorial
 -(top)
     + Sul mausoleo
