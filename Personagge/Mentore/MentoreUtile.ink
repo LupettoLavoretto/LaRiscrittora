@@ -141,11 +141,6 @@ VAR lutto = false
     + Non me la sento di parlare di morte
         ~ lutto = false
     + Sono apposto così. ->parlareColMentore
-    -    
--> top
- ->->la sento di parlare di morte
-        ~ lutto = false
-    + Sono apposto così. ->parlareColMentore
-    -    
+    -  
 -> top
  ->->
