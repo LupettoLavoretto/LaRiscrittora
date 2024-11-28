@@ -89,6 +89,8 @@ INCLUDE Giardino/Biblioteca/RaccontoUno.ink
 INCLUDE Giardino/Biblioteca/RaccontoDue.ink
 INCLUDE Giardino/Biblioteca/RaccontoTre.ink
 INCLUDE Giardino/Biblioteca/RaccontoQuattro.ink
+INCLUDE Giardino/Biblioteca/GestioneBiblioteca.Ink.ink
+
 
 
 

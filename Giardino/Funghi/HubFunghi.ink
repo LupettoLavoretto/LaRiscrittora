@@ -15,4 +15,11 @@ Ti prendi cura dei funghi
         -> contenuti_inventario
     -
     
+-> hub_funghi    
 -> hub_funghi
+
+=== gestione_funghi
+Check se funghi in crescita o meno.
+Se non in crescita, posso metterne uno nuovo
+
+->->
