@@ -1,28 +1,23 @@
 === storylets_mentore ===
 {
- - presentazioni == 0: -> presentazioni
- - tutorial == 0: -> tutorial
+//Introduzioni    
+    - presentazioni == 0: -> presentazioni
+    - tutorial == 0: -> tutorial
+
+//Presentazione dei luoghi
+    - are_entities_together_in(PG, Mentore, Funghi) && not prima_visita_funghi: -> prima_visita_funghi
+
+    - are_entities_together_in(PG, Mentore, Biblioteca) && not prima_visita_biblioteca: -> prima_visita_biblioteca
+
+    - are_entities_together_in(PG, Mentore, Sirene) && not prima_visita_sirene: -> prima_visita_sirene
+
+    - are_entities_together_in(PG, Mentore, Falene) && not prima_visita_falene: -> prima_visita_falene
+
+    - are_entities_together_in(PG, Mentore, Tisane) && not prima_visita_tisane: -> prima_visita_tisane
+
+    - are_entities_together_in(PG, Mentore, Mausoleo) && not prima_visita_mausoleo: -> prima_visita_mausoleo
  
- - else: ->->
-
-}
-
-+ ->
--> DONE
- luoghi
- - are_entities_together_in(PG, Mentore, Funghi) && not prima_visita_funghi: -> prima_visita_funghi
-
- - are_entities_together_in(PG, Mentore, Biblioteca) && not prima_visita_biblioteca: -> prima_visita_biblioteca
-
- - are_entities_together_in(PG, Mentore, Sirene) && not prima_visita_sirene: -> prima_visita_sirene
-
- - are_entities_together_in(PG, Mentore, Falene) && not prima_visita_falene: -> prima_visita_falene
-
- - are_entities_together_in(PG, Mentore, Tisane) && not prima_visita_tisane: -> prima_visita_tisane
-
- - are_entities_together_in(PG, Mentore, Mausoleo) && not prima_visita_mausoleo: -> prima_visita_mausoleo
- 
- - else: ->->
+- else: ->->
 
 }
 
