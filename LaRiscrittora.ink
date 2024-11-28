@@ -23,8 +23,9 @@ INCLUDE CodiceEStruttura/FunzioniVarie.ink
 
  ----------------------------------*/
 //Dialoghi dalle varie spettre etc.
-INCLUDE Personagge/Mentore.ink
-INCLUDE Personagge\StoryletsMentore.ink
+INCLUDE Personagge/Mentore/Mentore.ink
+INCLUDE Personagge/Mentore/StoryletsMentore.ink
+INCLUDE Personagge/Mentore/MentoreUtile.ink
 INCLUDE Personagge/AnimaUno.ink
 INCLUDE Personagge/AnimaDue.ink
 INCLUDE Personagge/AnimaTre.ink
@@ -86,7 +87,7 @@ INCLUDE Giardino\Biblioteca\RaccontoDue.ink
 INCLUDE Giardino\Biblioteca\RaccontoTre.ink
 INCLUDE Giardino\Biblioteca\RaccontoQuattro.ink
 INCLUDE CodiceEStruttura\GestioneMentore.ink
-INCLUDE Personagge/MentoreUtile.ink
+
 
 
 
