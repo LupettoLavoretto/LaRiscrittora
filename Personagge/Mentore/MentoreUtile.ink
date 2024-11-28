@@ -31,7 +31,6 @@ Tutorial
 
 === indicazioni
 //Strutturare come wave sintetica?
-//Com'è la logica? Qui ho le indicazioni pratiche, e negli storylet "prima visita a" invece è presentazione del contenuto?
 Indicazioni tutorial
 -(top)
     + Sul mausoleo
@@ -140,6 +139,11 @@ VAR lutto = false
     + Non voglio leggere storie su relazioni abusanti
         ~ abusi = false
     + Non me la sento di parlare di morte
+        ~ lutto = false
+    + Sono apposto così. ->parlareColMentore
+    -    
+-> top
+ ->->la sento di parlare di morte
         ~ lutto = false
     + Sono apposto così. ->parlareColMentore
     -    

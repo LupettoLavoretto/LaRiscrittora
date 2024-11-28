@@ -5,16 +5,16 @@
  ----------------------------------*/
 
 //File con gli appunti di gestione del progetto, la formattazione etc.
-INCLUDE AppuntiGestioneFile.ink
-INCLUDE AppuntiContenutiEStruttura.ink
-INCLUDE ToDo.ink
+INCLUDE FileAppunti/AppuntiGestioneFile.ink
+INCLUDE FileAppunti/AppuntiContenutiEStruttura.ink
+INCLUDE FileAppunti/ToDo.ink
 
 //File dedicati alla gestione complessiva del progetto
 INCLUDE CodiceEStruttura/VariabiliEListe.ink
 INCLUDE CodiceEStruttura/FunzioniGestioneSpazi.ink
 INCLUDE CodiceEStruttura/FunzioniCambioLuogo.ink
 INCLUDE CodiceEStruttura/TrackingStatoStoria.ink
-INCLUDE CodiceEStruttura/VarEFunAnime.ink
+
 INCLUDE CodiceEStruttura/FunzioniVarie.ink
 
 /* ---------------------------------
@@ -26,10 +26,13 @@ INCLUDE CodiceEStruttura/FunzioniVarie.ink
 INCLUDE Personagge/Mentore/Mentore.ink
 INCLUDE Personagge/Mentore/StoryletsMentore.ink
 INCLUDE Personagge/Mentore/MentoreUtile.ink
-INCLUDE Personagge/AnimaUno.ink
-INCLUDE Personagge/AnimaDue.ink
-INCLUDE Personagge/AnimaTre.ink
-INCLUDE Personagge/Animelle.ink
+INCLUDE Personagge/Mentore/GestioneMentore.ink
+
+INCLUDE Personagge/Anime/AnimaUno.ink
+INCLUDE Personagge/Anime/AnimaDue.ink
+INCLUDE Personagge/Anime/AnimaTre.ink
+INCLUDE Personagge/Anime/Animelle.ink
+INCLUDE Personagge/Anime/VarEFunAnime.ink
 
 
 //Gestione dell'inventario
@@ -40,53 +43,55 @@ INCLUDE Inventario/Inventario.ink
 //LUOGHI APERTI DALL'INIZIO DEL GIOCO
 
 //File dedicati alla gestione del Mausoleo
-INCLUDE Mausoleo\HubMausoleo.ink
-INCLUDE Mausoleo\StoriaUno.ink
-INCLUDE Mausoleo\StoriaDue.ink
-INCLUDE Mausoleo\StoriaTre.ink
+INCLUDE Mausoleo/HubMausoleo.ink
+INCLUDE Mausoleo/StoriaUno.ink
+INCLUDE Mausoleo/StoriaDue.ink
+INCLUDE Mausoleo/StoriaTre.ink
 INCLUDE Mausoleo/StoriaQuattro.ink
 INCLUDE Mausoleo/StoriaCinque.ink
 INCLUDE Mausoleo/StoriaSei.ink
 INCLUDE Mausoleo/StoriaSette.ink
 
 //File dedicata alla gestione del giardino
-INCLUDE Giardino\HubGiardino.ink
+INCLUDE Giardino/HubGiardino.ink
 
 //Cura di fiori e funghi
-INCLUDE Giardino\Funghi\HubFunghi.ink
-INCLUDE Giardino\Funghi\CoseFungose.ink
-
+INCLUDE Giardino/Funghi/HubFunghi.ink
+INCLUDE Giardino/Funghi/CoseFungose.ink
+INCLUDE Giardino/Funghi/VarEFunGestioneFunghi.ink
 
 //LUOGHI CHE SI SBLOCCANO COL SECONDO TIER
 
 //Angolo delle falene
-INCLUDE Giardino\Falene\HubFalene.ink
-INCLUDE Giardino\Falene\CoseFalene.ink
+INCLUDE Giardino/Falene/HubFalene.ink
+INCLUDE Giardino/Falene/CoseFalene.ink
 
 
 //Il labirinto
-INCLUDE Giardino\Labirinto\HubLabirinto.ink
-INCLUDE Giardino\Labirinto\CoseLabirinto.ink
-INCLUDE Giardino\Labirinto\Specchio.ink
+INCLUDE Giardino/Labirinto/HubLabirinto.ink
+INCLUDE Giardino/Labirinto/CoseLabirinto.ink
+INCLUDE Giardino/Labirinto/Specchio.ink
 
 
 //LUOGHI CHE SI SBLOCCANO COL TERZO TIER
 
 //Angolo delle tisane
-INCLUDE Giardino\Tisane\HubTisane.ink
-INCLUDE Giardino\Tisane\CoseTisane.ink
-INCLUDE Giardino\Tisane\DipintiERitratti.ink
+INCLUDE Giardino/Tisane/HubTisane.ink
+INCLUDE Giardino/Tisane/CoseTisane.ink
+INCLUDE Giardino/Tisane/DipintiERitratti.ink
 
 //Area del canto
-INCLUDE Giardino\Sirene\HubSirene.ink
+INCLUDE Giardino/Sirene/HubSirene.ink
 
 //Storie dalla biblioteca
-INCLUDE Giardino\Biblioteca\HubBiblioteca.ink
-INCLUDE Giardino\Biblioteca\RaccontoUno.ink
-INCLUDE Giardino\Biblioteca\RaccontoDue.ink
-INCLUDE Giardino\Biblioteca\RaccontoTre.ink
-INCLUDE Giardino\Biblioteca\RaccontoQuattro.ink
-INCLUDE CodiceEStruttura\GestioneMentore.ink
+INCLUDE Giardino/Biblioteca/HubBiblioteca.ink
+INCLUDE Giardino/Biblioteca/RaccontoUno.ink
+INCLUDE Giardino/Biblioteca/RaccontoDue.ink
+INCLUDE Giardino/Biblioteca/RaccontoTre.ink
+INCLUDE Giardino/Biblioteca/RaccontoQuattro.ink
+
+
+
 
 
 

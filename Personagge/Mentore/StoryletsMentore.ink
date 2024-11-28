@@ -2,8 +2,14 @@
 {
  - presentazioni == 0: -> presentazioni
  - tutorial == 0: -> tutorial
+ 
+ - else: ->->
 
- //storylets di presentazione dei vari luoghi
+}
+
++ ->
+-> DONE
+ luoghi
  - are_entities_together_in(PG, Mentore, Funghi) && not prima_visita_funghi: -> prima_visita_funghi
 
  - are_entities_together_in(PG, Mentore, Biblioteca) && not prima_visita_biblioteca: -> prima_visita_biblioteca
@@ -57,6 +63,8 @@ Mentore: Tornaci spesso: tutto nel giardino cambia spesso.
 ->->
 
 === prima_visita_tisane
+
+->->
 
 ->->
 
