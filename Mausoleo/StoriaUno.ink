@@ -17,16 +17,24 @@
     //la storia in corso viene attivata, e le altre non saranno accessibili fino alla sua conclusione
     ~ storiaUno = InCorso
     {
-    - alcolismo == false:
-    Hai segnalato che l'alcool per te è un problema, per cui questa storia verrà saltata, ma potrai scegliere un nuovo nome per questa lapide.
-        -> scelta_nome_uno
+    - alcolismo == false: -> trigger_alcolismo
+
     }
+- (top)    
     Ascolti la prima storia
     E ti presenti
     -> il_mio_nome ->
     -> assegnazione_genere ->
     -> hub_mausoleo
 
+
+= trigger_alcolismo
+    Hai segnalato che l'alcool per te è un problema, ed è uno dei temi della storia.
+    Puoi decidere se affrontarla comunque, o saltarla.
+        + Affronto -> top
+        + Salto -> scelta_nome_uno
+        -
+->->
 
 === aiuto_storia_uno ===
     + {doniTrovati != ()} Offri un dono allo spettro e inizi la sua storia

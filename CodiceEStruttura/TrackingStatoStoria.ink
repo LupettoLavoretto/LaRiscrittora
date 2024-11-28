@@ -49,7 +49,7 @@ VAR eventoSpecialeSpettroSette = false
 LIST doni = mela, pera, fungo, banana, ocelot
 VAR doniNonTrovati = (ocelot)
 VAR doniNonTrovatiLuogo = (fungo, banana, mela, pera)
-VAR doniTrovati = (fungo, banana, mela)
+VAR doniTrovati = ()
 VAR doniDonati = ()
 VAR luoghiDono = ()
 

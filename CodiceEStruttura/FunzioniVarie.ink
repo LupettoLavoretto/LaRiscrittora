@@ -45,8 +45,6 @@
     
 
 //Takes a list and prints it out, using commas. 
-// Dependenices: 
-// This function relies on the "pop" function. 
 //The fruit bowl contains {list_with_commas(fruitBowl)}.
 
 === function list_with_commas(list)
