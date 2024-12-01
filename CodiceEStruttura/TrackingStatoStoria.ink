@@ -48,8 +48,8 @@ VAR eventoSpecialeSpettroSette = false
 //doniNonTrovatiLuogo sono quelli assegnati invece in modo randomico da un luogo
 LIST doni = mela, pera, fungo, banana, ocelot
 VAR doniNonTrovati = (ocelot)
-VAR doniNonTrovatiLuogo = ()
-VAR doniTrovati = (fungo, banana, mela, pera)
+VAR doniNonTrovatiLuogo = (fungo, banana, mela, pera)
+VAR doniTrovati = ()
 VAR doniDonati = ()
 VAR luoghiDono = ()
 
