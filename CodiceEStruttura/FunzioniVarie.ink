@@ -53,7 +53,7 @@
 	}
 
 === function _list_with_commas(list, n)
-	{pop(list)}{ n > 1:{n == 2: e |, }{_list_with_commas(list, n-1)}}
+	{traduttoreIngredienti(pop(list))}{ n > 1:{n == 2: e |, }{_list_with_commas(list, n-1)}}
 
 === function oggettoOggetti(list)
 	{LIST_COUNT(list) == 1:oggetto|oggetti}

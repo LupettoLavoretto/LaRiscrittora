@@ -1,20 +1,23 @@
 === contenuti_inventario ===
 {doniTrovati != (): -> inventarietto|->vuoto}
 =inventarietto
-Hai con te {LIST_COUNT(doniTrovati)} {oggettoOggetti(doniTrovati)}:  {list_with_commas(doniTrovati)} 
+Hai con te {list_with_commas(doniTrovati)}.
 -> doveDevoTornare
 
-TODO: un po' come in The Good Dog Show, creare un "traduttore" di contenuti, che metta gli elementi della lista in modo presentabile
-= vuoto
-L'inventario è vuoto
--> doveDevoTornare
+    = vuoto
+    L'inventario è vuoto
+    -> doveDevoTornare
 
-=== function traduttoreIngredienti
-{
-- doniTrovati has mela: una mela
-- doniTrovati has fungo:: un fungo
-- banana: una banana
-- pera: una pera
+=== function traduttoreIngredienti(ingrediente)
+{ingrediente:
+- mela: 
+    ~ return "una mela"
+- fungo:
+    ~ return "un fungo"
+- banana: 
+    ~ return "una banana"
+- pera: 
+    ~ return "una pera"
 }
 
 
