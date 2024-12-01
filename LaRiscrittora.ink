@@ -37,7 +37,7 @@ INCLUDE Personagge/Anime/VarEFunAnime.ink
 
 //Gestione dell'inventario
 INCLUDE Inventario/Inventario.ink
-
+INCLUDE Inventario/GestioneInventario.ink
 
 
 //LUOGHI APERTI DALL'INIZIO DEL GIOCO
@@ -90,6 +90,8 @@ INCLUDE Giardino/Biblioteca/RaccontoDue.ink
 INCLUDE Giardino/Biblioteca/RaccontoTre.ink
 INCLUDE Giardino/Biblioteca/RaccontoQuattro.ink
 INCLUDE Giardino/Biblioteca/GestioneBiblioteca.Ink.ink
+
+
 
 
 

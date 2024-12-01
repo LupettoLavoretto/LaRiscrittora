@@ -1,37 +1,16 @@
 === contenuti_inventario ===
-{doniTrovati != (): -> inventarietto|->vuoto}
-=inventarietto
-Hai con te {list_with_commas(doniTrovati)}.
--> doveDevoTornare
+    {doniTrovati != (): -> inventarietto|->vuoto}
+
+    =inventarietto
+    Hai con te {list_with_commas(doniTrovati)}.
+    -> doveDevoTornare
 
     = vuoto
     L'inventario è vuoto
     -> doveDevoTornare
 
-=== function traduttoreIngredienti(ingrediente)
-{ingrediente:
-- mela: 
-    ~ return "una mela"
-- fungo:
-    ~ return "un fungo"
-- banana: 
-    ~ return "una banana"
-- pera: 
-    ~ return "una pera"
-}
 
 
-
-
-
-//Lo step potrebbe essere: controllo quanti elementi ci sono in doniTrovati. Printo il primo ingrediente, faccio un check per la punteggiatura: se è l'ultimo ingrediente, metto il punto, altrimenti la virgola
-
-=== function prova
-~ temp ingrediente = doniTrovati
- {
-    - ingrediente == LIST_MAX(doniTrovati):.
-    - else:,  
- }
 
 
 
@@ -104,9 +83,9 @@ Hai con te {list_with_commas(doniTrovati)}.
     }
     -> doveDevoTornare
     
-//Se la lista è vuota
-+ {doniTrovati == ()} Non hai nulla da donare
-+ Mmm, per ora passo -> doveDevoTornare   
-+ ->
-- 
+    //Se la lista è vuota
+    + {doniTrovati == ()} Non hai nulla da donare
+    + Mmm, per ora passo -> doveDevoTornare   
+    + ->
+    - 
 -> doveDevoTornare
