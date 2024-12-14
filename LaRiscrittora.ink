@@ -17,6 +17,8 @@ INCLUDE CodiceEStruttura/TrackingStatoStoria.ink
 
 INCLUDE CodiceEStruttura/FunzioniVarie.ink
 
+INCLUDE main.ink
+
 /* ---------------------------------
 
    CONTENUTI
@@ -108,7 +110,9 @@ INCLUDE Giardino/Biblioteca/GestioneBiblioteca.Ink.ink
 
 
 
--> inizio
+
+
+-> main
 
 
 
