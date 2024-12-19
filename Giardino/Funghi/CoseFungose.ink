@@ -101,7 +101,7 @@ TODO: quando ho capito come voglio gestire il tempo nel gioco, lo implemento qui
 
 === pianta_cinque
 Hai trovato una pianta cinque
-Indipendenza, novità, cancellazione
+//Indipendenza, novità, cancellazione
 + Step uno
     -> main
 + Step due
