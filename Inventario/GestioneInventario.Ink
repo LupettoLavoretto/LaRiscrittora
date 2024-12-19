@@ -39,8 +39,8 @@
     ~ return "un fungo"
 - banana: 
     ~ return "una banana"
-- pera: 
-    ~ return "una pera"
+- baccadellaaddolorata: 
+    ~ return "una bacca della Addolorata"
 - muschiodelleamanti:
     ~ return "del muschio delle amanti"
 

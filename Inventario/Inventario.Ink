@@ -39,6 +39,22 @@
     
     ->->
 
++ {doniTrovati has baccadellaaddolorata} Doni una bacca della Addolorata
+    ~ doniTrovati -= baccadellaaddolorata
+    ~ doniDonati += baccadellaaddolorata
+    TODO: settare valori
+    {
+    - storiaUno == InCorso:
+        ~ statoInchiostroSpettroUno --
+        Spettro uno inizia a piangere
+    - storiaDue == InCorso:
+        Hai regalato a spettro due qualcosa che proprio non gli interessa
+    - storiaTre == InCorso:
+        ~ statoInchiostroSpettroTre ++
+        Spettro tre apprezza mediamente il tuo dono.
+    }
+    ->->    
+
 + {doniTrovati has mela} Doni una mela
     ~ doniTrovati -= mela
     ~ doniDonati += mela

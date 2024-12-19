@@ -48,8 +48,8 @@ VAR eventoSpecialeSpettroSette = false
 //doniNonTrovatiLuogo sono quelli assegnati invece in modo randomico da un luogo
 //dato che alcuni doni possono venire da altre liste (es: serra), la nomenclatura qui sarà tutta in minuscolo
 //Doni: lista di tutti i possibili doni.
-LIST doni = muschiodelleamanti, mela, pera, fungo, banana, ocelot
-VAR doniNonTrovati = (ocelot, muschiodelleamanti)
+LIST doni = muschiodelleamanti, baccadellaaddolorata, mela, pera, fungo, banana, ocelot
+VAR doniNonTrovati = (ocelot, muschiodelleamanti, baccadellaaddolorata)
 VAR doniNonTrovatiLuogo = (fungo, banana, mela, pera)
 VAR doniTrovati = ()
 VAR doniDonati = ()
