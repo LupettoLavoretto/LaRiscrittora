@@ -9,7 +9,7 @@ TODO: quando ho capito come voglio gestire il tempo nel gioco, lo implemento qui
         Ora la punta è più grande, e attorno c'è un foro circolare.
         -> main
     + Step tre
-        Eccolo qui. Un lichene degli abissi.
+        Eccolo qui. Un <i>Lichene degli abissi</i>.
         Il lichene degli abissi è una danza, un roteare costante di fungo ed alga. Un ripetersi anche nell'errore, nel dolore.
         Girano e rigirano senza mai davvero afferrarsi.
         Se qualcuno sfiora il lichene, questo è destinato a scomparire.
@@ -34,7 +34,7 @@ TODO: quando ho capito come voglio gestire il tempo nel gioco, lo implemento qui
 + Step tre.
     Senti un fremito nel ventre. I rami ora sono coperti da un fitto tappeto del color dell'alba.
     Quando lo sfiori le tue labbra tremano, ricordi ti invadono: quel bacio, quelle dita desiderate tra le coscie.
-    Pienezza ti riempie: è per forza del muschio delle amanti.
+    Pienezza ti riempie: è per forza del <i>Muschio delle amanti</i>.
     Potresti portarne un po' con te, sapendo che sparirà.
     O lasciarlo qui sull'albero.
         + + Raccogli un po' di muschio.
@@ -61,7 +61,7 @@ TODO: quando ho capito come voglio gestire il tempo nel gioco, lo implemento qui
     Si rincorrono e si tuffano sul terreno, facendo come un suono di risata.
     -> main
 + Step tre.
-    La serra tutta si è fatta rossa, uno stupendo Canto delle compagne galleggia sul terreno.
+    La serra tutta si è fatta rossa, uno stupendo <i>Canto delle compagne</i> galleggia sul terreno.
     In un altro tempo, più pauroso, questo fungo veniva chiamato
     "Canto delle streghe".
     L'euforia ti riempie i polmoni, senti la gioia di sapere che non sei mai stata davvero sola.
@@ -76,16 +76,28 @@ TODO: quando ho capito come voglio gestire il tempo nel gioco, lo implemento qui
     + + No, non ora.
         -> main
 
-=== pianta_quattro
-Hai trovato una pianta quatto
-Indipendenza, novità, cancellazione
+=== la_spazzata
+//Indipendenza, novità, cancellazione
 + Step uno
+    Uh. Non vedi nulla. Forse a questo giro qualcosa è andato storto?
     -> main
 + Step due
+    La serra è vuota, eppure qualcosa è cambiato. Le luci sono più tenui. Il soffitto di rami sfiora la tua testa.
     -> main
-+ Step tre: il fungo è pronto!
-    ~ inCrescita = false
-    -> main
++ Step tre
+    Tutto scricchiola, gli alberi sembrano gemere dal dolore.
+    Il terreno stesso è impacciato, crepato.
+    Ok, ora riconosci cosa hai piantato: una grossa, esplosiva <i>Spazzata</i>.
+    La Spazzata non è un fungo, non è una pianta, ma è un insieme di tutte queste cose.
+    E se non viene fatta sfogare, esploderà spazzando via tutta la serra.
+    + + Bene: facciamola sfogare!
+        Questa è la parte più facile: basta prometterle che dirai a qualcuno qualcosa che senti sullo stomaco. Qualcosa che sono giorni o settimane (uh: questa Spazzata è molto grande. forse mesi?) che ti pesa.
+            Falle la promessa, e se ne andrà.
+            Ma se poi tradisci la promessa, la Spazzata tornerà ancora più forte.
+            ~ inCrescita = false
+        -> main
+    + + Non ora.
+        -> main
 
 === pianta_cinque
 Hai trovato una pianta cinque

@@ -89,7 +89,7 @@ VAR coltivazioniZ = ()
 
 
 -> hub_funghi
-mossa solo sulla superficie|È torbida|È piena di foglie e petali}]
+~ È ferma, mossa solo sulla superficie|È torbida|È piena di foglie e petali}]
             ~ tipoColtivazioni += ricordo
         -   
             ~ counter ++
@@ -184,8 +184,8 @@ mossa solo sulla superficie|È torbida|È piena di foglie e petali}]
         -> muschio_delle_amanti
     - cantoDelleCompagne:
         -> canto_delle_compagne
-    - quattro:
-        -> pianta_quattro
+    - laSpazzata:
+        -> la_spazzata
     - cinque:
         -> pianta_cinque
     - sei:
