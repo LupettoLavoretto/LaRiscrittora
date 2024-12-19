@@ -22,7 +22,7 @@ Ti prendi cura dei funghi
 Check se funghi in crescita o meno.
 Se non in crescita, posso metterne uno nuovo
 
-->->nuti_inventario
+->->inventario
 
     + [Te ne vai]
         -> main
@@ -40,5 +40,6 @@ Se non in crescita, posso metterne uno nuovo
 === cura
     Ti prendi cura del giardino.
     {~ L'aria sembra più dolce oggi|Da qualche parte, tra le foglie, qualcosa canta|Piccole luci sfarfallano sopra il terreno}.
+    TODO: inserire stato del fungo in corso.
     + [Te ne vai]
     -> main

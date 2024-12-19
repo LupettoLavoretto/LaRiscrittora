@@ -17,7 +17,7 @@ TODO: quando ho capito come voglio gestire il tempo nel gioco, lo implemento qui
                 Un piccolo sbuffo. Le tue dita ora sanno di mare.
                 Il lichene è scomparso, tu no.
                 C'è qualcuno che devi allontanare?
-                ~ fungoInCrescita = false
+                ~ inCrescita = false
             + + Lo lasci dov'è.
             - -
             -> main
@@ -40,7 +40,7 @@ TODO: quando ho capito come voglio gestire il tempo nel gioco, lo implemento qui
         + + Raccogli un po' di muschio.
             Così vicino, il muschio ti chiama.
             Ti invita a fermare per un attimo tutto, a premiare come più ti piace il tuo corpo, dentro o fuori che sia.
-            ~ fungoInCrescita = false
+            ~ inCrescita = false
             {
             - doniTrovati hasnt muschiodelleamanti:
             ~ doniTrovati += muschiodelleamanti
@@ -71,7 +71,7 @@ TODO: quando ho capito come voglio gestire il tempo nel gioco, lo implemento qui
             Puoi farlo da te, o chiamare qualcuno a cui tieni.
             Riempiti dell'euforia del fungo, e lascia che il mondo intero ascolti la tua voce.
             Con l'ultima nota, il fungo sarà altrove, da un'altra compagna bisognosa.
-            ~ fungoInCrescita = false
+            ~ inCrescita = false
             -> main
     + + No, non ora.
         -> main
@@ -84,7 +84,7 @@ Indipendenza, novità, cancellazione
 + Step due
     -> main
 + Step tre: il fungo è pronto!
-    ~ fungoInCrescita = false
+    ~ inCrescita = false
     -> main
 
 === pianta_cinque
@@ -95,7 +95,7 @@ Indipendenza, novità, cancellazione
 + Step due
     -> main
 + Step tre: il fungo è pronto!
-    ~ fungoInCrescita = false
+    ~ inCrescita = false
     -> main
 
 
@@ -107,5 +107,5 @@ Indipendenza, ciclicità, ricordo
 + Step due
     -> main
 + Step tre: il fungo è pronto!
-    ~ fungoInCrescita = false
+    ~ inCrescita = false
     -> main

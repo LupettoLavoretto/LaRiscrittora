@@ -89,7 +89,23 @@ VAR coltivazioniZ = ()
 
 
 -> hub_funghi
-, ciclicità):
+mossa solo sulla superficie|È torbida|È piena di foglie e petali}]
+            ~ tipoColtivazioni += ricordo
+        -   
+            ~ counter ++
+            -> test
+     
+ 
+ 
+ === results
+ ~ one = false
+ ~ two = false
+ ~ three = false
+ ~ counter = 0
+ ~ inCrescita = true
+ 
+    {
+    - tipoColtivazioni == (collaborazione, ciclicità):
         ~ fungoProposto = LIST_RANDOM(pianteCollaborazione ^ pianteCiclicità)
         -> da_lista_a_coltivazioni
         
@@ -128,8 +144,6 @@ VAR coltivazioniZ = ()
         {fungoProposto}
         -> da_lista_a_coltivazioni
         
-        
-        
     - tipoColtivazioni == (ciclicità, cancellazione):
         ~ fungoProposto = LIST_RANDOM(pianteCiclicità ^ pianteCancellazione)
         {fungoProposto}
@@ -140,8 +154,6 @@ VAR coltivazioniZ = ()
         {fungoProposto}
         -> da_lista_a_coltivazioni
         
-        
-    
     - tipoColtivazioni == (novità, cancellazione):
         ~ fungoProposto = LIST_RANDOM(pianteNovità ^ pianteCancellazione)
         {fungoProposto}
@@ -163,68 +175,6 @@ VAR coltivazioniZ = ()
  
  
 
-/* === test_coltivazioni ===
-{~ Ho bisogno di lasciare nel passato|Vorrei dimenticare|Non ho più bisogno di}
-+ {coltivazioniX != ()}<>qualcosa che riguarda il lavoro
-    + + {coltivazioniX ^ coltivazioniZ != ()} Con qualcosa di z
-        ~ fungoProposto = LIST_RANDOM(coltivazioniX ^ coltivazioniZ)
-        {fungoProposto}
-        ~ coltivazioniX -= fungoProposto
-        ~ coltivazioniZ -= fungoProposto
-        ~ libriLetti += fungoProposto
-        -> da_lista_a_coltivazioni
-    + + {coltivazioniX ^ coltivazioniY!= ()} Con qualcosa di y    
-        ~ fungoProposto = LIST_RANDOM(coltivazioniX ^ coltivazioniY)
-        {fungoProposto}
-        ~ coltivazioniX -= fungoProposto
-        ~ coltivazioniY -= fungoProposto
-        ~ libriLetti += fungoProposto
-        ->da_lista_a_coltivazioni
-    + + No, vorrei qualcosa di diverso!
-        -> test_libri
-
-+ {coltivazioniY != ()}<>qualcosa che riguarda la spiritualità
-    + + {coltivazioniY ^ coltivazioniZ != ()} Con qualcosa di z
-        ~ fungoProposto = LIST_RANDOM(coltivazioniY ^ coltivazioniZ)
-        ~ coltivazioniZ -= fungoProposto
-        ~ coltivazioniY -= fungoProposto
-        ~ libriLetti += fungoProposto
-        -> da_lista_a_coltivazioni
-    + + {coltivazioniX ^ coltivazioniY != ()} Con qualcosa di x    
-        ~ fungoProposto = LIST_RANDOM(coltivazioniX ^ coltivazioniY)
-        ~ coltivazioniX -= fungoProposto
-        ~ coltivazioniY -= fungoProposto
-        ~ libriLetti += fungoProposto
-        -> da_lista_a_coltivazioni
-    + + No, vorrei qualcosa di diverso!
-        -> test_libri
-        
-
-+ {coltivazioniZ != ()}<>qualcosa che riguarda gli affetti
-    + + {coltivazioniY ^ coltivazioniZ != ()} Con qualcosa di y
-        ~ fungoProposto = LIST_RANDOM(coltivazioniY ^ coltivazioniZ)
-        ~ coltivazioniZ -= fungoProposto
-        ~ coltivazioniY -= fungoProposto
-        ~ libriLetti += fungoProposto
-        -> da_lista_a_coltivazioni
-    + + {coltivazioniX ^ coltivazioniZ != ()} Con qualcosa di x    
-        ~ fungoProposto = LIST_RANDOM(coltivazioniX ^ coltivazioniZ)
-        ~ coltivazioniX -= fungoProposto
-        ~ coltivazioniZ -= fungoProposto
-        ~ libriLetti += fungoProposto
-        -> da_lista_a_coltivazioni
-    + + No, vorrei qualcosa di diverso!
-        -> test_libri
-        
-+ {libriLetti != ()} Vorrei qualcosa che ho già letto
-        -> rilettura
-+ Mmm, mi è passata la voglia di leggere
-    -> hub_biblioteca
--
--> DONE
-
-*/
-
 
 === da_lista_a_coltivazioni ===
 {fungoProposto:
@@ -240,13 +190,7 @@ VAR coltivazioniZ = ()
         -> pianta_cinque
     - sei:
         -> pianta_sei
-    - else: Non ho trovato un fungoProposto adatto, mi spiace
-    -> test_libri
-    
 }
 
 
--> DONE
-
-
--> hub_funghi
+-> main
