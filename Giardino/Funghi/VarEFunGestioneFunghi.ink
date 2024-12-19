@@ -89,7 +89,15 @@ VAR coltivazioniZ = ()
 
 
 -> hub_funghi
-oProposto = LIST_RANDOM(pianteCollaborazione ^ pianteCancellazione)
+cità)
+        -> da_lista_a_coltivazioni
+        
+    - tipoColtivazioni == (collaborazione, stabilità):
+        ~ fungoProposto = LIST_RANDOM(pianteCollaborazione ^ pianteStabilità)
+        -> da_lista_a_coltivazioni    
+        
+    - tipoColtivazioni == (collaborazione, cancellazione):
+        ~ fungoProposto = LIST_RANDOM(pianteCollaborazione ^ pianteCancellazione)
         {fungoProposto}
         -> da_lista_a_coltivazioni
         
@@ -98,8 +106,14 @@ oProposto = LIST_RANDOM(pianteCollaborazione ^ pianteCancellazione)
         {fungoProposto}
         -> da_lista_a_coltivazioni
         
+        
     - tipoColtivazioni == (indipendenza, ciclicità):
         ~ fungoProposto = LIST_RANDOM(pianteIndipendenza ^ pianteCiclicità)
+        {fungoProposto}
+        -> da_lista_a_coltivazioni
+                
+    - tipoColtivazioni == (indipendenza, stabilità):
+        ~ fungoProposto = LIST_RANDOM(pianteIndipendenza ^ pianteStabilità)
         {fungoProposto}
         -> da_lista_a_coltivazioni
         
@@ -113,6 +127,8 @@ oProposto = LIST_RANDOM(pianteCollaborazione ^ pianteCancellazione)
         {fungoProposto}
         -> da_lista_a_coltivazioni
         
+        
+        
     - tipoColtivazioni == (ciclicità, cancellazione):
         ~ fungoProposto = LIST_RANDOM(pianteCiclicità ^ pianteCancellazione)
         {fungoProposto}
@@ -122,6 +138,18 @@ oProposto = LIST_RANDOM(pianteCollaborazione ^ pianteCancellazione)
         ~ fungoProposto = LIST_RANDOM(pianteCiclicità ^ pianteRicordo)
         {fungoProposto}
         -> da_lista_a_coltivazioni
+        
+        
+    
+    - tipoColtivazioni == (stabilità, cancellazione):
+        ~ fungoProposto = LIST_RANDOM(pianteStabilità ^ pianteCancellazione)
+        {fungoProposto}
+        -> da_lista_a_coltivazioni
+        
+    - tipoColtivazioni == (stabilità, ricordo):
+        ~ fungoProposto = LIST_RANDOM(pianteStabilità ^ pianteRicordo)
+        {fungoProposto}
+        -> da_lista_a_coltivazioni    
         
     - else: 
          ~ LIST_RANDOM(tipoColtivazioni)
@@ -199,8 +227,8 @@ oProposto = LIST_RANDOM(pianteCollaborazione ^ pianteCancellazione)
 
 === da_lista_a_coltivazioni ===
 {fungoProposto:
-    - uno:
-        -> pianta_uno
+    - licheneDegliAbissi:
+        -> lichene_degli_abissi
     - due:
         -> pianta_due
     - tre:
@@ -211,11 +239,6 @@ oProposto = LIST_RANDOM(pianteCollaborazione ^ pianteCancellazione)
         -> pianta_cinque
     - sei:
         -> pianta_sei
-    - sette:
-        -> pianta_sette
-    - otto:
-        -> pianta_otto
-
     - else: Non ho trovato un fungoProposto adatto, mi spiace
     -> test_libri
     
