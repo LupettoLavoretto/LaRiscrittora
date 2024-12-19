@@ -18,6 +18,7 @@ Con calma
     * Per i consigli di lettura, eventualmente mettere un limite al numero di domande che possono essere fatte?
     *Pensare a dove posizionare il canto finale
     * Pensare a Storylet che si attivano se Mentore e anime sono assieme
+    * Pensare a come gestire il fattore "tempo" coi funghi etc (es: dopo tot tempo qualcosa cresce: come e perchè?)
 */
   
 /*

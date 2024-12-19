@@ -22,4 +22,14 @@ Ti prendi cura dei funghi
 Check se funghi in crescita o meno.
 Se non in crescita, posso metterne uno nuovo
 
-->->
+->-> in crescita|Ci sei solo tu, coi tuoi pensieri}.
+    + [Vuoi elaborare qualcosa di nuovo]
+        -> test_coltivazioni
+    + [Te ne vai]
+        -> main
+
+
+=== cura
+    Ti prendi cura del giardino.
+    {~ L'aria sembra più dolce oggi|Da qualche parte, tra le foglie, qualcosa canta|Piccole luci sfarfallano sopra il terreno}.
+    -> hub_funghi 
