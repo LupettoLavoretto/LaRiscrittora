@@ -38,25 +38,43 @@ TODO: quando ho capito come voglio gestire il tempo nel gioco, lo implemento qui
     Potresti portarne un po' con te, sapendo che sparirà.
     O lasciarlo qui sull'albero.
         + + Raccogli un po' di muschio.
-        Così vicino, il muschio ti chiama.
-        Ti invita a fermare per un attimo tutto, a premiare come più ti piace il tuo corpo, dentro o fuori che sia.
-        ~ fungoInCrescita = false
-        ~ doniTrovati += muschiodelleamanti
+            Così vicino, il muschio ti chiama.
+            Ti invita a fermare per un attimo tutto, a premiare come più ti piace il tuo corpo, dentro o fuori che sia.
+            ~ fungoInCrescita = false
+            {
+            - doniTrovati hasnt muschiodelleamanti:
+            ~ doniTrovati += muschiodelleamanti
+            }
         + + Non è ancora il momento.
         - -
-        -> main
+            -> main
 
 
-=== pianta_tre
-Hai trovato una pianta tre
-Collaborazione, ciclicità, ricordo
+=== canto_delle_compagne
+//Collaborazione, ciclicità, ricordo
 + Step uno
+    Piccole palline rosse sul terreno caldo.
+    L'umidità evapora creando una nebbiolina rossastra.
     -> main
 + Step due
+    Le palline ondeggiano nella nebbia ora, sospinte da un vento invisibile.
+    Si rincorrono e si tuffano sul terreno, facendo come un suono di risata.
     -> main
-+ Step tre: il fungo è pronto!
-    ~ fungoInCrescita = false
-    -> main
++ Step tre.
+    La serra tutta si è fatta rossa, uno stupendo Canto delle compagne galleggia sul terreno.
+    In un altro tempo, più pauroso, questo fungo veniva chiamato
+    "Canto delle streghe".
+    L'euforia ti riempie i polmoni, senti la gioia di sapere che non sei mai stata davvero sola.
+    Hai voglia di cantare.
+    Questo spingerà il fungo altrove, verso altre streghe, altre compagne.
+    + + È il momento di cantare.
+            Puoi farlo da te, o chiamare qualcuno a cui tieni.
+            Riempiti dell'euforia del fungo, e lascia che il mondo intero ascolti la tua voce.
+            Con l'ultima nota, il fungo sarà altrove, da un'altra compagna bisognosa.
+            ~ fungoInCrescita = false
+            -> main
+    + + No, non ora.
+        -> main
 
 === pianta_quattro
 Hai trovato una pianta quatto

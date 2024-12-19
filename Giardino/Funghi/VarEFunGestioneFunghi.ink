@@ -89,7 +89,8 @@ VAR coltivazioniZ = ()
 
 
 -> hub_funghi
-T_RANDOM(pianteCollaborazione ^ pianteCiclicità)
+, ciclicità):
+        ~ fungoProposto = LIST_RANDOM(pianteCollaborazione ^ pianteCiclicità)
         -> da_lista_a_coltivazioni
         
     - tipoColtivazioni == (collaborazione, novità):
@@ -231,8 +232,8 @@ T_RANDOM(pianteCollaborazione ^ pianteCiclicità)
         -> lichene_degli_abissi
     - muschioDelleAmanti:
         -> muschio_delle_amanti
-    - tre:
-        -> pianta_tre
+    - cantoDelleCompagne:
+        -> canto_delle_compagne
     - quattro:
         -> pianta_quattro
     - cinque:
