@@ -41,13 +41,7 @@
     ~ return "una banana"
 - pera: 
     ~ return "una pera"
+- muschiodelleamanti:
+    ~ return "del muschio delle amanti"
+
 }
-
-
-    //TEST FALLITO: Lo step potrebbe essere: controllo quanti elementi ci sono in doniTrovati. Printo il primo ingrediente, faccio un check per la punteggiatura: se è l'ultimo ingrediente, metto il punto, altrimenti la virgola.
-    //=== function prova
-    //~ temp ingrediente = doniTrovati
-    //{
-    //  - ingrediente == LIST_MAX(doniTrovati):.
-    // - else:,  
-    //}

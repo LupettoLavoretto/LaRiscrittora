@@ -16,9 +16,10 @@
 
 === gestione_inventario ===
 {debug: I doni trovati sono {doniTrovati}}
-+ {doniTrovati has banana} Doni una banana
-    ~ doniTrovati -= banana
-    ~ doniDonati += banana
++ {doniTrovati has muschiodelleamanti} Doni del muschio delle amanti.
+    ~ doniTrovati -= muschiodelleamanti
+    ~ doniDonati += muschiodelleamanti
+    TODO: settare ipotetica reazione.
     {
     - storiaDue == InCorso:
         ~ statoInchiostroSpettroDue ++

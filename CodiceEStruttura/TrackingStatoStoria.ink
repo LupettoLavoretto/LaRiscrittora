@@ -46,7 +46,10 @@ VAR eventoSpecialeSpettroSette = false
 //Liste per la gestione dei doni agli spettri
 //Nota: doniNonTrovati sono i doni che verranno dati da eventi, anime etc.
 //doniNonTrovatiLuogo sono quelli assegnati invece in modo randomico da un luogo
-LIST doni = mela, pera, fungo, banana, ocelot
+//dato che alcuni doni possono venire da altre liste (es: serra), la nomenclatura qui sarà tutta in minuscolo
+//Doni: lista di tutti i possibili doni.
+LIST doni = muschiodelleamanti, mela, pera, fungo, banana, ocelot
+//doniNonTrovati: Lista di tutti i doni che sono randomici, che non vengono da altre situazioni (es: muschiodelleamanti)
 VAR doniNonTrovati = (ocelot)
 VAR doniNonTrovatiLuogo = (fungo, banana, mela, pera)
 VAR doniTrovati = ()

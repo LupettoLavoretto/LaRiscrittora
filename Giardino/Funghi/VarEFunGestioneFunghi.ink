@@ -89,11 +89,11 @@ VAR coltivazioniZ = ()
 
 
 -> hub_funghi
-cità)
+T_RANDOM(pianteCollaborazione ^ pianteCiclicità)
         -> da_lista_a_coltivazioni
         
-    - tipoColtivazioni == (collaborazione, stabilità):
-        ~ fungoProposto = LIST_RANDOM(pianteCollaborazione ^ pianteStabilità)
+    - tipoColtivazioni == (collaborazione, novità):
+        ~ fungoProposto = LIST_RANDOM(pianteCollaborazione ^ pianteNovità)
         -> da_lista_a_coltivazioni    
         
     - tipoColtivazioni == (collaborazione, cancellazione):
@@ -112,8 +112,8 @@ cità)
         {fungoProposto}
         -> da_lista_a_coltivazioni
                 
-    - tipoColtivazioni == (indipendenza, stabilità):
-        ~ fungoProposto = LIST_RANDOM(pianteIndipendenza ^ pianteStabilità)
+    - tipoColtivazioni == (indipendenza, novità):
+        ~ fungoProposto = LIST_RANDOM(pianteIndipendenza ^ pianteNovità)
         {fungoProposto}
         -> da_lista_a_coltivazioni
         
@@ -141,13 +141,13 @@ cità)
         
         
     
-    - tipoColtivazioni == (stabilità, cancellazione):
-        ~ fungoProposto = LIST_RANDOM(pianteStabilità ^ pianteCancellazione)
+    - tipoColtivazioni == (novità, cancellazione):
+        ~ fungoProposto = LIST_RANDOM(pianteNovità ^ pianteCancellazione)
         {fungoProposto}
         -> da_lista_a_coltivazioni
         
-    - tipoColtivazioni == (stabilità, ricordo):
-        ~ fungoProposto = LIST_RANDOM(pianteStabilità ^ pianteRicordo)
+    - tipoColtivazioni == (novità, ricordo):
+        ~ fungoProposto = LIST_RANDOM(pianteNovità ^ pianteRicordo)
         {fungoProposto}
         -> da_lista_a_coltivazioni    
         
@@ -229,8 +229,8 @@ cità)
 {fungoProposto:
     - licheneDegliAbissi:
         -> lichene_degli_abissi
-    - due:
-        -> pianta_due
+    - muschioDelleAmanti:
+        -> muschio_delle_amanti
     - tre:
         -> pianta_tre
     - quattro:

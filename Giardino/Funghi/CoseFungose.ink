@@ -1,7 +1,7 @@
 === lichene_degli_abissi
 TODO: quando ho capito come voglio gestire il tempo nel gioco, lo implemento qui. A quel punto i tre step non sono scelte ma cose che avanzano man mano.
+//Collaborazione, ciclicità, cancellazione
     Una punticina bluastra emerge dal terreno.
-    Collaborazione, ciclicità, cancellazione
     + Step uno
         Un odore salmastro si diffonde per la serra.
         -> main
@@ -17,21 +17,34 @@ TODO: quando ho capito come voglio gestire il tempo nel gioco, lo implemento qui
                 Un piccolo sbuffo. Le tue dita ora sanno di mare.
                 Il lichene è scomparso, tu no.
                 C'è qualcuno che devi allontanare?
-            ~ fungoInCrescita = false
+                ~ fungoInCrescita = false
             + + Lo lasci dov'è.
             - -
             -> main
 
-=== pianta_due
-Hai trovato una pianta due
-Collaborazione, stabilità, ricordo
+=== muschio_delle_amanti
+//Collaborazione, novità, ricordo
+È solo una tua impressione, o i rami hanno iniziato a brillare?
 + Step uno
+    C'è una polvere ramata, brillante, che scende da alcuni rami.
     -> main
 + Step due
+    La polvere si è intrecciata, arrotolata, come a formare dei fili.
     -> main
-+ Step tre: il fungo è pronto!
-    ~ fungoInCrescita = false
-    -> main
++ Step tre.
+    Senti un fremito nel ventre. I rami ora sono coperti da un fitto tappeto del color dell'alba.
+    Quando lo sfiori le tue labbra tremano, ricordi ti invadono: quel bacio, quelle dita desiderate tra le coscie.
+    Pienezza ti riempie: è per forza del muschio delle amanti.
+    Potresti portarne un po' con te, sapendo che sparirà.
+    O lasciarlo qui sull'albero.
+        + + Raccogli un po' di muschio.
+        Così vicino, il muschio ti chiama.
+        Ti invita a fermare per un attimo tutto, a premiare come più ti piace il tuo corpo, dentro o fuori che sia.
+        ~ fungoInCrescita = false
+        ~ doniTrovati += muschiodelleamanti
+        + + Non è ancora il momento.
+        - -
+        -> main
 
 
 === pianta_tre
@@ -47,7 +60,7 @@ Collaborazione, ciclicità, ricordo
 
 === pianta_quattro
 Hai trovato una pianta quatto
-Indipendenza, stabilità, cancellazione
+Indipendenza, novità, cancellazione
 + Step uno
     -> main
 + Step due
@@ -58,7 +71,7 @@ Indipendenza, stabilità, cancellazione
 
 === pianta_cinque
 Hai trovato una pianta cinque
-Indipendenza, stabilità, cancellazione
+Indipendenza, novità, cancellazione
 + Step uno
     -> main
 + Step due

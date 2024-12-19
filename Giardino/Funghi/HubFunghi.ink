@@ -22,7 +22,15 @@ Ti prendi cura dei funghi
 Check se funghi in crescita o meno.
 Se non in crescita, posso metterne uno nuovo
 
-->-> in crescita|Ci sei solo tu, coi tuoi pensieri}.
+->->nuti_inventario
+
+    + [Te ne vai]
+        -> main
+
+
+
+=== pre_test
+    {~ In questo momento, l'orto è vuoto|Non c'è nulla in crescita|Ci sei solo tu, coi tuoi pensieri}.
     + [Vuoi elaborare qualcosa di nuovo]
         -> test_coltivazioni
     + [Te ne vai]
