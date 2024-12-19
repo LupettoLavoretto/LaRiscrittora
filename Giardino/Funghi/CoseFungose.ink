@@ -1,5 +1,5 @@
 === lichene_degli_abissi
-TODO: quando ho capito come voglio gestire il tempo nel gioco, lo implemento qui. A quel punto i tre step non sono scelte ma cose che avanzano man mano.
+TODO: quando ho capito come voglio gestire il tempo nel gioco, lo implemento qui. A quel punto i tre step non sono scelte ma cose che avanzano man mano. Non serve che sia esplicito, al contrario, è piuttosto qualcosa che uso per me, per far in modo che alcune cose accadano "dopo un po'". Plausibilmente questo è vero per la serra e forse anche per la zona delle tisane.
 //Collaborazione, ciclicità, cancellazione
 //Outcome: allontana qualcuno.
     Una punticina bluastra emerge dal terreno.
@@ -100,16 +100,13 @@ TODO: quando ho capito come voglio gestire il tempo nel gioco, lo implemento qui
             Falle la promessa, e se ne andrà.
             Ma se poi tradisci la promessa, la Spazzata tornerà ancora più forte.
             ~ inCrescita = false
-            {
-            - doniTrovati hasnt baccadellaaddolorata:
-            ~ doniTrovati += baccadellaaddolorata
-            }
         -> main
     + + Non ora.
         -> main
 
 === bacca_della_addolorata
 //Indipendenza, novità, cancellazione
+//Outcome: liberazione, invito ad avanzare
 + Step uno
     Una mano rugosa stritola il terreno, le sue dita sembrano arrivare a infinita profondità.
     -> main
@@ -124,19 +121,41 @@ TODO: quando ho capito come voglio gestire il tempo nel gioco, lo implemento qui
         La mano molla la sua presa, rivelandosi per quel che era dall'inizio: solo un insieme tenace di radici.
         Senti dalle tue spalle qualcosa sciogliersi, scivolare via: ora hai un po' meno paura di camminare.
         ~ inCrescita = false
+            {
+            - doniTrovati hasnt baccadellaaddolorata:
+            ~ doniTrovati += baccadellaaddolorata
+            }
         
         -> main
         + + Non è il momento.
         -> main
 
 
-=== pianta_sei
-Hai trovato una pianta sei
-Indipendenza, ciclicità, ricordo
+=== non_ti_scordar_di_te
+//Indipendenza, ciclicità, ricordo
+//Outcome: ricordo di chi non c'è più
 + Step uno
+    Su uno dei tronchi a terra è comparsa una sostanza viscosa, gelatinosa.
+    Non è invitante al tatto, ma l'aria attorno ti ricorda qualcosa: sigaro, tabacco forse?
+    O è canfora? O addirittura torta, o rabarbaro, o caffè.
+    Qualunque cosa sia, ti piace.
     -> main
 + Step due
+    La sostanza si è solidificata, e nel farlo il tronco è in più punti sparito.
+    No, non sparito: è trasparente.
+    Fili di vetro sembrano puntare verso il cielo.
     -> main
-+ Step tre: il fungo è pronto!
-    ~ inCrescita = false
-    -> main
++ Step tre
+    Tronco e sostanza sono una cosa sola: un fungo di vetro, dita che si sfiora e intrecciano lanciate verso il cielo.
+    Hai trovato un <i>Non ti scordar di te</i>.
+    Cresce su ciò che è passato, che non c'è più, per renderlo parte di sè.
+    Qualcosa di nuovo, eppure antico.
+    Quando sfiorisce, il ciclo ricomincia.
+    + + Intrecci le tue dita alle sue
+        Si sciolgono tra le tue mani, rilasciando di nuovo un profumo familiare.
+        Ti porti quel che rimane alle labbra: il tuo corpo viene invaso da fiducia e calore.
+        Senti in te chi non c'è più: siete parte della stessa storia.
+        ~ inCrescita = false
+        -> main
+    + + Non ora 
+        -> main

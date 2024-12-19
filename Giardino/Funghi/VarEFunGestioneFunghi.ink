@@ -1,13 +1,13 @@
 //Variabili per la gestione della serra
-LIST coltivazioni = licheneDegliAbissi, muschioDelleAmanti, cantoDelleCompagne, laSpazzata, baccaDellaAddolorata, sei
+LIST coltivazioni = licheneDegliAbissi, muschioDelleAmanti, cantoDelleCompagne, laSpazzata, baccaDellaAddolorata, nonTiScordarDiTe
 
 LIST tipoColtivazioni = collaborazione, ciclicità, novità, cancellazione, ricordo, indipendenza
 
 VAR pianteCollaborazione = (licheneDegliAbissi, muschioDelleAmanti, cantoDelleCompagne)
-VAR pianteCiclicità = (licheneDegliAbissi, cantoDelleCompagne, sei)
-VAR pianteIndipendenza = (laSpazzata, baccaDellaAddolorata, sei)
+VAR pianteCiclicità = (licheneDegliAbissi, cantoDelleCompagne, nonTiScordarDiTe)
+VAR pianteIndipendenza = (laSpazzata, baccaDellaAddolorata, nonTiScordarDiTe)
 VAR pianteNovità =(muschioDelleAmanti,laSpazzata, baccaDellaAddolorata)
-VAR pianteRicordo =(muschioDelleAmanti, cantoDelleCompagne, sei)
+VAR pianteRicordo =(muschioDelleAmanti, cantoDelleCompagne, nonTiScordarDiTe)
 VAR pianteCancellazione =(licheneDegliAbissi,laSpazzata, baccaDellaAddolorata)
 
     //Pianta che verrà proposta
@@ -172,8 +172,8 @@ L'aria si muove tra le fronde, portandoti storie lontane.
         -> la_spazzata
     - baccaDellaAddolorata:
         -> bacca_della_addolorata
-    - sei:
-        -> pianta_sei
+    - nonTiScordarDiTe:
+        -> non_ti_scordar_di_te
 }
 
 
