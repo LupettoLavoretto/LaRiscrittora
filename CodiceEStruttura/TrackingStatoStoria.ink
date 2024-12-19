@@ -49,8 +49,7 @@ VAR eventoSpecialeSpettroSette = false
 //dato che alcuni doni possono venire da altre liste (es: serra), la nomenclatura qui sarà tutta in minuscolo
 //Doni: lista di tutti i possibili doni.
 LIST doni = muschiodelleamanti, mela, pera, fungo, banana, ocelot
-//doniNonTrovati: Lista di tutti i doni che sono randomici, che non vengono da altre situazioni (es: muschiodelleamanti)
-VAR doniNonTrovati = (ocelot)
+VAR doniNonTrovati = (ocelot, muschiodelleamanti)
 VAR doniNonTrovatiLuogo = (fungo, banana, mela, pera)
 VAR doniTrovati = ()
 VAR doniDonati = ()

@@ -1,106 +1,90 @@
-//Variabili per la gestione della biblioteca
-LIST coltivazioni = fungone
-VAR coltivazioniColtivate = ()
-VAR coltivazioniX = ()
-VAR coltivazioniY = ()
-VAR coltivazioniZ = ()
-    //Libro che verrà proposto
+//Variabili per la gestione della serra
+LIST coltivazioni = licheneDegliAbissi, muschioDelleAmanti, cantoDelleCompagne, laSpazzata, cinque, sei
+
+LIST tipoColtivazioni = collaborazione, ciclicità, novità, cancellazione, ricordo, indipendenza
+
+VAR pianteCollaborazione = (licheneDegliAbissi, muschioDelleAmanti, cantoDelleCompagne)
+VAR pianteCiclicità = (licheneDegliAbissi, cantoDelleCompagne, sei)
+VAR pianteIndipendenza = (laSpazzata, cinque, sei)
+VAR pianteNovità =(muschioDelleAmanti,laSpazzata, cinque)
+VAR pianteRicordo =(muschioDelleAmanti, cantoDelleCompagne, sei)
+VAR pianteCancellazione =(licheneDegliAbissi,laSpazzata, cinque)
+
+    //Pianta che verrà proposta
     VAR fungoProposto = ()
+    
+//Variabili per la gestione del test
+VAR counter = 0
+VAR firstQuest = false
+VAR secondQuest = false
+VAR thirdQuest = false
+
+//Variabili monitoraggio stato vegetali
+VAR inCrescita = false
     
 
 === test_coltivazioni ===
-{~ Ho bisogno di lasciare nel passato|Vorrei dimenticare|Non ho più bisogno di}
-+ {coltivazioniX != ()}<>qualcosa che riguarda il lavoro
-    + + {coltivazioniX ^ coltivazioniZ != ()} Con qualcosa di z
-        ~ fungoProposto = LIST_RANDOM(coltivazioniX ^ coltivazioniZ)
-        {fungoProposto}
-        ~ coltivazioniX -= fungoProposto
-        ~ coltivazioniZ -= fungoProposto
-        ~ libriLetti += fungoProposto
-        -> da_lista_a_coltivazioni
-    + + {coltivazioniX ^ coltivazioniY!= ()} Con qualcosa di y    
-        ~ fungoProposto = LIST_RANDOM(coltivazioniX ^ coltivazioniY)
-        {fungoProposto}
-        ~ coltivazioniX -= fungoProposto
-        ~ coltivazioniY -= fungoProposto
-        ~ libriLetti += fungoProposto
-        ->da_lista_a_coltivazioni
-    + + No, vorrei qualcosa di diverso!
-        -> test_libri
+Sassi, foglie e acqua ha qualcosa da raccontarti.
+L'aria si muove tra le fronde, portandoti storie lontane.
+    -> test
 
-+ {coltivazioniY != ()}<>qualcosa che riguarda la spiritualità
-    + + {coltivazioniY ^ coltivazioniZ != ()} Con qualcosa di z
-        ~ fungoProposto = LIST_RANDOM(coltivazioniY ^ coltivazioniZ)
-        ~ coltivazioniZ -= fungoProposto
-        ~ coltivazioniY -= fungoProposto
-        ~ libriLetti += fungoProposto
-        -> da_lista_a_coltivazioni
-    + + {coltivazioniX ^ coltivazioniY != ()} Con qualcosa di x    
-        ~ fungoProposto = LIST_RANDOM(coltivazioniX ^ coltivazioniY)
-        ~ coltivazioniX -= fungoProposto
-        ~ coltivazioniY -= fungoProposto
-        ~ libriLetti += fungoProposto
-        -> da_lista_a_coltivazioni
-    + + No, vorrei qualcosa di diverso!
-        -> test_libri
-        
+=== test
+{
+    - counter < 2: -> random
+    - counter == 2: -> results
+}
 
-+ {coltivazioniZ != ()}<>qualcosa che riguarda gli affetti
-    + + {coltivazioniY ^ coltivazioniZ != ()} Con qualcosa di y
-        ~ fungoProposto = LIST_RANDOM(coltivazioniY ^ coltivazioniZ)
-        ~ coltivazioniZ -= fungoProposto
-        ~ coltivazioniY -= fungoProposto
-        ~ libriLetti += fungoProposto
-        -> da_lista_a_coltivazioni
-    + + {coltivazioniX ^ coltivazioniZ != ()} Con qualcosa di x    
-        ~ fungoProposto = LIST_RANDOM(coltivazioniX ^ coltivazioniZ)
-        ~ coltivazioniX -= fungoProposto
-        ~ coltivazioniZ -= fungoProposto
-        ~ libriLetti += fungoProposto
-        -> da_lista_a_coltivazioni
-    + + No, vorrei qualcosa di diverso!
-        -> test_libri
-        
-+ {libriLetti != ()} Vorrei qualcosa che ho già letto
-        -> rilettura
-+ Mmm, mi è passata la voglia di leggere
-    -> hub_biblioteca
--
--> DONE
+= random
+~ temp dice = RANDOM(1,3)
+{dice:
+    - 1:
+        -> first_question
+    - 2: 
+        -> second_question
+    - 3:
+        -> third_question
 
-=== da_lista_a_coltivazioni ===
-{fungoProposto:
-    - libroAnna:
-        -> libro_anna
-    - libroCeci:
-        ->libro_ceci
-    - libroGabri:
-        -> libro_gabri
-    - libroGreta:
-        -> libro_greta
-
-    - else: Non ho trovato un fungoProposto adatto, mi spiace
-    -> test_libri
-    
 }
 
 
--> DONE
-
-
--> hub_funghi
-~ È ferma, mossa solo sulla superficie|È torbida|È piena di foglie e petali}]
-            ~ tipoColtivazioni += ricordo
-        -   
+    = first_question
+        Sul terreno le foglie e i sassi...
+            + [{~ Si sfiorano|Si perdono gli uni nelle altre}]
+                ~ tipoColtivazioni += collaborazione
+            + [{~ Si osservano distaccati|Difendono i propri confini}]
+                ~ tipoColtivazioni += indipendenza    
+            -   
             ~ counter ++
             -> test
-     
- 
+    
+    = second_question
+        L'aria...
+            + [{~ Insegue sé stessa, gioca con le foglie creando mulinelli|Ruota e ruzzola portando odori dal passato}]
+                ~ tipoColtivazioni += ciclicità
+            + [{~ È scoppiettante, fremente, carica di elettricità|Esplora cautamente ogni angolo della serra}]
+                ~ tipoColtivazioni += novità    
+            -   
+            ~ counter ++
+            -> test
+    
+
+    = third_question
+        L'acqua...
+            + [{~ È ferma, mossa solo sulla superficie|È torbida|È piena di foglie e petali}]
+                ~ tipoColtivazioni += ricordo
+            + [{~ È ferma, mossa solo sulla superficie|È torbida|È piena di foglie e petali}]
+                ~ tipoColtivazioni += cancellazione    
+            -   
+            ~ counter ++
+            -> test
+
+
+
  
  === results
- ~ one = false
- ~ two = false
- ~ three = false
+ ~ firstQuest = false
+ ~ secondQuest = false
+ ~ thirdQuest = false
  ~ counter = 0
  ~ inCrescita = true
  
