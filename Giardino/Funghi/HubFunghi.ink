@@ -12,7 +12,7 @@
     -
     
 {
-    - inCrescita:
+    - fungoProposto != ():
         ->cura
     - else:
         -> pre_test
