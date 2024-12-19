@@ -2,10 +2,10 @@
 {
     - fungoProposto has licheneDegliAbissi:
     {
-        - crescita <5: -> lichene_degli_abissi.step_uno
-        - crescita <8: -> lichene_degli_abissi.step_due
-        - crescita <10: -> lichene_degli_abissi.step_tre
-        - crescita <20: -> lichene_degli_abissi.step_quattro
+        - inCrescita <5: -> lichene_degli_abissi.step_uno
+        - inCrescita <8: -> lichene_degli_abissi.step_due
+        - inCrescita <10: -> lichene_degli_abissi.step_tre
+        - inCrescita <20: -> lichene_degli_abissi.step_quattro
     }
 }
 
