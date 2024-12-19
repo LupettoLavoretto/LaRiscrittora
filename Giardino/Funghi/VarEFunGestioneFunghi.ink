@@ -36,17 +36,20 @@ L'aria si muove tra le fronde, portandoti storie lontane.
 = random
 ~ temp dice = RANDOM(1,3)
 {dice:
-    - 1:
+    - 1 && !firstQuest:
         -> first_question
-    - 2: 
+    - 2 && !secondQuest: 
         -> second_question
-    - 3:
+    - 3 && !thirdQuest:
         -> third_question
-
+    - else:
+        -> random
 }
 
 
     = first_question
+     ~ firstQuest = true
+ 
         Sul terreno le foglie e i sassi...
             + [{~ Si sfiorano|Si perdono gli uni nelle altre}]
                 ~ tipoColtivazioni += collaborazione
@@ -57,6 +60,8 @@ L'aria si muove tra le fronde, portandoti storie lontane.
             -> test
     
     = second_question
+    ~ secondQuest = true
+
         L'aria...
             + [{~ Insegue sé stessa, gioca con le foglie creando mulinelli|Ruota e ruzzola portando odori dal passato}]
                 ~ tipoColtivazioni += ciclicità
@@ -68,10 +73,11 @@ L'aria si muove tra le fronde, portandoti storie lontane.
     
 
     = third_question
+     ~ thirdQuest = true
         L'acqua...
             + [{~ È ferma, mossa solo sulla superficie|È torbida|È piena di foglie e petali}]
                 ~ tipoColtivazioni += ricordo
-            + [{~ È ferma, mossa solo sulla superficie|È torbida|È piena di foglie e petali}]
+            + [{~ Scava, portando con sé il terriccio|Schiaccia foglie e sassi|La sua voce è potente}]
                 ~ tipoColtivazioni += cancellazione    
             -   
             ~ counter ++
