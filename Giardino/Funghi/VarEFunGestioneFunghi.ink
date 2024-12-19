@@ -10,7 +10,7 @@ VAR pianteNovità =(muschioDelleAmanti,laSpazzata, baccaDellaAddolorata)
 VAR pianteRicordo =(muschioDelleAmanti, cantoDelleCompagne, nonTiScordarDiTe)
 VAR pianteCancellazione =(licheneDegliAbissi,laSpazzata, baccaDellaAddolorata)
 
-    //Pianta che verrà proposta
+    //Pianta che verrà proposta. La uso anche per tracking dello stato delle piante.
     VAR fungoProposto = ()
     
 //Variabili per la gestione del test
@@ -20,8 +20,7 @@ VAR secondQuest = false
 VAR thirdQuest = false
 
 //Variabili monitoraggio stato vegetali
-VAR inCrescita = false
-    
+VAR inCrescita = 0    
 
 === test_coltivazioni ===
 Sassi, foglie e acqua ha qualcosa da raccontarti.
@@ -86,7 +85,7 @@ L'aria si muove tra le fronde, portandoti storie lontane.
  ~ secondQuest = false
  ~ thirdQuest = false
  ~ counter = 0
- ~ inCrescita = true
+ ~ inCrescita = 1
  
     {
     - tipoColtivazioni == (collaborazione, ciclicità):

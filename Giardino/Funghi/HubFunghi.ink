@@ -29,7 +29,7 @@
 
 
 === cura
-    Ti prendi cura del giardino.
+    Ti prendi cura della serra.
     {~ L'aria sembra più dolce oggi|Da qualche parte, tra le foglie, qualcosa canta|Piccole luci sfarfallano sopra il terreno}.
     TODO: inserire stato del fungo in corso.
     + [Te ne vai]
