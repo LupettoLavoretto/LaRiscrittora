@@ -9,7 +9,8 @@ COSE TECNICHE/STRUTTURALE DA DECIDERE E RISOLVERE
 Prioritari
     * Capire se con una lista o che c'è un modo più sensato di gestire i doni spettro per spettro
     * Capire meglio la natura del luogo dei funghi etc, sia per l'estetica che per le parole descriventi
-
+    * Una volta che il test è finito, serve una frasina
+    * Risolvere problema inventario
 Con calma
     * A tempo perso, caricare a ruota nomi nella lista:
         Nomi di più generi e nazionalità possibili

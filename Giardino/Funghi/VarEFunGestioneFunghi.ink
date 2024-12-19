@@ -98,53 +98,43 @@ L'aria si muove tra le fronde, portandoti storie lontane.
         
     - tipoColtivazioni == (collaborazione, cancellazione):
         ~ fungoProposto = LIST_RANDOM(pianteCollaborazione ^ pianteCancellazione)
-        {fungoProposto}
         -> da_lista_a_coltivazioni
         
     - tipoColtivazioni == (collaborazione, ricordo):
         ~ fungoProposto = LIST_RANDOM(pianteCollaborazione ^ pianteRicordo)
-        {fungoProposto}
         -> da_lista_a_coltivazioni
         
         
     - tipoColtivazioni == (indipendenza, ciclicità):
         ~ fungoProposto = LIST_RANDOM(pianteIndipendenza ^ pianteCiclicità)
-        {fungoProposto}
         -> da_lista_a_coltivazioni
                 
     - tipoColtivazioni == (indipendenza, novità):
         ~ fungoProposto = LIST_RANDOM(pianteIndipendenza ^ pianteNovità)
-        {fungoProposto}
         -> da_lista_a_coltivazioni
         
     - tipoColtivazioni == (indipendenza, cancellazione):
             ~ fungoProposto = LIST_RANDOM(pianteIndipendenza ^ pianteCancellazione)
-            {fungoProposto}
         -> da_lista_a_coltivazioni
         
     - tipoColtivazioni == (indipendenza, ricordo):
         ~ fungoProposto = LIST_RANDOM(pianteIndipendenza ^ pianteRicordo)
-        {fungoProposto}
         -> da_lista_a_coltivazioni
         
     - tipoColtivazioni == (ciclicità, cancellazione):
         ~ fungoProposto = LIST_RANDOM(pianteCiclicità ^ pianteCancellazione)
-        {fungoProposto}
         -> da_lista_a_coltivazioni
         
     - tipoColtivazioni == (ciclicità, ricordo):
         ~ fungoProposto = LIST_RANDOM(pianteCiclicità ^ pianteRicordo)
-        {fungoProposto}
         -> da_lista_a_coltivazioni
         
     - tipoColtivazioni == (novità, cancellazione):
         ~ fungoProposto = LIST_RANDOM(pianteNovità ^ pianteCancellazione)
-        {fungoProposto}
         -> da_lista_a_coltivazioni
         
     - tipoColtivazioni == (novità, ricordo):
         ~ fungoProposto = LIST_RANDOM(pianteNovità ^ pianteRicordo)
-        {fungoProposto}
         -> da_lista_a_coltivazioni    
         
     - else: 
