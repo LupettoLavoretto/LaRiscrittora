@@ -89,7 +89,7 @@ VAR coltivazioniZ = ()
 
 
 -> hub_funghi
-OM(pianteCollaborazione ^ pianteCancellazione)
+oProposto = LIST_RANDOM(pianteCollaborazione ^ pianteCancellazione)
         {fungoProposto}
         -> da_lista_a_coltivazioni
         

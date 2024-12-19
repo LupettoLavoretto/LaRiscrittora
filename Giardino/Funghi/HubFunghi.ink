@@ -32,4 +32,5 @@ Se non in crescita, posso metterne uno nuovo
 === cura
     Ti prendi cura del giardino.
     {~ L'aria sembra più dolce oggi|Da qualche parte, tra le foglie, qualcosa canta|Piccole luci sfarfallano sopra il terreno}.
-    -> hub_funghi 
+    + [Te ne vai]
+    -> main

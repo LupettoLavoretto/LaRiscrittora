@@ -25,3 +25,4 @@
     = stitch_tre
         + Terzo contenuto anima uno
     ->->
+ ->main
