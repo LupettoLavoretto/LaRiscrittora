@@ -31,6 +31,6 @@
 === cura
     Ti prendi cura della serra.
     {~ L'aria sembra più dolce oggi|Da qualche parte, tra le foglie, qualcosa canta|Piccole luci sfarfallano sopra il terreno}.
-    TODO: inserire stato del fungo in corso.
+    -> plant_check -> 
     + [Te ne vai]
     -> main
