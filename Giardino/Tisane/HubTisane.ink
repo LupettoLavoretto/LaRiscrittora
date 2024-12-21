@@ -8,3 +8,7 @@ Eccoci: è il momento di una bella tisana
     -
     
 -> hub_tisane
+        -> contenuti_inventario
+    -
+    
+-> hub_tisane

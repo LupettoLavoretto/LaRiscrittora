@@ -7,16 +7,16 @@ COSE DA INSERIRE E VALUTARE A LIVELLO DI STORIA
 
 COSE TECNICHE/STRUTTURALE DA DECIDERE E RISOLVERE
 Prioritari
-    * Capire se con una lista o che c'è un modo più sensato di gestire i doni spettro per spettro
-    * Capire meglio la natura del luogo dei funghi etc, sia per l'estetica che per le parole descriventi
-    * Una volta che il test è finito, serve una frasina
-    * Risolvere problema inventario
+
 Con calma
     * A tempo perso, caricare a ruota nomi nella lista:
         Nomi di più generi e nazionalità possibili
+        
     * Modi per proporre libri (con tag) nella biblioteca:
-        -> fatto, manca qualcosa che riduca la quantità di scelte a disposizione, creando la situa: tasto per scelta a, tasto per scelta b, tasto per scelta c, tasto per avere altre proposte, tasto per uscire. Non è comunque urgente, anzi.    
-    * I quadri si popolano randomicamente attraverso Unity (es: sulla parete del locale dove preparo la tisana) o sono scelte come i libri
+        -> fatto, manca qualcosa che riduca la quantità di scelte a disposizione, creando la situa: tasto per scelta a, tasto per scelta b, tasto per scelta c, tasto per avere altre proposte, tasto per uscire. Non è comunque urgente, anzi.
+        --->>> Il modo in cui ho gestito la cosa coi funghi potrebbe funzionare molto bene ed essere più stimolante :D
+        
+        
     * Per i consigli di lettura, eventualmente mettere un limite al numero di domande che possono essere fatte?
     *Pensare a dove posizionare il canto finale
     * Pensare a Storylet che si attivano se Mentore e anime sono assieme
