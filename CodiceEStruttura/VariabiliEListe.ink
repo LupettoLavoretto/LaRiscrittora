@@ -1,5 +1,5 @@
 //Per abilitare o meno il debug
-VAR debug = false
+VAR debug = true
 
 //Nome giocatrice e pronomi
 VAR nome = ""
@@ -20,7 +20,7 @@ VAR contenutoFunghi = ()
 VAR contenutoLabirinto = ()
 VAR contenutoTisane = ()
 VAR contenutoSirene = ()
-VAR contenutoCasettaAnime = (AnimaUno, AnimaDue, AnimaTre, AnimellaUno)
+VAR contenutoCasettaAnime = (AnimaUno, AnimaDue, AnimaTre, AnimellaUno, AnimellaDue, AnimellaTre)
 
     
 //Variabili per tracciare i trigger warning. True = non è TW, posso mostrare quelle storie
