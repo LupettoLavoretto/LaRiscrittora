@@ -3,11 +3,11 @@
 
     =inventarietto
     Hai con te {list_with_commas(doniTrovati)}.
-    -> doveDevoTornare
+    -> main
 
     = vuoto
     L'inventario è vuoto
-    -> doveDevoTornare
+    -> main
 
 
 
@@ -97,11 +97,11 @@ TODO: settare valori oggetti creati
         ~ statoInchiostroSpettroTre ++
         Spettro tre apprezza mediamente il tuo dono.
     }
-    -> doveDevoTornare
+    -> main
     
     //Se la lista è vuota
     + {doniTrovati == ()} Non hai nulla da donare
-    + Mmm, per ora passo -> doveDevoTornare   
+    + Mmm, per ora passo -> main 
     + ->
     - 
--> doveDevoTornare
+-> main

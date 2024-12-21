@@ -90,7 +90,7 @@
     ~ temp entity2_location = entity_location(entity2)
     ~ move_entity(entity1, entity2_location)
     
-
+/*
 === doveDevoTornare ===
 {
     - contenutoGiardino has PG:
@@ -115,6 +115,7 @@
 }
 
 -> DONE
+*/
 
     
     
