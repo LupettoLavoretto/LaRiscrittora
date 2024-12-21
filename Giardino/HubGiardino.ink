@@ -17,11 +17,9 @@
 
 -> main
 
-
+//Passiamo da qui solo a inizio del gioco.
 === inizio
 La storia inizia ora
-    + scelta
-    + scelta
     + Qualcuno ti osserva: gli parli
         -> presentazioni
     -

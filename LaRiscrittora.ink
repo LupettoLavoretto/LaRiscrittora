@@ -95,8 +95,8 @@ INCLUDE Giardino/Biblioteca/RaccontoQuattro.ink
 INCLUDE Giardino/Biblioteca/GestioneBiblioteca.Ink.ink
 
 
-//Luogo di partenza della storia
--> main
+//Punto di partenza della storia
+-> inizio
 
 
 

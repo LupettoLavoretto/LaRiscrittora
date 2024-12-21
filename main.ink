@@ -15,8 +15,11 @@
 <- animella_due
 <- animella_tre
 
+//Spostamenti
+<- move_between_rooms(my_location)
+
 //Inventario
 <- contenuti_inventario
 
-<- move_between_rooms(my_location)
+
 + -> main
