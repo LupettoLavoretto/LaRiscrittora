@@ -1,4 +1,5 @@
 //Liste per gestire i luoghi dove troviamo il mentore
+//NOTA: IL MENTORE NON COMPARE MAI NEL LABIRINTO, QUELLO è SPAZIO PRIVATO
 VAR luoghiMentorePrimoTier =(Giardino, Mausoleo, Funghi)
 VAR luoghiMentoreSecondoTier =(Giardino, Mausoleo, Funghi, Falene)
 VAR luoghiMentoreTerzoTier = (Giardino, Mausoleo, Biblioteca, Falene, Funghi, Tisane, Sirene)
@@ -7,7 +8,6 @@ VAR mentore_location = ()
     
 
 === random_luogo_mentore
-//NOTA: IL MENTORE NON COMPARE MAI NEL LABIRINTO, QUELLO è SPAZIO PRIVATO
 //Ho una lista di luoghi che svuoto e poi resetto, così che sia percepibile come effettivamente randomica
 //Quando poi avrò le storie un attimo settate, andranno risistemate le condizioni del cambio tier
 
