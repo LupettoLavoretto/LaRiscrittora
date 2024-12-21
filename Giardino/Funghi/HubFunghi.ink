@@ -1,12 +1,6 @@
 === hub_funghi ===
-~ temp my_location = entity_location(PG)
-    TODO: è possibile che queste tre cose possano venire chiamate in una funzione temporale? O in qualcosa di accorpato? O in realtà, più plausibilmente, in rapporto al "main"
-    -> random_luogo_mentore ->
-    -> comparsa_anime ->
     -> randomizzazione_dono_luoghi ->
 
-    <- move_between_rooms(my_location)
-    <- mentore
     <- contenuti_inventario
     
     -
