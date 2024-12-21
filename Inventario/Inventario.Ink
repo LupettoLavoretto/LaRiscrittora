@@ -15,11 +15,11 @@
 
 
 === gestione_inventario ===
+TODO: settare valori oggetti creati
 {debug: I doni trovati sono {doniTrovati}}
 + {doniTrovati has muschiodelleamanti} Doni del muschio delle amanti.
     ~ doniTrovati -= muschiodelleamanti
     ~ doniDonati += muschiodelleamanti
-    TODO: settare ipotetica reazione.
     {
     - storiaDue == InCorso:
         ~ statoInchiostroSpettroDue ++
@@ -42,7 +42,6 @@
 + {doniTrovati has baccadellaaddolorata} Doni una bacca della Addolorata
     ~ doniTrovati -= baccadellaaddolorata
     ~ doniDonati += baccadellaaddolorata
-    TODO: settare valori
     {
     - storiaUno == InCorso:
         ~ statoInchiostroSpettroUno --
