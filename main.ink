@@ -1,6 +1,6 @@
 === main
-~ temp my_location = entity_location(PG)
 @interact
+~ temp my_location = entity_location(PG)
 
 //Dialoghi del mentore
 <- mentore
@@ -15,6 +15,8 @@
 <- animella_due
 <- animella_tre
 
+//Inventario
+<- contenuti_inventario
 
 <- move_between_rooms(my_location)
 + -> main

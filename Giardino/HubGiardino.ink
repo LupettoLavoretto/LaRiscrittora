@@ -5,14 +5,12 @@
 //Troveremo sempre un piccolo descrittore (randomico o meno, da vedere)
 
 //Solo a inizio storia partirà la parte di "intro", utile a dare un benvenuto
-
-<- mentore
-    + Ti siedi sulla panchina -> panchina
-    + {doniTrovati != ()} Controlla li lista di oggetti che hai con te
-        -> contenuti_inventario
+    + Ti guardi attorno
+    + Ti siedi sulla panchina
+    -> panchina
     -
 
--> DONE
+-> main
 
 
 === panchina

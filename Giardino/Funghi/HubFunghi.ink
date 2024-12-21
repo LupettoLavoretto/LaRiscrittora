@@ -1,8 +1,5 @@
 === hub_funghi ===
     -> randomizzazione_dono_luoghi ->
-
-    <- contenuti_inventario
-    
     -
     
 {

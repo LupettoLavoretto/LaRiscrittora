@@ -1,4 +1,5 @@
 === contenuti_inventario ===
++ [Controlli l'inventario]
     {doniTrovati != (): -> inventarietto|->vuoto}
 
     =inventarietto
