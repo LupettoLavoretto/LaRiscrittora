@@ -54,14 +54,14 @@
 //Collaborazione, ciclicità, cancellazione
 //Outcome: allontana qualcuno.
     Una punticina bluastra emerge dal terreno.
-    ->->
+      -> main
     = step_uno
         Un odore salmastro si diffonde per la serra.
         Ora la punta è più grande, e attorno c'è un foro circolare.
-        ->->
+          -> main
     = step_due
         Il foro ha le dimensioni di un pugno, mentre la punta sembra roteare nell'aria a incredibile velocità, completamente silenziosa.
-        ->->
+          -> main
     = step_tre
         Eccolo qui. Un <i>Lichene degli abissi</i>.
         Il lichene degli abissi è una danza, un roteare costante di fungo ed alga. Un ripetersi anche nell'errore, nel dolore.
@@ -75,24 +75,24 @@
                 ~ fungoProposto = ()
             + + Lo lasci dov'è.
             - -
-            ->->
+              -> main
     = step_quattro
         Troppo tempo è passato, e non rimane che un foro nel terreno.
             ~ inCrescita = 0
             ~ fungoProposto = ()
-            ->->
+              -> main
 
 === muschio_delle_amanti
 //Collaborazione, novità, ricordo
 //Outcome: datti piacere
     È solo una tua impressione, o i rami hanno iniziato a brillare?
-    ->->
+      -> main
     = step_uno
         C'è una polvere ramata, brillante, che scende da alcuni rami.
-        ->->
+          -> main
     = step_due
         La polvere si è intrecciata, arrotolata, come a formare dei fili.
-        ->->
+          -> main
     = step_tre
         Senti un fremito nel ventre. I rami ora sono coperti da un fitto tappeto del color dell'alba.
         Quando lo sfiori le tue labbra tremano, ricordi ti invadono: quel bacio, quelle dita desiderate tra le coscie.
@@ -110,25 +110,24 @@
                 }
             + + Non è ancora il momento.
             - -
-            ->->
+             -> main
     = step_quattro
         Qualcosa ti titilla lo stomaco, ma qualunque cosa stesse crescendo, non c'è più.
         ~ inCrescita = 0
         ~ fungoProposto = ()
-        ->->
+          -> main
 
 === canto_delle_compagne
 //Collaborazione, ciclicità, ricordo
 //Outcome: canta, sola o con le compagne
-    ->->
     = step_uno
         Piccole palline rosse sul terreno caldo.
         L'umidità evapora creando una nebbiolina rossastra.
-        ->->
+          -> main
     = step_due
         Le palline ondeggiano nella nebbia ora, sospinte da un vento invisibile.
         Si rincorrono e si tuffano sul terreno, facendo come un suono di risata.
-        ->->
+          -> main
     = step_tre
         La serra tutta si è fatta rossa, uno stupendo <i>Canto delle compagne</i> galleggia sul terreno.
         In un altro tempo, più pauroso, questo fungo veniva chiamato
@@ -142,25 +141,24 @@
                 Con l'ultima nota, il fungo sarà altrove, da un'altra compagna bisognosa.
                 ~ inCrescita = 0
                 ~ fungoProposto = ()
-                ->->
+                  -> main
         + + No, non ora.
-            ->->
+              -> main
     = step_quattro
         Rimane un coro lontano dell'aria, nulla di più.
         ~ inCrescita = 0
         ~ fungoProposto = ()
-        ->->
+          -> main
 
 === la_spazzata
 //Indipendenza, novità, cancellazione
 //Outcome: prometti di dire qualcosa che ti pesa sullo stomaco.
-    ->->
     = step_uno
         Uh. Non vedi nulla. Forse qualcosa è andato storto?
-        ->->
+          -> main
     = step_due
         La serra è vuota, eppure qualcosa è cambiato. Le luci sono più tenui. Il soffitto di rami sfiora la tua testa.
-        ->->
+          -> main
     = step_tre
         Tutto scricchiola, gli alberi sembrano gemere dal dolore.
         Il terreno stesso è impacciato, crepato.
@@ -173,26 +171,25 @@
                 Ma se poi tradisci la promessa, la Spazzata tornerà ancora più forte.
                 ~ inCrescita = 0
                 ~ fungoProposto = ()
-            ->->
+              -> main
         + + Non ora.
-            ->->
+            -> main
     = step_quattro
         Il soffitto di rami sembra incavato. Ciò che c'era, ora non è più.
         ~ inCrescita = 0
         ~ fungoProposto = ()    
-        ->->
+          -> main
 
 
 === bacca_della_addolorata
 //Indipendenza, novità, cancellazione
 //Outcome: liberazione, invito ad avanzare
-    ->->
     = step_uno
         Una mano rugosa stritola il terreno, le sue dita sembrano arrivare a infinita profondità.
-        ->->
+          -> main
     = step_due
         Dalla troncatura della mano emergono piccoli rami ricolmi di fiorellini bianchi. Ogni volta che espiri, un fiorellino vola via.
-        ->->
+          -> main
     = step_tre
         Nè rami, nè fiori. Solo la mano, e una piccolissima bacca vermiglia.
         Hai trovato una <i>Bacca dell'addolorata</i>. Una pianta cara a chi ha finalmente trovato la sua strada, ma non riesce ad avanzare.
@@ -207,30 +204,29 @@
                 ~ doniTrovati += baccadellaaddolorata
                 }
             
-            ->->
+              -> main
             + + Non è il momento.
-            ->->
+              -> main
     = step_quattro
         Una mano tremante nel terreno, rinsecchita. Si sbriciola al primo soffio d'aria.            
         ~ inCrescita = 0
         ~ fungoProposto = ()
-        ->->
+          -> main
 
 === non_ti_scordar_di_te
 //Indipendenza, ciclicità, ricordo
 //Outcome: ricordo di chi non c'è più
-    ->->
     = step_uno
         Su uno dei tronchi a terra è comparsa una sostanza viscosa, gelatinosa.
         Non è invitante al tatto, ma l'aria attorno ti ricorda qualcosa: sigaro, tabacco forse?
         O è canfora? O addirittura torta, o rabarbaro, o caffè.
         Qualunque cosa sia, ti piace.
-        ->->
+          -> main
     = step_due
         La sostanza si è solidificata, e nel farlo il tronco è in più punti sparito.
         No, non sparito: è trasparente.
         Fili di vetro sembrano puntare verso il cielo.
-        ->->
+          -> main
     = step_tre
         Tronco e sostanza sono una cosa sola: un fungo di vetro, dita che si sfiora e intrecciano lanciate verso il cielo.
         Hai trovato un <i>Non ti scordar di te</i>.
@@ -243,14 +239,11 @@
             Senti in te chi non c'è più: siete parte della stessa storia.
                 ~ inCrescita = 0
                 ~ fungoProposto = ()
-            ->->
+              -> main
         + + Non ora 
-            ->->
+              -> main
     = step_quattro
         Malinconia. La sensazione di aver fatto tardi, di aver perso qualcosa di importante.
-        ~ inCrescita = 0
-        ~ fungoProposto = ()
-        ->->te.
         ~ inCrescita = 0
         ~ fungoProposto = ()
        -> main
