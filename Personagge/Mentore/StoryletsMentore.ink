@@ -17,6 +17,8 @@
 
     - are_entities_together_in(PG, Mentore, Mausoleo) && not prima_visita_mausoleo: -> prima_visita_mausoleo
  
+//Da creare: storylets per quando anime (non animelle) e Mentore sono assieme
+
 - else: ->->
 
 }
@@ -61,3 +63,4 @@
 
 ->->
 
+//Da creare: storylets per quando anime (non animelle) e Mentore sono assieme
