@@ -11,8 +11,8 @@ VAR counterLuoghi = 0
 
 //Funzione per randomizzare la comparsa di ogni tipo di anima
 === comparsa_anime
-//Anime e animelle devono comparire solo dopo la prima storia.
-{storiaUno != Conclusa: ->->}
+//Anime e animelle devono comparire solo dopo l'inizio della prima storia.
+{storiaUno == NonIniziata : ->->}
 //Anime e animelle non possono comparire nel Labirinto.
 {contenutoLabirinto has PG: ->->}
 ~ counterLuoghi ++
