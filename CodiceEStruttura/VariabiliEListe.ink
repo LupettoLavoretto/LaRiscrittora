@@ -1,3 +1,5 @@
+~ SEED_RANDOM(235)
+
 //Per abilitare o meno il debug
 VAR debug = false
 

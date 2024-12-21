@@ -22,9 +22,15 @@
         ~ return CasettaAnime                  
     - else:
         DEBUG: error, cannot find {entity} anywhere!
+        {contenutoCasettaAnime}
         ~ return 0
 }
 
+
+/*
+~ temp CurrentLocation = entity_location(PG)
+~ move_entity(AnimellaUno, CurrentLocation)
+*/
 //Funzione per spostare un'entità da un luogo a un altro
 === function move_entity(entity, destination)
 
