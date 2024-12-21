@@ -37,7 +37,7 @@ TODO: settare valori oggetti creati
         Spettro tre è disgustato dal tuo dono.
     }
     
-    ->->
+   -> main
 
 + {doniTrovati has baccadellaaddolorata} Doni una bacca della Addolorata
     ~ doniTrovati -= baccadellaaddolorata
@@ -52,7 +52,7 @@ TODO: settare valori oggetti creati
         ~ statoInchiostroSpettroTre ++
         Spettro tre apprezza mediamente il tuo dono.
     }
-    ->->    
+   -> main    
 
 + {doniTrovati has mela} Doni una mela
     ~ doniTrovati -= mela
@@ -67,7 +67,7 @@ TODO: settare valori oggetti creati
         ~ statoInchiostroSpettroTre ++
         Spettro tre apprezza mediamente il tuo dono.
     }
-    ->->
+   -> main
 
 + {doniTrovati has pera} Doni una pera
     ~ doniTrovati -= pera
@@ -82,7 +82,7 @@ TODO: settare valori oggetti creati
         ~ statoInchiostroSpettroTre ++
         Spettro tre apprezza mediamente il tuo dono.
     }
-    ->->
+   -> main
     
 + {doniTrovati has fungo} Doni un fungo
     ~ doniTrovati -= fungo

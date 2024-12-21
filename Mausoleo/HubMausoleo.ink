@@ -13,7 +13,7 @@ Sei nel mausoleo
     -
     -
     
--> hub_mausoleo
+-> main
 
 === lapidi
     <-lapide_uno
@@ -24,6 +24,6 @@ Sei nel mausoleo
     <-lapide_sei
     <-lapide_sette
     + Preferisci fare altro
-        -> hub_mausoleo
+        -> main
 
 -> DONE

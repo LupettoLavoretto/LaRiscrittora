@@ -250,4 +250,7 @@
         Malinconia. La sensazione di aver fatto tardi, di aver perso qualcosa di importante.
         ~ inCrescita = 0
         ~ fungoProposto = ()
-        ->->
+        ->->te.
+        ~ inCrescita = 0
+        ~ fungoProposto = ()
+       -> main

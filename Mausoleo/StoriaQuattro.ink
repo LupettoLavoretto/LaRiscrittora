@@ -11,7 +11,7 @@
             -> storia_quattro
         
         //opzione se c'è un'altra storia attiva
-        + {storiaTre == InCorso or storiaDue == InCorso or storiaQuattro == Conclusa} La quarta lapide appartiene a {effettivoStatoSpettroQuattro} -> hub_mausoleo
+        + {storiaTre == InCorso or storiaDue == InCorso or storiaQuattro == Conclusa} La quarta lapide appartiene a {effettivoStatoSpettroQuattro} -> main
         
         //opzione se questa storia è attiva
         + {storiaQuattro == InCorso} Il fantasma della quarta storia ti attende -> aiuto_storia_quattro
@@ -30,7 +30,7 @@
     //la storia in corso viene attivata, e le altre non saranno accessibili fino alla sua conclusione
     ~ storiaQuattro = InCorso
     Ascolti la quarta storia
-    -> hub_mausoleo
+    -> main
 
 
 
@@ -51,4 +51,4 @@
                 ~ effettivoStatoSpettroQuattro = NuovoStatoUnoQuattro
              + Non ho risolto la storia
              -
-        -> hub_mausoleo
+        -> main

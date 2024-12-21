@@ -77,3 +77,5 @@ VAR counterLuoghi = 0
 
 }
 -> DONE
+}
+-> main

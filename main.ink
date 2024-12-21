@@ -1,4 +1,7 @@
 === main
+-> random_luogo_mentore ->
+-> comparsa_anime ->
+
 @interact
 
 //Dialoghi del mentore

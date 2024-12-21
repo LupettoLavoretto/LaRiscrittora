@@ -17,4 +17,4 @@ Sei dalle falene
         -> contenuti_inventario
     -
     
--> hub_falene
+-> hub_falene-> main

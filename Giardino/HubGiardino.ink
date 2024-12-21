@@ -1,7 +1,5 @@
 === hub_giardino ===
 ~ temp my_location = entity_location(PG)
--> random_luogo_mentore ->
--> comparsa_anime ->
 
 //Questo è il punto che troveremo a inizio gioco, e che fa da hub centrale della storia.
 //Troveremo sempre un piccolo descrittore (randomico o meno, da vedere)
@@ -20,7 +18,7 @@
 
 === panchina
 
--> hub_giardino
+-> main
 
 
 === inizio
@@ -30,4 +28,4 @@ La storia inizia ora
     + Qualcuno ti osserva: gli parli
         -> presentazioni
     -
--> hub_giardino
+-> main

@@ -11,7 +11,7 @@
             -> storia_cinque
         
         //opzione se c'è un'altra storia attiva
-        + {storiaSei == InCorso or storiaSette == InCorso or storiaCinque == Conclusa} La quinta lapide appartiene a {effettivoStatoSpettroCinque} -> hub_mausoleo
+        + {storiaSei == InCorso or storiaSette == InCorso or storiaCinque == Conclusa} La quinta lapide appartiene a {effettivoStatoSpettroCinque} -> main
         
         //opzione se questa storia è attiva
         + {storiaCinque == InCorso} Il fantasma della quinta storia ti attende -> aiuto_storia_cinque
@@ -30,7 +30,7 @@
     //la storia in corso viene attivata, e le altre non saranno accessibili fino alla sua conclusione
     ~ storiaCinque = InCorso
     Ascolti la quinta storia
-    -> hub_mausoleo
+    -> main
 
 
 
@@ -51,4 +51,4 @@
                 ~ effettivoStatoSpettroCinque = NuovoStatoUnoCinque
              + Non ho risolto la storia
              -
-        -> hub_mausoleo
+        -> main

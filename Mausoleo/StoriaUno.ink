@@ -4,14 +4,14 @@
         -> storia_uno
     
     //opzione se c'è un'altra storia attiva
-    + {storiaUno == Conclusa} La prima lapide appartiene a {effettivoStatoSpettroUno} -> hub_mausoleo
+    + {storiaUno == Conclusa} La prima lapide appartiene a {effettivoStatoSpettroUno} -> main
     
     //opzione se questa storia è attiva
     + {storiaUno == InCorso} Il fantasma della prima storia ti attende -> aiuto_storia_uno
     
     + ->
     
-    -> DONE
+    -> main
 
 === storia_uno ===
     //la storia in corso viene attivata, e le altre non saranno accessibili fino alla sua conclusione
@@ -25,7 +25,7 @@
     E ti presenti
     -> il_mio_nome ->
     -> assegnazione_genere ->
-    -> hub_mausoleo
+    -> main
 
 
 = trigger_alcolismo
@@ -82,13 +82,13 @@
                 -> evento_speciale
             + Non ho risolto la storia
             -
-        -> hub_mausoleo
+        -> main
     
     
     = evento_speciale
         Sei finita nell'evento speciale
         ~ storiaUno = Conclusa
-        -> hub_mausoleo
+        -> main
 
 === scelta_nome_uno
     + Scelta nome uno

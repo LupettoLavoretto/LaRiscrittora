@@ -11,7 +11,7 @@
             -> storia_due
         
         //opzione se c'è un'altra storia attiva
-        + {storiaTre == InCorso or storiaQuattro == InCorso or storiaDue == Conclusa} La seconda lapide appartiene a {effettivoStatoSpettroDue} -> hub_mausoleo
+        + {storiaTre == InCorso or storiaQuattro == InCorso or storiaDue == Conclusa} La seconda lapide appartiene a {effettivoStatoSpettroDue} -> main
         
         //opzione se questa storia è attiva
         + {storiaDue == InCorso} Il fantasma della seconda storia ti attende -> aiuto_storia_due
@@ -30,7 +30,7 @@
     //la storia in corso viene attivata, e le altre non saranno accessibili fino alla sua conclusione
     ~ storiaDue = InCorso
     Ascolti la seconda storia
-    -> hub_mausoleo
+    -> main
 
 
 
@@ -51,4 +51,4 @@
                 ~ effettivoStatoSpettroDue = NuovoStatoUnoDue
              + Non ho risolto la storia
              -
-        -> hub_mausoleo
+        -> main
