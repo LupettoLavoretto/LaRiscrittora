@@ -38,7 +38,7 @@ VAR counterLuoghi = 0
 }
 
 
-//Se seleziono un'amima principale, viene randomizzata la comparsa di una di queste
+//Se seleziono un'anima principale, viene randomizzata la comparsa di una di queste
 === random_anime
 //Resetto il contatore legato alle anime principali
 ~ ultimaVoltaVistaAnima = 0
@@ -75,7 +75,5 @@ VAR counterLuoghi = 0
         -> animella_tre
     - else: non ho più animelle da estrarre ->->
 
-}
--> DONE
 }
 -> main

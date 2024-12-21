@@ -17,7 +17,9 @@
     - contenutoTisane has entity:
         ~ return Tisane   
     - contenutoSirene has entity:
-        ~ return Sirene      
+        ~ return Sirene
+    - contenutoCasettaAnime has entity:
+        ~ return CasettaAnime                  
     - else:
         DEBUG: error, cannot find {entity} anywhere!
         ~ return 0
@@ -44,6 +46,8 @@
         ~ contenutoTisane -= entity
     - Sirene:
         ~ contenutoSirene -= entity
+    - CasettaAnime:
+        ~ contenutoCasettaAnime -= entity    
         
     - else:
         DEBUG: error, cannot understand location {CurrentLocation} while trying to move {entity} out.
@@ -66,7 +70,8 @@
         ~ contenutoTisane += entity        
     - Sirene:
         ~ contenutoSirene += entity
-        
+    - CasettaAnime:
+        ~ contenutoCasettaAnime += entity            
     - else:
         DEBUG: error, cannot understand location {destination} while trying to move {entity} in.
 }
