@@ -13,7 +13,8 @@ INCLUDE FileAppunti/ToDo.ink
 INCLUDE CodiceEStruttura/VariabiliEListe.ink
 INCLUDE CodiceEStruttura/FunzioniGestioneSpazi.ink
 INCLUDE CodiceEStruttura/FunzioniCambioLuogo.ink
-INCLUDE CodiceEStruttura/TrackingStatoStoria.ink
+INCLUDE CodiceEStruttura/TrackingStorieSpettri.ink
+INCLUDE CodiceEStruttura/DoniEInchiostro.ink
 
 INCLUDE CodiceEStruttura/FunzioniVarie.ink
 
@@ -92,6 +93,8 @@ INCLUDE Giardino/Biblioteca/RaccontoDue.ink
 INCLUDE Giardino/Biblioteca/RaccontoTre.ink
 INCLUDE Giardino/Biblioteca/RaccontoQuattro.ink
 INCLUDE Giardino/Biblioteca/GestioneBiblioteca.Ink.ink
+
+
 
 
 
