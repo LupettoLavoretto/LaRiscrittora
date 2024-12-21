@@ -8,13 +8,12 @@
 
     = stitch_uno
         + Primo contenuto anima tre
-    ->->
+    -> main
     
     = stitch_due
         + Secondo contenuto anima tre
-    ->->
+    -> main
     
     = stitch_tre
         + Terzo contenuto anima tre
-    ->->
     -> main

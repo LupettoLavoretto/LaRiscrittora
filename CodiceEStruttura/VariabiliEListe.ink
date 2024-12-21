@@ -9,12 +9,12 @@ LIST pronomi = maschili, femminili, neutri
 LIST luoghi = Giardino, Mausoleo, Biblioteca, Falene, Funghi, Labirinto, Tisane, Sirene
 
 //Lista delle personagge del gioco (quelle che hanno elementi di variabilità
-LIST personagge = Mentore, PG
+LIST personagge = Mentore, PG, AnimaUno, AnimaDue, AnimaTre
 
 //Lista dei contenuti di un determinato luogo, in modo da tracciare chi è dove
 VAR contenutoGiardino = (PG, Mentore)
 VAR contenutoMausoleo = ()
-VAR contenutoBiblioteca = ()
+VAR contenutoBiblioteca = (AnimaUno, AnimaDue, AnimaTre)
 VAR contenutoFalene = ()
 VAR contenutoFunghi = ()
 VAR contenutoLabirinto = ()

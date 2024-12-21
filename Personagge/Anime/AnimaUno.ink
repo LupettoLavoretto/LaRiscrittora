@@ -16,17 +16,15 @@
 
     = stitch_uno
         + Primo contenuto anima uno
-    ->->
+    -> main
     
     = stitch_due
-        + Secondo contenuto anima uno
-    ->->
-    
+        + Secondo contenuto anima uno 
+        
+    -> main
     = stitch_tre
         + Terzo contenuto anima uno
-    ->->
- ->main
-n
+    ->main
  
 
 
