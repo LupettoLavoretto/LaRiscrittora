@@ -1,3 +1,12 @@
+/* ---------------------------------
+
+   Presentazioni
+
+ ----------------------------------*/
+
+TODO: Inizio: più che scegliere il tuo nome, scegli un nuovo nome per quel luogo, il tuo nuovo inizio. La domanda del mentore è ambigua in questo senso. Lo è già ora, ma potrebbe essere interessante vedere qualcosa di ancora più ambiguo nel caso.
+
+
 === presentazioni ===
     Ma dimmi, come vuoi che ti chiami?
         -> il_mio_nome ->
