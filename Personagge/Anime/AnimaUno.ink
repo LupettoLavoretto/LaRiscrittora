@@ -1,4 +1,8 @@
 === anima_uno
++ {are_two_entities_together(AnimaUno, PG)} [Parli con l'anima] 
+    -> parlareConAnima
+
+= parlareConAnima
 {
 - alcolismo == false:
     {

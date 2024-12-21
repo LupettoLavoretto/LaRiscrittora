@@ -1,4 +1,8 @@
 === anima_due
++ {are_two_entities_together(AnimaDue, PG)} [Parli con l'anima] 
+    -> parlareConAnima
+
+= parlareConAnima
 {
     - not stitch_uno: -> stitch_uno
     - not stitch_due: -> stitch_due
